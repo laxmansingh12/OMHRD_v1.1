@@ -519,11 +519,6 @@
     <Content Include="images\nw\logo - Copy.jpg" />
     <Content Include="images\nw\logo-png.png" />
     <Content Include="images\nw\logo.jpg" />
-    <Content Include="images\ProfileImages\2.jpg" />
-    <Content Include="images\ProfileImages\2AadharVerified.jpg" />
-    <Content Include="images\ProfileImages\2AddressVerified.jpg" />
-    <Content Include="images\ProfileImages\2ChequeVerified.jpg" />
-    <Content Include="images\ProfileImages\2PanVerified.jpg" />
     <Content Include="images\ProfileImages\Ajaykumar.jpg" />
     <Content Include="images\ProfileImages\angelrout.jpg" />
     <Content Include="images\ProfileImages\AP.jpg" />
