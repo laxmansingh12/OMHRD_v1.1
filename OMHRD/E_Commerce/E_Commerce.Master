@@ -1,0 +1,407 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="E_Commerce.master.cs" Inherits="OMHRD.E_Commerce.E_Commerce" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>OM HRD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Best Look Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smart phone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/JiSlider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css' />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" novalidate>
+        <div class="banner-top" id="home">
+            <div class="w3_navigation">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header navbar-left">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h2><a href="../Default.aspx" style="color: black;">
+                                <img src="../images/nw/logo-png.png" alt=" " style="width: 60px;" />Marketing Pvt. Ltd</a></h2>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                            <nav class="menu menu--iris">
+                                <ul class="nav navbar-nav menu__list">
+                                    <li class="menu__item"><a href="Default.aspx" class="menu__link">Home</a></li>
+                                    <li class="dropdown menu__item">
+                                        <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">About<b class="caret"></b></a>
+                                        <ul class="dropdown-menu agile_short_dropdown">
+                                            <li><a href="AboutUs.aspx">About Us</a></li>
+                                            <li><a href="OurMetion.aspx">Our Mission</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item"><a href="frmGallaryShow.aspx" class="menu__link">Gallery</a></li>
+                                    <li class="menu__item"><a href="../ProductSale/Default.aspx" class="menu__link">Shopping at OM HRD</a></li>
+                                    <%-- <li class="dropdown menu__item">
+                                        <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Our Product<b class="caret"></b></a>
+                                        <ul class="dropdown-menu agile_short_dropdown">
+                                            <li><a href="frmProductShow.aspx">Category</a></li>
+                                        </ul>
+                                    </li>--%>
+                                    <li class="menu__item"><a href="ContactUs.aspx" class="menu__link">Contact </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <div class="col-md-12 modal_body_left modal_body_left1">
+                            <h3 class="agileinfo_sign">Log In <span>Now</span></h3>
+                            <form method="post" novalidate>
+                                <div class="styled-input agile-styled-input-top">
+                                    <label>User Name</label>
+                                    <asp:TextBox ID="txtluser" CssClass="form-control" runat="server" required=""></asp:TextBox>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Password</label>
+                                    <asp:TextBox ID="txtLpassword" CssClass="form-control" runat="server" TextMode="Password" required=""></asp:TextBox>
+                                    <span></span>
+                                </div>
+                                <br />
+                                <center><asp:Button ID="btnLog" runat="server" CssClass="btn btn-success" Text="Log In" OnClick="btnLog_Click"/>
+                                <p><a href="#" data-toggle="modal" style="color: black;" data-target="#myModal6">Forgot Password</a></p></center>
+                            </form>
+
+                            <div class="clearfix"></div>
+                            <p><a href="#" data-toggle="modal" style="color: black;" data-target="#myModal9">Don't have an account?</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade product-sec1" id="myModal6" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <h3 class="agileinfo_sign">Forgot   <span>Password</span></h3>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#ForContact">Contact Number</a></li>
+                            <li><a data-toggle="tab" href="#ForEMail">Email Address</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="ForContact" class="tab-pane fade in active">
+                                <div class="col-md-12 modal_body_left modal_body_left1">
+                                    <label>User Name </label>
+                                    <asp:TextBox ID="txtForUserContact" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <label>Contact Number</label>
+                                    <asp:TextBox ID="txtForgotContact" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <a id="btnForContact" href="#">Submit</a>
+                                    <asp:LinkButton ID="lnkForContact" runat="server" OnClick="lnkForContact_Click">LinkButton</asp:LinkButton>
+                                    <%--<asp:Button ID="btnforContact" runat="server" Text="Submit" OnClick="btnforContact_Click" />--%>
+                                </div>
+                            </div>
+                            <div id="ForEMail" class="tab-pane fade">
+                                <div class="col-md-12 ">
+                                    <label>User Name </label>
+                                    <asp:TextBox ID="txtForUserEmail" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <label>Email Addtess</label>
+                                    <asp:TextBox ID="txtForgotEmail" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <asp:Button ID="btnForgotEmail" runat="server" Text="Submit" OnClick="btnForgotEmail_Click" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-info">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body modal-spa">
+                        <div class="login-grids">
+                            <div class="login">
+                                <div class="login-bottom">
+                                    <h3>Terms And Conditions</h3>
+                                    <p>
+                                        <input type="checkbox" id="myCheck" onclick="myFunction()">&nbsp;
+                                              By creating an account, you agree to OM HRD's Conditions of Use and Privacy Notice. 
+                                              Terms and Conditions are a set of rules and guidelines that a user must agree to in order to use your website or mobile app.
+                              It acts as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.
+                             <br />
+                                        It’s up to you to set the rules and guidelines that the user must agree to.
+                              You can think of your Terms and Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so on.
+                                    </p>
+                                    <br />
+                                    <center><p id="text" style="display: none"><a href="#" style="color: black;" data-toggle="modal" data-target="#myModal7">Join Us</a></p></center>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade product-sec1" id="myModal7" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <center><h3 class="agileinfo_sign">Join  <span>Us</span></h3></center>
+                        <form method="post" novalidate>
+                            <div class="col-md-6 modal_body_left modal_body_left1">
+                                <div class="styled-input agile-styled-input-top">
+                                    <label>First Name </label>
+                                    <asp:TextBox ID="txtFirstname" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                                    <span></span>
+                                    <div id="div_Fname" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Last Name</label>
+                                    <asp:TextBox ID="txtLastName" CssClass="form-control" runat="server" required=""></asp:TextBox>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <label>User Name<span style="color: red; font-weight: bold">*</span></label>
+                                    <asp:TextBox ID="txtuserName" runat="server" required="" CssClass="form-control" onkeypress="return AvoidSpace(event)" onkeyup="ClearMessage(event)"></asp:TextBox>
+                                    <input id="btnCheck" type="button" class="btn btn-danger" value="Show Availability" onclick="CheckAvailability()" />
+                                    <div id="div_UName" style="color: #EA0000;"></div>
+                                    <div id="message" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Password</label>
+                                    <asp:TextBox ID="txtpassword" CssClass="form-control" runat="server" TextMode="Password" required=""></asp:TextBox>
+                                    <span></span>
+                                    <div id="div_Password" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Confirm Password</label>
+                                    <asp:TextBox ID="txtcompassword" CssClass="form-control" runat="server" TextMode="Password" required="" onChange="checkPasswordMatch();"></asp:TextBox>
+                                    <span></span>
+                                    <div id="div_ComPassword" style="color: #EA0000;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 modal_body_right modal_body_right1">
+                                <div class="styled-input agile-styled-input-top">
+                                    <label>Email ID</label>
+                                    <asp:TextBox ID="txtemail" CssClass="form-control" runat="server" TextMode="Email" required=""></asp:TextBox>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Contact Number</label>
+                                    <asp:TextBox ID="txtcontact" CssClass="form-control" runat="server" required=""></asp:TextBox>
+                                    <span></span>
+                                    <div id="div_Contact" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <label>Reference ID</label>
+                                    <asp:TextBox ID="txtReferenceId" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <span></span>
+                                    <div id="div_RefId" style="color: #EA0000;"></div>
+                                </div>
+                                <%-- <asp:Button ID="btnSignUp" runat="server" Text="Submit" OnClick="btnSignUp_Click" />--%>
+                                <asp:LinkButton ID="linksignup" runat="server" Text="Submit" OnClick="linksignup_Click"></asp:LinkButton>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="w3l_footer">
+            <div class="container">
+                <div class="w3ls_footer_grid">
+                    <div class="col-md-4 w3ls_footer_grid_left">
+                        <h4>Location:</h4>
+                        <p>
+                            N.S-16, 3rd floor, Mianwali Nagar
+                                <br>
+                            New Delhi-110087 
+                        </p>
+                    </div>
+                    <div class="col-md-4 w3ls_footer_grid_left">
+                        <h4>Contact us:</h4>
+                        <p><span>Phone : </span>011-45072882</p>
+                        <p><span>Email : </span><a href="mailto:admin@omhrd.com">admin@omhrd.com</a></p>
+                    </div>
+                    <div class="col-md-4 w3ls_footer_grid_left">
+                        <h4>Events Hours:</h4>
+                        <p>Event Starts (10am-12pm)</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-middle-agileinfo">
+                    <div class="footer-button">
+                        <div class="button-top-w3layouts">
+                            <div class="logo-icons-w3ls">
+                                <img src="images/f2.png" alt="img">
+                            </div>
+                        </div>
+
+                        <h2>We’re Committed to Service Excellence.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right wow fadeInLeft animated" data-wow-delay=".5s">
+            <div class="container">
+                <p class="copy-right">© 2018 OM HRD . All Rights Reserved | Design by Peytonsoft <a href="http://peytonsoft.com/">Peytonsoft</a></p>
+            </div>
+        </div>
+        <div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Best Look</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="agileits-w3layouts-info">
+                            <img src="images/b1.jpg" alt="" />
+                            <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal about-modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Best Look</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="agileits-w3layouts-info">
+                            <img src="images/b2.jpg" alt="" />
+                            <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Best Look</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="agileits-w3layouts-info">
+                            <img src="images/b3.jpg" alt="" />
+                            <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal about-modal fade" id="myModal4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Best Look</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="agileits-w3layouts-info">
+                            <img src="images/b4.jpg" alt="" />
+                            <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/JiSlider.js"></script>
+        <script>
+            $(window).load(function () {
+                $('#JiSlider').JiSlider({ color: '#fff', start: 3, reverse: false }).addClass('ff')
+            })
+        </script>
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function () {
+                $(".center").slick({
+                    dots: true,
+                    infinite: true,
+                    centerMode: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: true,
+                                centerMode: false,
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: true,
+                                centerMode: false,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+        <script src="js/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </form>
+</body>
+</html>

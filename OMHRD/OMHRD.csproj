@@ -1,0 +1,1597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87852173-9DC9-4245-8A70-EE9C8C17CBC3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OMHRD</RootNamespace>
+    <AssemblyName>OMHRD</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Business.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business.Object\bin\Debug\Business.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Business.Object, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business.Object\bin\Debug\Business.Object.dll</HintPath>
+    </Reference>
+    <Reference Include="Business.SQLServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Business.Object\bin\Debug\Business.SQLServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MCPG.CCA.Util">
+      <HintPath>C:\Users\TarunKushwah\Downloads\ASP.Net_Kit_Version_3.5\ASP.Net_Kit_Version_3.5\NON_SEAMLESS_KIT\libs\MCPG.CCA.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\AddGallery.aspx" />
+    <Content Include="Admin\AdminProfileShow.aspx" />
+    <Content Include="Admin\css\animate.min.css" />
+    <Content Include="Admin\css\bootstrap.css" />
+    <Content Include="Admin\css\flexslider.css" />
+    <Content Include="Admin\css\jquery-ui.css" />
+    <Content Include="Admin\css\jquery.countdown.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\EditSignUpDetail.aspx" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\frmBannerMaster.aspx" />
+    <Content Include="Admin\frmCategoryMaster.aspx" />
+    <Content Include="Admin\frmChangePassword.aspx" />
+    <Content Include="Admin\frmColorMaster.aspx" />
+    <Content Include="Admin\frmEditPickupDetail.aspx" />
+    <Content Include="Admin\frmFamilyTreeHierarchyChart.aspx" />
+    <Content Include="Admin\frmItemList.aspx" />
+    <Content Include="Admin\frmItemMaster.aspx" />
+    <Content Include="Admin\frmNewCollection.aspx" />
+    <Content Include="Admin\frmpayout.aspx" />
+    <Content Include="Admin\frmSizeMaster.aspx" />
+    <Content Include="Admin\frmSubCategory.aspx" />
+    <Content Include="Admin\frmUnitMaster.aspx" />
+    <Content Include="Admin\frontEndBanner.aspx" />
+    <Content Include="Admin\images\1.jpg" />
+    <Content Include="Admin\images\1.png" />
+    <Content Include="Admin\images\10.jpg" />
+    <Content Include="Admin\images\11.jpg" />
+    <Content Include="Admin\images\12.jpg" />
+    <Content Include="Admin\images\13.jpg" />
+    <Content Include="Admin\images\14.jpg" />
+    <Content Include="Admin\images\15.jpg" />
+    <Content Include="Admin\images\16.jpg" />
+    <Content Include="Admin\images\17.jpg" />
+    <Content Include="Admin\images\18.jpg" />
+    <Content Include="Admin\images\19.jpg" />
+    <Content Include="Admin\images\2.jpg" />
+    <Content Include="Admin\images\2.png" />
+    <Content Include="Admin\images\20.jpg" />
+    <Content Include="Admin\images\21.jpg" />
+    <Content Include="Admin\images\22.jpg" />
+    <Content Include="Admin\images\23.jpg" />
+    <Content Include="Admin\images\24.jpg" />
+    <Content Include="Admin\images\25.jpg" />
+    <Content Include="Admin\images\26.jpg" />
+    <Content Include="Admin\images\27.jpg" />
+    <Content Include="Admin\images\28.jpg" />
+    <Content Include="Admin\images\29.jpg" />
+    <Content Include="Admin\images\3.jpg" />
+    <Content Include="Admin\images\3.png" />
+    <Content Include="Admin\images\30.jpg" />
+    <Content Include="Admin\images\31.jpg" />
+    <Content Include="Admin\images\32.jpg" />
+    <Content Include="Admin\images\33.jpg" />
+    <Content Include="Admin\images\34.jpg" />
+    <Content Include="Admin\images\4.jpg" />
+    <Content Include="Admin\images\4.png" />
+    <Content Include="Admin\images\5.jpg" />
+    <Content Include="Admin\images\5.png" />
+    <Content Include="Admin\images\6.jpg" />
+    <Content Include="Admin\images\7.jpg" />
+    <Content Include="Admin\images\8.jpg" />
+    <Content Include="Admin\images\9.jpg" />
+    <Content Include="Admin\images\bag-.png" />
+    <Content Include="Admin\images\bag.png" />
+    <Content Include="Admin\images\banner.jpg" />
+    <Content Include="Admin\images\check.png" />
+    <Content Include="Admin\images\close_1.png" />
+    <Content Include="Admin\images\img-sp.png" />
+    <Content Include="Admin\images\si.jpg" />
+    <Content Include="Admin\images\si1.jpg" />
+    <Content Include="Admin\images\si2.jpg" />
+    <Content Include="Admin\js\bootstrap-3.1.1.min.js" />
+    <Content Include="Admin\js\classie.js" />
+    <Content Include="Admin\js\imagezoom.js" />
+    <Content Include="Admin\js\jquery-ui.min.js" />
+    <Content Include="Admin\js\jquery.countdown.js" />
+    <Content Include="Admin\js\jquery.flexslider.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\jquery.wmuSlider.js" />
+    <Content Include="Admin\js\script.js" />
+    <Content Include="Admin\js\simpleCart.min.js" />
+    <Content Include="Admin\js\uisearch.js" />
+    <Content Include="Admin\js\wow.min.js" />
+    <Content Include="Admin\PickUpApproveList.aspx" />
+    <Content Include="Admin\PickUpRejectList.aspx" />
+    <Content Include="Admin\PickUpWaitingList.aspx" />
+    <Content Include="Admin\PpaymentReceive.aspx" />
+    <Content Include="Admin\ShoppingHistory.aspx" />
+    <Content Include="Admin\USerList.aspx" />
+    <Content Include="Admin\WalletRecharge.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\easy-responsive-tabs.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\team.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="E_Commerce\AboutUs.aspx" />
+    <Content Include="E_Commerce\ContactUs.aspx" />
+    <Content Include="E_Commerce\css\bootstrap.css" />
+    <Content Include="E_Commerce\css\font-awesome.css" />
+    <Content Include="E_Commerce\css\JiSlider.css" />
+    <Content Include="E_Commerce\css\style.css" />
+    <Content Include="E_Commerce\css\swipebox.css" />
+    <Content Include="E_Commerce\Default.aspx" />
+    <Content Include="E_Commerce\fonts\fontawesome-webfont.svg" />
+    <Content Include="E_Commerce\frmGallaryShow.aspx" />
+    <Content Include="E_Commerce\frmLogIn.aspx" />
+    <Content Include="E_Commerce\images\ab1.jpg" />
+    <Content Include="E_Commerce\images\ab11.jpg" />
+    <Content Include="E_Commerce\images\about.jpg" />
+    <Content Include="E_Commerce\images\b1.jpg" />
+    <Content Include="E_Commerce\images\b11.jpg" />
+    <Content Include="E_Commerce\images\b2.jpg" />
+    <Content Include="E_Commerce\images\b21.jpg" />
+    <Content Include="E_Commerce\images\b3.jpg" />
+    <Content Include="E_Commerce\images\b31.jpg" />
+    <Content Include="E_Commerce\images\b4.jpg" />
+    <Content Include="E_Commerce\images\b41.jpg" />
+    <Content Include="E_Commerce\images\ba1.jpg" />
+    <Content Include="E_Commerce\images\ba10.jpg" />
+    <Content Include="E_Commerce\images\ba2.jpg" />
+    <Content Include="E_Commerce\images\ba20.jpg" />
+    <Content Include="E_Commerce\images\ba3.jpg" />
+    <Content Include="E_Commerce\images\ba30.jpg" />
+    <Content Include="E_Commerce\images\ba4.jpeg" />
+    <Content Include="E_Commerce\images\ba40.jpg" />
+    <Content Include="E_Commerce\images\ba6.jpg" />
+    <Content Include="E_Commerce\images\banner.jpg" />
+    <Content Include="E_Commerce\images\bannerall - Copy - Copy.jpg" />
+    <Content Include="E_Commerce\images\bannerall.jpg" />
+    <Content Include="E_Commerce\images\f2.png" />
+    <Content Include="E_Commerce\images\icons.svg" />
+    <Content Include="E_Commerce\images\left-1.png" />
+    <Content Include="E_Commerce\images\left-quote.png" />
+    <Content Include="E_Commerce\images\left.png" />
+    <Content Include="E_Commerce\images\m1.jpg" />
+    <Content Include="E_Commerce\images\m10.jpg" />
+    <Content Include="E_Commerce\images\m11.jpg" />
+    <Content Include="E_Commerce\images\m2.jpg" />
+    <Content Include="E_Commerce\images\m3.jpg" />
+    <Content Include="E_Commerce\images\m4.jpg" />
+    <Content Include="E_Commerce\images\m5.jpg" />
+    <Content Include="E_Commerce\images\m6.jpg" />
+    <Content Include="E_Commerce\images\m7.jpg" />
+    <Content Include="E_Commerce\images\m8.jpg" />
+    <Content Include="E_Commerce\images\m9.jpg" />
+    <Content Include="E_Commerce\images\overlay.png" />
+    <Content Include="E_Commerce\images\right-quote.png" />
+    <Content Include="E_Commerce\images\right.png" />
+    <Content Include="E_Commerce\images\s11.jpg" />
+    <Content Include="E_Commerce\images\service.jpg" />
+    <Content Include="E_Commerce\images\st2.jpg" />
+    <Content Include="E_Commerce\images\t1.jpg" />
+    <Content Include="E_Commerce\images\t2.jpg" />
+    <Content Include="E_Commerce\images\t3.jpg" />
+    <Content Include="E_Commerce\images\tm1.jpg" />
+    <Content Include="E_Commerce\images\tm2.jpg" />
+    <Content Include="E_Commerce\images\tm3.jpg" />
+    <Content Include="E_Commerce\images\tm4.jpg" />
+    <Content Include="E_Commerce\images\tm5.jpg" />
+    <Content Include="E_Commerce\images\up.png" />
+    <Content Include="E_Commerce\js\bootstrap.js" />
+    <Content Include="E_Commerce\js\easing.js" />
+    <Content Include="E_Commerce\js\JiSlider.js" />
+    <Content Include="E_Commerce\js\jquery-2.1.4.min.js" />
+    <Content Include="E_Commerce\js\jquery.swipebox.min.js" />
+    <Content Include="E_Commerce\js\move-top.js" />
+    <Content Include="E_Commerce\js\numscroller-1.0.js" />
+    <Content Include="E_Commerce\js\slick.js" />
+    <Content Include="E_Commerce\js\SmoothScroll.min.js" />
+    <Content Include="E_Commerce\OurMetion.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HomeMaster.Master" />
+    <Content Include="E_Commerce\E_Commerce.Master" />
+    <Content Include="E_Commerce\fonts\fontawesome-webfont.eot" />
+    <Content Include="E_Commerce\fonts\fontawesome-webfont.ttf" />
+    <Content Include="E_Commerce\fonts\fontawesome-webfont.woff" />
+    <Content Include="E_Commerce\fonts\fontawesome-webfont.woff2" />
+    <Content Include="E_Commerce\fonts\FontAwesome.otf" />
+    <Content Include="E_Commerce\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="E_Commerce\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\b1.jpg" />
+    <Content Include="images\b2.jpg" />
+    <Content Include="images\b21.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\btn_next.png" />
+    <Content Include="images\btn_pause.png" />
+    <Content Include="images\btn_play.png" />
+    <Content Include="images\btn_prev.png" />
+    <Content Include="images\close_1.png" />
+    <Content Include="images\CommingSoon.jpg" />
+    <Content Include="images\Footer.jpg" />
+    <Content Include="images\Gallery\banner.png" />
+    <Content Include="images\Gallery\Gal1.jpg" />
+    <Content Include="images\Gallery\Gal2.jpg" />
+    <Content Include="images\Gallery\Gal3.gif" />
+    <Content Include="images\Gallery\Gal4.gif" />
+    <Content Include="images\ItemImages\100 %25 pure Aloe Vera 1.png" />
+    <Content Include="images\ItemImages\100 %25 pure Aloe Vera 2.png" />
+    <Content Include="images\ItemImages\100 %25 pure Aloe Vera 3.png" />
+    <Content Include="images\ItemImages\abc1.jpg" />
+    <Content Include="images\ItemImages\abc2.jpg" />
+    <Content Include="images\ItemImages\abc3.jpg" />
+    <Content Include="images\ItemImages\Aloe Vera Glycerin soap 1.jpg" />
+    <Content Include="images\ItemImages\Aloe Vera Glycerin soap 2.jpg" />
+    <Content Include="images\ItemImages\Aloe Vera Glycerin soap 3.jpg" />
+    <Content Include="images\ItemImages\Aloe vera Juice1.png" />
+    <Content Include="images\ItemImages\Aloe vera Juice2.png" />
+    <Content Include="images\ItemImages\Aloe vera Juice3.png" />
+    <Content Include="images\ItemImages\Dish wash Liquid Gel1.png" />
+    <Content Include="images\ItemImages\Dish wash Liquid Gel2.png" />
+    <Content Include="images\ItemImages\Dish wash Liquid Gel3.png" />
+    <Content Include="images\ItemImages\Dish washer 1.png" />
+    <Content Include="images\ItemImages\Dish washer 2.png" />
+    <Content Include="images\ItemImages\Dish washer 3.png" />
+    <Content Include="images\ItemImages\Dishwash Bar1.png" />
+    <Content Include="images\ItemImages\Dishwash Bar2.png" />
+    <Content Include="images\ItemImages\Dishwash Bar3.png" />
+    <Content Include="images\ItemImages\Floor Cleaner1.png" />
+    <Content Include="images\ItemImages\Floor Cleaner2.png" />
+    <Content Include="images\ItemImages\Floor Cleaner3.png" />
+    <Content Include="images\ItemImages\Formal1.jpg" />
+    <Content Include="images\ItemImages\Formal2.jpeg" />
+    <Content Include="images\ItemImages\Formal2.jpg" />
+    <Content Include="images\ItemImages\Formal3.jpg" />
+    <Content Include="images\ItemImages\Formal3.png" />
+    <Content Include="images\ItemImages\Gas Safety device1.png" />
+    <Content Include="images\ItemImages\Gas safety Device2.jpeg" />
+    <Content Include="images\ItemImages\Gas Safety device2.png" />
+    <Content Include="images\ItemImages\Gas safety Device3.jpeg" />
+    <Content Include="images\ItemImages\Gas Safety device3.png" />
+    <Content Include="images\ItemImages\Glass cleaner1.png" />
+    <Content Include="images\ItemImages\Glass cleaner2.png" />
+    <Content Include="images\ItemImages\Glass cleaner3.png" />
+    <Content Include="images\ItemImages\Glycerine soap Pack of five.1.png" />
+    <Content Include="images\ItemImages\Glycerine soap Pack of five.2.png" />
+    <Content Include="images\ItemImages\Glycerine soap Pack of five.3.png" />
+    <Content Include="images\ItemImages\Haldi POwder 100gm1.png" />
+    <Content Include="images\ItemImages\Haldi POwder 100gm2.png" />
+    <Content Include="images\ItemImages\Haldi POwder 100gm3.png" />
+    <Content Include="images\ItemImages\Hand Wash1.png" />
+    <Content Include="images\ItemImages\Hand Wash2.png" />
+    <Content Include="images\ItemImages\Hand Wash3.png" />
+    <Content Include="images\ItemImages\Kareka Jamun juice1.jpg" />
+    <Content Include="images\ItemImages\Kareka Jamun juice2.jpg" />
+    <Content Include="images\ItemImages\Kareka Jamun juice3.jpg" />
+    <Content Include="images\ItemImages\Karela Jamun juice1.jpg" />
+    <Content Include="images\ItemImages\Karela Jamun juice2.jpg" />
+    <Content Include="images\ItemImages\Karela Jamun juice3.jpg" />
+    <Content Include="images\ItemImages\Lemon Grass Soap1.jpg" />
+    <Content Include="images\ItemImages\Lemon Grass Soap2.jpg" />
+    <Content Include="images\ItemImages\Lemon Grass Soap3.jpg" />
+    <Content Include="images\ItemImages\Mint Glycerin Soap1.jpg" />
+    <Content Include="images\ItemImages\Mint Glycerin Soap2.jpg" />
+    <Content Include="images\ItemImages\Mint Glycerin Soap3.jpg" />
+    <Content Include="images\ItemImages\Mix Fruit Glycerin soap1.jpg" />
+    <Content Include="images\ItemImages\Mix Fruit Glycerin soap2.jpg" />
+    <Content Include="images\ItemImages\Mix Fruit Glycerin soap3.jpg" />
+    <Content Include="images\ItemImages\Neem Tulsi Soap1.jpg" />
+    <Content Include="images\ItemImages\Neem Tulsi Soap2.jpg" />
+    <Content Include="images\ItemImages\Neem Tulsi Soap3.jpg" />
+    <Content Include="images\ItemImages\OMHRD PRODUCTS1.png" />
+    <Content Include="images\ItemImages\OMHRD PRODUCTS2.png" />
+    <Content Include="images\ItemImages\OMHRD PRODUCTS3.png" />
+    <Content Include="images\ItemImages\Paint1.JPG" />
+    <Content Include="images\ItemImages\Paint2.JPG" />
+    <Content Include="images\ItemImages\Paint3.JPG" />
+    <Content Include="images\ItemImages\Panch Tulsi1.jpg" />
+    <Content Include="images\ItemImages\Panch Tulsi2.jpg" />
+    <Content Include="images\ItemImages\Panch Tulsi3.jpg" />
+    <Content Include="images\ItemImages\Pro X protein Powder for Kids 1.jpg" />
+    <Content Include="images\ItemImages\Pro X protein Powder for Kids 2.jpg" />
+    <Content Include="images\ItemImages\Pro X protein Powder for Kids 3.jpg" />
+    <Content Include="images\ItemImages\Shirt1.JPG" />
+    <Content Include="images\ItemImages\Shirt2.JPG" />
+    <Content Include="images\ItemImages\Shirt3.JPG" />
+    <Content Include="images\ItemImages\Toilet Cleaner1.png" />
+    <Content Include="images\ItemImages\Toilet Cleaner2.png" />
+    <Content Include="images\ItemImages\Toilet Cleaner3.png" />
+    <Content Include="images\mark1.png" />
+    <Content Include="images\nw\11.jpg" />
+    <Content Include="images\nw\12.jpeg" />
+    <Content Include="images\nw\13.jpg" />
+    <Content Include="images\nw\15.jpg" />
+    <Content Include="images\nw\22.jpg" />
+    <Content Include="images\nw\ba2.jpg" />
+    <Content Include="images\nw\banner1.jpg" />
+    <Content Include="images\nw\banner2.gif" />
+    <Content Include="images\nw\banner3.gif" />
+    <Content Include="images\nw\banner4.gif" />
+    <Content Include="images\nw\banner5.jpg" />
+    <Content Include="images\nw\contact us.jpg" />
+    <Content Include="images\nw\logo - Copy.jpg" />
+    <Content Include="images\nw\logo-png.png" />
+    <Content Include="images\nw\logo.jpg" />
+    <Content Include="images\ProfileImages\2.jpg" />
+    <Content Include="images\ProfileImages\2AadharVerified.jpg" />
+    <Content Include="images\ProfileImages\2AddressVerified.jpg" />
+    <Content Include="images\ProfileImages\2ChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\2PanVerified.jpg" />
+    <Content Include="images\ProfileImages\Ajaykumar.jpg" />
+    <Content Include="images\ProfileImages\angelrout.jpg" />
+    <Content Include="images\ProfileImages\AP.jpg" />
+    <Content Include="images\ProfileImages\Ashok chauhan.jpg" />
+    <Content Include="images\ProfileImages\Ashok chauhanAadharVerified.JPG" />
+    <Content Include="images\ProfileImages\Biswanath.jpg" />
+    <Content Include="images\ProfileImages\Gajay1.singh.jpg" />
+    <Content Include="images\ProfileImages\Gajay1.singhAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Gajay1.singhAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Gajay1.singhChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Gajay1.singhPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Govindi.singh.jpg" />
+    <Content Include="images\ProfileImages\Govindi1.singhAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Govindi1.singhAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Govindi1.singhPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Jaspal.singh.jpg" />
+    <Content Include="images\ProfileImages\Jaspal1.singh.jpg" />
+    <Content Include="images\ProfileImages\Jaspal1.singhAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Jaspal1.singhAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Jaspal1.singhChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Jaspal1.singhPanVerified.jpg" />
+    <Content Include="images\ProfileImages\JayachandranPanicker.jpg" />
+    <Content Include="images\ProfileImages\JayachandranPanickerAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\JayachandranPanickerChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\JayachandranPanickerPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Kaushal.jpg" />
+    <Content Include="images\ProfileImages\Kumod.jpg" />
+    <Content Include="images\ProfileImages\Manabendra.jpg" />
+    <Content Include="images\ProfileImages\Narayan1.negi.jpg" />
+    <Content Include="images\ProfileImages\Narayan1.negiAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Narayan1.negiAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Narayan1.negiChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Narayan1.negiPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Prasad.jpg" />
+    <Content Include="images\ProfileImages\Rajendra.singh.jpg" />
+    <Content Include="images\ProfileImages\Rajendra.singhAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Rajendra.singhAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Rajendra.singhChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Rajendra.singhPanVerified.jpg" />
+    <Content Include="images\ProfileImages\ramnathChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\sanjayv.jpg" />
+    <Content Include="images\ProfileImages\Sarajit1.jpg" />
+    <Content Include="images\ProfileImages\Seema.jpg" />
+    <Content Include="images\ProfileImages\Seema2.jpg" />
+    <Content Include="images\ProfileImages\Shyamal.jpg" />
+    <Content Include="images\ProfileImages\Sumit.jpg" />
+    <Content Include="images\ProfileImages\SumitAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\SumitPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Thakurdas.jpg" />
+    <Content Include="images\ProfileImages\Tripti.sharma.jpg" />
+    <Content Include="images\ProfileImages\Tripti.sharmaAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Tripti.sharmaPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Vijay.singh.jpg" />
+    <Content Include="images\ProfileImages\Vijay.singhAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Vijay.singhAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Vijay.singhChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Vijay.singhPanVerified.jpg" />
+    <Content Include="images\ProfileImages\Yashoda.devi.jpg" />
+    <Content Include="images\ProfileImages\Yashoda.deviAadharVerified.jpg" />
+    <Content Include="images\ProfileImages\Yashoda.deviAddressVerified.jpg" />
+    <Content Include="images\ProfileImages\Yashoda.deviChequeVerified.jpg" />
+    <Content Include="images\ProfileImages\Yashoda.deviPanVerified.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="images\tick-mark1.png" />
+    <Content Include="images\up_arrow.png" />
+    <Content Include="PickUp\AllItemsList.aspx" />
+    <Content Include="PickUp\ChangePassword.aspx" />
+    <Content Include="PickUp\css\animate.min.css" />
+    <Content Include="PickUp\css\bootstrap.css" />
+    <Content Include="PickUp\css\flexslider.css" />
+    <Content Include="PickUp\css\jquery-ui.css" />
+    <Content Include="PickUp\css\jquery.countdown.css" />
+    <Content Include="PickUp\css\style.css" />
+    <Content Include="PickUp\Default.aspx" />
+    <Content Include="PickUp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="PickUp\frmProfileUpdate.aspx" />
+    <Content Include="PickUp\images\1.jpg" />
+    <Content Include="PickUp\images\1.png" />
+    <Content Include="PickUp\images\10.jpg" />
+    <Content Include="PickUp\images\11.jpg" />
+    <Content Include="PickUp\images\12.jpg" />
+    <Content Include="PickUp\images\13.jpg" />
+    <Content Include="PickUp\images\14.jpg" />
+    <Content Include="PickUp\images\15.jpg" />
+    <Content Include="PickUp\images\16.jpg" />
+    <Content Include="PickUp\images\17.jpg" />
+    <Content Include="PickUp\images\18.jpg" />
+    <Content Include="PickUp\images\19.jpg" />
+    <Content Include="PickUp\images\2.jpg" />
+    <Content Include="PickUp\images\2.png" />
+    <Content Include="PickUp\images\20.jpg" />
+    <Content Include="PickUp\images\21.jpg" />
+    <Content Include="PickUp\images\22.jpg" />
+    <Content Include="PickUp\images\23.jpg" />
+    <Content Include="PickUp\images\24.jpg" />
+    <Content Include="PickUp\images\25.jpg" />
+    <Content Include="PickUp\images\26.jpg" />
+    <Content Include="PickUp\images\27.jpg" />
+    <Content Include="PickUp\images\28.jpg" />
+    <Content Include="PickUp\images\29.jpg" />
+    <Content Include="PickUp\images\3.jpg" />
+    <Content Include="PickUp\images\3.png" />
+    <Content Include="PickUp\images\30.jpg" />
+    <Content Include="PickUp\images\31.jpg" />
+    <Content Include="PickUp\images\32.jpg" />
+    <Content Include="PickUp\images\33.jpg" />
+    <Content Include="PickUp\images\34.jpg" />
+    <Content Include="PickUp\images\4.jpg" />
+    <Content Include="PickUp\images\4.png" />
+    <Content Include="PickUp\images\5.jpg" />
+    <Content Include="PickUp\images\5.png" />
+    <Content Include="PickUp\images\6.jpg" />
+    <Content Include="PickUp\images\7.jpg" />
+    <Content Include="PickUp\images\8.jpg" />
+    <Content Include="PickUp\images\9.jpg" />
+    <Content Include="PickUp\images\bag-.png" />
+    <Content Include="PickUp\images\bag.png" />
+    <Content Include="PickUp\images\banner.jpg" />
+    <Content Include="PickUp\images\check.png" />
+    <Content Include="PickUp\images\close_1.png" />
+    <Content Include="PickUp\images\img-sp.png" />
+    <Content Include="PickUp\images\si.jpg" />
+    <Content Include="PickUp\images\si1.jpg" />
+    <Content Include="PickUp\images\si2.jpg" />
+    <Content Include="PickUp\js\bootstrap-3.1.1.min.js" />
+    <Content Include="PickUp\js\classie.js" />
+    <Content Include="PickUp\js\imagezoom.js" />
+    <Content Include="PickUp\js\jquery-ui.min.js" />
+    <Content Include="PickUp\js\jquery.countdown.js" />
+    <Content Include="PickUp\js\jquery.flexslider.js" />
+    <Content Include="PickUp\js\jquery.min.js" />
+    <Content Include="PickUp\js\jquery.wmuSlider.js" />
+    <Content Include="PickUp\js\script.js" />
+    <Content Include="PickUp\js\simpleCart.min.js" />
+    <Content Include="PickUp\js\uisearch.js" />
+    <Content Include="PickUp\js\wow.min.js" />
+    <Content Include="PickUp\OrderFrm.aspx" />
+    <Content Include="PickUp\SaleProduct.aspx" />
+    <Content Include="PickUp\UserList.aspx" />
+    <Content Include="PickUp\WalletRecharge.aspx" />
+    <Content Include="ProductSale\css\animate.min.css" />
+    <Content Include="ProductSale\css\bootstrap.css" />
+    <Content Include="ProductSale\css\flexslider.css" />
+    <Content Include="ProductSale\css\jquery-ui.css" />
+    <Content Include="ProductSale\css\jquery.countdown.css" />
+    <Content Include="ProductSale\css\style.css" />
+    <Content Include="ProductSale\Default.aspx" />
+    <Content Include="ProductSale\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ProductSale\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ProductSale\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ProductSale\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ProductSale\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ProductSale\frmAddToCartList.aspx" />
+    <Content Include="ProductSale\frmAllProductShow.aspx" />
+    <Content Include="ProductSale\frmPrivacyPolicy.aspx" />
+    <Content Include="ProductSale\frmReturnRefund.aspx" />
+    <Content Include="ProductSale\frmTermAndCondtion.aspx" />
+    <Content Include="ProductSale\images\1.jpg" />
+    <Content Include="ProductSale\images\1.png" />
+    <Content Include="ProductSale\images\10.jpg" />
+    <Content Include="ProductSale\images\11.jpg" />
+    <Content Include="ProductSale\images\12.jpg" />
+    <Content Include="ProductSale\images\13.jpg" />
+    <Content Include="ProductSale\images\14.jpg" />
+    <Content Include="ProductSale\images\15.jpg" />
+    <Content Include="ProductSale\images\16.jpg" />
+    <Content Include="ProductSale\images\17.jpg" />
+    <Content Include="ProductSale\images\18.jpg" />
+    <Content Include="ProductSale\images\19.jpg" />
+    <Content Include="ProductSale\images\2.jpg" />
+    <Content Include="ProductSale\images\2.png" />
+    <Content Include="ProductSale\images\20.jpg" />
+    <Content Include="ProductSale\images\21.jpg" />
+    <Content Include="ProductSale\images\22.jpg" />
+    <Content Include="ProductSale\images\23.jpg" />
+    <Content Include="ProductSale\images\24.jpg" />
+    <Content Include="ProductSale\images\25.jpg" />
+    <Content Include="ProductSale\images\26.jpg" />
+    <Content Include="ProductSale\images\27.jpg" />
+    <Content Include="ProductSale\images\28.jpg" />
+    <Content Include="ProductSale\images\29.jpg" />
+    <Content Include="ProductSale\images\3.jpg" />
+    <Content Include="ProductSale\images\3.png" />
+    <Content Include="ProductSale\images\30.jpg" />
+    <Content Include="ProductSale\images\31.jpg" />
+    <Content Include="ProductSale\images\32.jpg" />
+    <Content Include="ProductSale\images\33.jpg" />
+    <Content Include="ProductSale\images\34.jpg" />
+    <Content Include="ProductSale\images\4.jpg" />
+    <Content Include="ProductSale\images\4.png" />
+    <Content Include="ProductSale\images\5.jpg" />
+    <Content Include="ProductSale\images\5.png" />
+    <Content Include="ProductSale\images\6.jpg" />
+    <Content Include="ProductSale\images\7.jpg" />
+    <Content Include="ProductSale\images\8.jpg" />
+    <Content Include="ProductSale\images\9.jpg" />
+    <Content Include="ProductSale\images\bag-.png" />
+    <Content Include="ProductSale\images\bag.png" />
+    <Content Include="ProductSale\images\check.png" />
+    <Content Include="ProductSale\images\close_1.png" />
+    <Content Include="ProductSale\images\img-sp.png" />
+    <Content Include="ProductSale\images\si.jpg" />
+    <Content Include="ProductSale\images\si1.jpg" />
+    <Content Include="ProductSale\images\si2.jpg" />
+    <Content Include="ProductSale\js\bootstrap-3.1.1.min.js" />
+    <Content Include="ProductSale\js\classie.js" />
+    <Content Include="ProductSale\js\imagezoom.js" />
+    <Content Include="ProductSale\js\jquery-ui.min.js" />
+    <Content Include="ProductSale\js\jquery.countdown.js" />
+    <Content Include="ProductSale\js\jquery.flexslider.js" />
+    <Content Include="ProductSale\js\jquery.min.js" />
+    <Content Include="ProductSale\js\jquery.wmuSlider.js" />
+    <Content Include="ProductSale\js\script.js" />
+    <Content Include="ProductSale\js\simpleCart.min.js" />
+    <Content Include="ProductSale\js\uisearch.js" />
+    <Content Include="ProductSale\js\wow.min.js" />
+    <Content Include="ProductSale\login.aspx" />
+    <Content Include="ProductSale\mailus.aspx" />
+    <Content Include="ProductSale\PaymentMod\ccavRequestHandler.aspx" />
+    <Content Include="ProductSale\PaymentMod\ccavResponseHandler.aspx" />
+    <Content Include="ProductSale\PaymentMod\dataFrom.htm" />
+    <Content Include="ProductSale\productdetail.aspx" />
+    <Content Include="ProductSale\ProductSale.Master" />
+    <Content Include="ProductSale\ShoppingAddress.aspx" />
+    <Content Include="ProductSale\SubProductDetailShow.aspx" />
+    <Content Include="User\ChangePassword.aspx" />
+    <Content Include="User\css\animate.min.css" />
+    <Content Include="User\css\bootstrap.css" />
+    <Content Include="User\css\flexslider.css" />
+    <Content Include="User\css\jquery-ui.css" />
+    <Content Include="User\css\jquery.countdown.css" />
+    <Content Include="User\css\style.css" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="User\frmFamilyTreeHierarchyUser.aspx" />
+    <Content Include="User\frmMyProfile.aspx" />
+    <Content Include="User\frmWalletDetails.aspx" />
+    <Content Include="User\images\1.jpg" />
+    <Content Include="User\images\1.png" />
+    <Content Include="User\images\10.jpg" />
+    <Content Include="User\images\11.jpg" />
+    <Content Include="User\images\12.jpg" />
+    <Content Include="User\images\13.jpg" />
+    <Content Include="User\images\14.jpg" />
+    <Content Include="User\images\15.jpg" />
+    <Content Include="User\images\16.jpg" />
+    <Content Include="User\images\17.jpg" />
+    <Content Include="User\images\18.jpg" />
+    <Content Include="User\images\19.jpg" />
+    <Content Include="User\images\2.jpg" />
+    <Content Include="User\images\2.png" />
+    <Content Include="User\images\20.jpg" />
+    <Content Include="User\images\21.jpg" />
+    <Content Include="User\images\22.jpg" />
+    <Content Include="User\images\23.jpg" />
+    <Content Include="User\images\24.jpg" />
+    <Content Include="User\images\25.jpg" />
+    <Content Include="User\images\26.jpg" />
+    <Content Include="User\images\27.jpg" />
+    <Content Include="User\images\28.jpg" />
+    <Content Include="User\images\29.jpg" />
+    <Content Include="User\images\3.jpg" />
+    <Content Include="User\images\3.png" />
+    <Content Include="User\images\30.jpg" />
+    <Content Include="User\images\31.jpg" />
+    <Content Include="User\images\32.jpg" />
+    <Content Include="User\images\33.jpg" />
+    <Content Include="User\images\34.jpg" />
+    <Content Include="User\images\4.jpg" />
+    <Content Include="User\images\4.png" />
+    <Content Include="User\images\5.jpg" />
+    <Content Include="User\images\5.png" />
+    <Content Include="User\images\6.jpg" />
+    <Content Include="User\images\7.jpg" />
+    <Content Include="User\images\8.jpg" />
+    <Content Include="User\images\9.jpg" />
+    <Content Include="User\images\bag-.png" />
+    <Content Include="User\images\bag.png" />
+    <Content Include="User\images\banner.jpg" />
+    <Content Include="User\images\check.png" />
+    <Content Include="User\images\close_1.png" />
+    <Content Include="User\images\img-sp.png" />
+    <Content Include="User\images\si.jpg" />
+    <Content Include="User\images\si1.jpg" />
+    <Content Include="User\images\si2.jpg" />
+    <Content Include="User\js\bootstrap-3.1.1.min.js" />
+    <Content Include="User\js\classie.js" />
+    <Content Include="User\js\imagezoom.js" />
+    <Content Include="User\js\jquery-ui.min.js" />
+    <Content Include="User\js\jquery.countdown.js" />
+    <Content Include="User\js\jquery.flexslider.js" />
+    <Content Include="User\js\jquery.min.js" />
+    <Content Include="User\js\jquery.wmuSlider.js" />
+    <Content Include="User\js\script.js" />
+    <Content Include="User\js\simpleCart.min.js" />
+    <Content Include="User\js\uisearch.js" />
+    <Content Include="User\js\wow.min.js" />
+    <Content Include="User\ShoppingHistory.aspx" />
+    <Content Include="User\WalletRecharge.aspx" />
+    <Content Include="Webservice.asmx" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="PickUp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="PickUp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="PickUp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="PickUp\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="PickUp\PickUp.Master" />
+    <Content Include="ProOrder.xsc">
+      <DependentUpon>ProOrder.xsd</DependentUpon>
+    </Content>
+    <Content Include="OMHRDDataSet.xsc">
+      <DependentUpon>OMHRDDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="OMHRDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMHRDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="OMHRDDataSet.xss">
+      <DependentUpon>OMHRDDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="ProOrder.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProOrder.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ProOrder.xss">
+      <DependentUpon>ProOrder.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\easy-responsive-tabs.js" />
+    <Content Include="js\imagezoom.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.countup.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.waypoints.min.js" />
+    <Content Include="js\minicart.min.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\responsiveslides.min.js" />
+    <Content Include="js\Validation.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="User\User.Master" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddGallery.aspx.cs">
+      <DependentUpon>AddGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddGallery.aspx.designer.cs">
+      <DependentUpon>AddGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminProfileShow.aspx.cs">
+      <DependentUpon>AdminProfileShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminProfileShow.aspx.designer.cs">
+      <DependentUpon>AdminProfileShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditSignUpDetail.aspx.cs">
+      <DependentUpon>EditSignUpDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditSignUpDetail.aspx.designer.cs">
+      <DependentUpon>EditSignUpDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmBannerMaster.aspx.cs">
+      <DependentUpon>frmBannerMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmBannerMaster.aspx.designer.cs">
+      <DependentUpon>frmBannerMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmCategoryMaster.aspx.cs">
+      <DependentUpon>frmCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmCategoryMaster.aspx.designer.cs">
+      <DependentUpon>frmCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmChangePassword.aspx.cs">
+      <DependentUpon>frmChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmChangePassword.aspx.designer.cs">
+      <DependentUpon>frmChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmColorMaster.aspx.cs">
+      <DependentUpon>frmColorMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmColorMaster.aspx.designer.cs">
+      <DependentUpon>frmColorMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmEditPickupDetail.aspx.cs">
+      <DependentUpon>frmEditPickupDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmEditPickupDetail.aspx.designer.cs">
+      <DependentUpon>frmEditPickupDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmFamilyTreeHierarchyChart.aspx.cs">
+      <DependentUpon>frmFamilyTreeHierarchyChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmFamilyTreeHierarchyChart.aspx.designer.cs">
+      <DependentUpon>frmFamilyTreeHierarchyChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmItemList.aspx.cs">
+      <DependentUpon>frmItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmItemList.aspx.designer.cs">
+      <DependentUpon>frmItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmItemMaster.aspx.cs">
+      <DependentUpon>frmItemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmItemMaster.aspx.designer.cs">
+      <DependentUpon>frmItemMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmNewCollection.aspx.cs">
+      <DependentUpon>frmNewCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmNewCollection.aspx.designer.cs">
+      <DependentUpon>frmNewCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmpayout.aspx.cs">
+      <DependentUpon>frmpayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmpayout.aspx.designer.cs">
+      <DependentUpon>frmpayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSizeMaster.aspx.cs">
+      <DependentUpon>frmSizeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSizeMaster.aspx.designer.cs">
+      <DependentUpon>frmSizeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSubCategory.aspx.cs">
+      <DependentUpon>frmSubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSubCategory.aspx.designer.cs">
+      <DependentUpon>frmSubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmUnitMaster.aspx.cs">
+      <DependentUpon>frmUnitMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frmUnitMaster.aspx.designer.cs">
+      <DependentUpon>frmUnitMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frontEndBanner.aspx.cs">
+      <DependentUpon>frontEndBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\frontEndBanner.aspx.designer.cs">
+      <DependentUpon>frontEndBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PickUpApproveList.aspx.cs">
+      <DependentUpon>PickUpApproveList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PickUpApproveList.aspx.designer.cs">
+      <DependentUpon>PickUpApproveList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PickUpRejectList.aspx.cs">
+      <DependentUpon>PickUpRejectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PickUpRejectList.aspx.designer.cs">
+      <DependentUpon>PickUpRejectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PickUpWaitingList.aspx.cs">
+      <DependentUpon>PickUpWaitingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PickUpWaitingList.aspx.designer.cs">
+      <DependentUpon>PickUpWaitingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PpaymentReceive.aspx.cs">
+      <DependentUpon>PpaymentReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PpaymentReceive.aspx.designer.cs">
+      <DependentUpon>PpaymentReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShoppingHistory.aspx.cs">
+      <DependentUpon>ShoppingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShoppingHistory.aspx.designer.cs">
+      <DependentUpon>ShoppingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\USerList.aspx.cs">
+      <DependentUpon>USerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\USerList.aspx.designer.cs">
+      <DependentUpon>USerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WalletRecharge.aspx.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WalletRecharge.aspx.designer.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\E_Commerce.Master.cs">
+      <DependentUpon>E_Commerce.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\E_Commerce.Master.designer.cs">
+      <DependentUpon>E_Commerce.Master</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\frmGallaryShow.aspx.cs">
+      <DependentUpon>frmGallaryShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\frmGallaryShow.aspx.designer.cs">
+      <DependentUpon>frmGallaryShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\frmLogIn.aspx.cs">
+      <DependentUpon>frmLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\frmLogIn.aspx.designer.cs">
+      <DependentUpon>frmLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_Commerce\OurMetion.aspx.cs">
+      <DependentUpon>OurMetion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_Commerce\OurMetion.aspx.designer.cs">
+      <DependentUpon>OurMetion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMaster.Master.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeMaster.Master.designer.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="OMHRDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMHRDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\AllItemsList.aspx.cs">
+      <DependentUpon>AllItemsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\AllItemsList.aspx.designer.cs">
+      <DependentUpon>AllItemsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\frmProfileUpdate.aspx.cs">
+      <DependentUpon>frmProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\frmProfileUpdate.aspx.designer.cs">
+      <DependentUpon>frmProfileUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\OrderFrm.aspx.cs">
+      <DependentUpon>OrderFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\OrderFrm.aspx.designer.cs">
+      <DependentUpon>OrderFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\PickUp.Master.cs">
+      <DependentUpon>PickUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\PickUp.Master.designer.cs">
+      <DependentUpon>PickUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\SaleProduct.aspx.cs">
+      <DependentUpon>SaleProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\SaleProduct.aspx.designer.cs">
+      <DependentUpon>SaleProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\WalletRecharge.aspx.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\WalletRecharge.aspx.designer.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\frmAddToCartList.aspx.cs">
+      <DependentUpon>frmAddToCartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\frmAddToCartList.aspx.designer.cs">
+      <DependentUpon>frmAddToCartList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\frmAllProductShow.aspx.cs">
+      <DependentUpon>frmAllProductShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\frmAllProductShow.aspx.designer.cs">
+      <DependentUpon>frmAllProductShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\frmPrivacyPolicy.aspx.cs">
+      <DependentUpon>frmPrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\frmPrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>frmPrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\frmReturnRefund.aspx.cs">
+      <DependentUpon>frmReturnRefund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\frmReturnRefund.aspx.designer.cs">
+      <DependentUpon>frmReturnRefund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\frmTermAndCondtion.aspx.cs">
+      <DependentUpon>frmTermAndCondtion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\frmTermAndCondtion.aspx.designer.cs">
+      <DependentUpon>frmTermAndCondtion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\mailus.aspx.cs">
+      <DependentUpon>mailus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\mailus.aspx.designer.cs">
+      <DependentUpon>mailus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\PaymentMod\ccavRequestHandler.aspx.cs">
+      <DependentUpon>ccavRequestHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\PaymentMod\ccavRequestHandler.aspx.designer.cs">
+      <DependentUpon>ccavRequestHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\PaymentMod\ccavResponseHandler.aspx.cs">
+      <DependentUpon>ccavResponseHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\PaymentMod\ccavResponseHandler.aspx.designer.cs">
+      <DependentUpon>ccavResponseHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\productdetail.aspx.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\productdetail.aspx.designer.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\ProductSale.Master.cs">
+      <DependentUpon>ProductSale.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\ProductSale.Master.designer.cs">
+      <DependentUpon>ProductSale.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\ShoppingAddress.aspx.cs">
+      <DependentUpon>ShoppingAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\ShoppingAddress.aspx.designer.cs">
+      <DependentUpon>ShoppingAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSale\SubProductDetailShow.aspx.cs">
+      <DependentUpon>SubProductDetailShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSale\SubProductDetailShow.aspx.designer.cs">
+      <DependentUpon>SubProductDetailShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmFamilyTreeHierarchyUser.aspx.cs">
+      <DependentUpon>frmFamilyTreeHierarchyUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\frmFamilyTreeHierarchyUser.aspx.designer.cs">
+      <DependentUpon>frmFamilyTreeHierarchyUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmMyProfile.aspx.cs">
+      <DependentUpon>frmMyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\frmMyProfile.aspx.designer.cs">
+      <DependentUpon>frmMyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmWalletDetails.aspx.cs">
+      <DependentUpon>frmWalletDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\frmWalletDetails.aspx.designer.cs">
+      <DependentUpon>frmWalletDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ShoppingHistory.aspx.cs">
+      <DependentUpon>ShoppingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ShoppingHistory.aspx.designer.cs">
+      <DependentUpon>ShoppingHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\WalletRecharge.aspx.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\WalletRecharge.aspx.designer.cs">
+      <DependentUpon>WalletRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webservice.asmx.cs">
+      <DependentUpon>Webservice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\UsreVerifiedImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\BillGenrate.rdlc" />
+    <EmbeddedResource Include="Report\PickUpOrder.rdlc" />
+    <EmbeddedResource Include="Report\PickUpSale.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65374</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

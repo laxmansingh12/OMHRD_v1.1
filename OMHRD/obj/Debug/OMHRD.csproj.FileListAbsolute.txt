@@ -1,0 +1,1036 @@
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ApplicationInsights.config
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\csc.exe
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\vbc.exe
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.dll.config
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Owin.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Providers.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\WebGrease.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Providers.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Object.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Object.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ApplicationInsights.config
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\csc.exe
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\vbc.exe
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.dll.config
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\OMHRD.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Common.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Object.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.SQLServer.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Owin.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Providers.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\WebGrease.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Common.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.Object.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\System.Web.Providers.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+F:\NewFolder\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+F:\NewFolder\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+F:\NewFolder\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\ApplicationInsights.config
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\csc.exe
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\vbc.exe
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+F:\NewFolder\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+F:\NewFolder\OMHRD\OMHRD\bin\OMHRD.dll.config
+F:\NewFolder\OMHRD\OMHRD\bin\OMHRD.dll
+F:\NewFolder\OMHRD\OMHRD\bin\OMHRD.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+F:\NewFolder\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+F:\NewFolder\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Business.Common.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Business.Object.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Business.SQLServer.dll
+F:\NewFolder\OMHRD\OMHRD\bin\EntityFramework.dll
+F:\NewFolder\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Owin.dll
+F:\NewFolder\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+F:\NewFolder\OMHRD\OMHRD\bin\System.Web.Providers.dll
+F:\NewFolder\OMHRD\OMHRD\bin\WebGrease.dll
+F:\NewFolder\OMHRD\OMHRD\bin\Business.Common.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\Business.Object.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\NewFolder\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+F:\NewFolder\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\NewFolder\OMHRD\OMHRD\bin\EntityFramework.xml
+F:\NewFolder\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\NewFolder\OMHRD\OMHRD\bin\System.Web.Providers.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\NewFolder\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\ApplicationInsights.config
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\csc.exe
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\vbc.exe
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll.config
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.pdb
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Owin.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\WebGrease.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.pdb
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.pdb
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+D:\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+D:\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+G:\OMHRD\OMHRD\bin\ApplicationInsights.config
+G:\OMHRD\OMHRD\bin\roslyn\csc.exe
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+G:\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+G:\OMHRD\OMHRD\bin\roslyn\vbc.exe
+G:\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+G:\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+G:\OMHRD\OMHRD\bin\OMHRD.dll.config
+G:\OMHRD\OMHRD\bin\OMHRD.dll
+G:\OMHRD\OMHRD\bin\OMHRD.pdb
+G:\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+G:\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+G:\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+G:\OMHRD\OMHRD\bin\Business.Common.dll
+G:\OMHRD\OMHRD\bin\Business.Object.dll
+G:\OMHRD\OMHRD\bin\Business.SQLServer.dll
+G:\OMHRD\OMHRD\bin\EntityFramework.dll
+G:\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+G:\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+G:\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+G:\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+G:\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+G:\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+G:\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+G:\OMHRD\OMHRD\bin\Owin.dll
+G:\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+G:\OMHRD\OMHRD\bin\System.Web.Providers.dll
+G:\OMHRD\OMHRD\bin\WebGrease.dll
+G:\OMHRD\OMHRD\bin\Business.Common.pdb
+G:\OMHRD\OMHRD\bin\Business.Object.pdb
+G:\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+G:\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+G:\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+G:\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+G:\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+G:\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+G:\OMHRD\OMHRD\bin\EntityFramework.xml
+G:\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\OMHRD\OMHRD\bin\System.Web.Providers.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+G:\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+G:\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+G:\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\ApplicationInsights.config
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\csc.exe
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\vbc.exe
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\OMHRD.dll.config
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\OMHRD.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\OMHRD.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.Common.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.Object.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.SQLServer.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\EntityFramework.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Owin.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\System.Web.Providers.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\WebGrease.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.Common.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.Object.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\EntityFramework.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\System.Web.Providers.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\ApplicationInsights.config
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\csc.exe
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\vbc.exe
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\OMHRD.dll.config
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\OMHRD.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\OMHRD.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.Common.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.Object.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.SQLServer.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\EntityFramework.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Owin.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\System.Web.Providers.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\WebGrease.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.Common.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.Object.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\EntityFramework.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\System.Web.Providers.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+C:\Users\Peytonsoft\Desktop\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+H:\OMHRD\OMHRD\bin\ApplicationInsights.config
+H:\OMHRD\OMHRD\bin\roslyn\csc.exe
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+H:\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+H:\OMHRD\OMHRD\bin\roslyn\vbc.exe
+H:\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+H:\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+H:\OMHRD\OMHRD\bin\OMHRD.dll.config
+H:\OMHRD\OMHRD\bin\OMHRD.dll
+H:\OMHRD\OMHRD\bin\OMHRD.pdb
+H:\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+H:\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+H:\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+H:\OMHRD\OMHRD\bin\Business.Common.dll
+H:\OMHRD\OMHRD\bin\Business.Object.dll
+H:\OMHRD\OMHRD\bin\Business.SQLServer.dll
+H:\OMHRD\OMHRD\bin\EntityFramework.dll
+H:\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+H:\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+H:\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+H:\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+H:\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+H:\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+H:\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+H:\OMHRD\OMHRD\bin\Owin.dll
+H:\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+H:\OMHRD\OMHRD\bin\System.Web.Providers.dll
+H:\OMHRD\OMHRD\bin\WebGrease.dll
+H:\OMHRD\OMHRD\bin\Business.Common.pdb
+H:\OMHRD\OMHRD\bin\Business.Object.pdb
+H:\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+H:\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+H:\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+H:\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+H:\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+H:\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+H:\OMHRD\OMHRD\bin\EntityFramework.xml
+H:\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\OMHRD\OMHRD\bin\System.Web.Providers.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+H:\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+H:\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+H:\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+G:\OMHRD\OMHRD\bin\MCPG.CCA.Util.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\ApplicationInsights.config
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\csc.exe
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\vbc.exe
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+F:\21082018\datasoft\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+F:\21082018\datasoft\OMHRD\OMHRD\bin\OMHRD.dll.config
+F:\21082018\datasoft\OMHRD\OMHRD\bin\OMHRD.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\OMHRD.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.Common.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.Object.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.SQLServer.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\EntityFramework.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Owin.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\System.Web.Providers.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\WebGrease.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.Common.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.Object.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\EntityFramework.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\System.Web.Providers.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+F:\21082018\datasoft\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+F:\21082018\datasoft\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+F:\21082018\datasoft\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+F:\21082018\datasoft\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+F:\21082018\datasoft\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+G:\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+G:\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+G:\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+G:\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+G:\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+H:\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+H:\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+H:\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+H:\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\MCPG.CCA.Util.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Business.SQLServer.dll
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ApplicationInsights.config
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\csc.exe
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\vbc.exe
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll.config
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\MCPG.CCA.Util.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Owin.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\WebGrease.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ApplicationInsights.config
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\csc.exe
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Collections.Immutable.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\System.Reflection.Metadata.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\vbc.exe
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\roslyn\VBCSCompiler.exe.config
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll.config
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\OMHRD.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.bootstrap.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\AspNet.ScriptManager.jQuery.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ReportViewer.WebForms.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ScriptManager.WebForms.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Web.Infrastructure.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Owin.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\WebGrease.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.SqlServer.Types.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Common.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.Object.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Business.SQLServer.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.DependencyCollector.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.Web.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AI.WindowsServer.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.ApplicationInsights.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Optimization.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Antlr3.Runtime.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Newtonsoft.Json.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\EntityFramework.SqlServer.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\System.Web.Providers.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Google.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\de\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\es\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\fr\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\it\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ja\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ko\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\pt\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\ru\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\RdlCompile.cache
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\RdlCompile.compiled
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.dll
+F:\Office Work\Aspx\BackUp\OMHRD\OMHRD\obj\Debug\OMHRD.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Debug\OMHRD.csprojResolveAssemblyReference.cache

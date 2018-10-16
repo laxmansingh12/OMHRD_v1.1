@@ -1,0 +1,308 @@
+C:\FWMS_14_08_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_14_08_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_14_08_13\Business.Common\bin\Debug\Business.SQLServer.dll
+C:\FWMS_14_08_13\Business.Common\bin\Debug\Business.SQLServer.pdb
+C:\FWMS_14_08_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\FWMS_14_08_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_14_08_13\Business.Common\obj\Debug\Business.Common.pdb
+G:\FWMS_14_08_13\Business.Common\bin\Debug\Business.Common.dll
+G:\FWMS_14_08_13\Business.Common\bin\Debug\Business.Common.pdb
+G:\FWMS_14_08_13\Business.Common\bin\Debug\Business.SQLServer.dll
+G:\FWMS_14_08_13\Business.Common\bin\Debug\Business.SQLServer.pdb
+G:\FWMS_14_08_13\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+G:\FWMS_14_08_13\Business.Common\obj\Debug\Business.Common.dll
+G:\FWMS_14_08_13\Business.Common\obj\Debug\Business.Common.pdb
+G:\FWMS_19_08_13\Business.Common\bin\Debug\Business.Common.dll
+G:\FWMS_19_08_13\Business.Common\bin\Debug\Business.Common.pdb
+G:\FWMS_19_08_13\Business.Common\bin\Debug\Business.SQLServer.dll
+G:\FWMS_19_08_13\Business.Common\bin\Debug\Business.SQLServer.pdb
+G:\FWMS_19_08_13\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+G:\FWMS_19_08_13\Business.Common\obj\Debug\Business.Common.dll
+G:\FWMS_19_08_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_19_08_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_19_08_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_19_08_13\Business.Common\bin\Debug\Business.SQLServer.dll
+C:\FWMS_19_08_13\Business.Common\bin\Debug\Business.SQLServer.pdb
+C:\FWMS_19_08_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\FWMS_19_08_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_19_08_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_24_08_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_24_08_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_24_08_13\Business.Common\bin\Debug\Business.SQLServer.dll
+C:\FWMS_24_08_13\Business.Common\bin\Debug\Business.SQLServer.pdb
+C:\FWMS_24_08_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\FWMS_24_08_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_24_08_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_26_08_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_26_08_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_26_08_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_26_08_13\Business.Common\obj\Debug\Business.Common.pdb
+G:\New folder (5)\FWMS_26_08_13\Business.Common\bin\Debug\Business.Common.dll
+G:\New folder (5)\FWMS_26_08_13\Business.Common\bin\Debug\Business.Common.pdb
+G:\New folder (5)\FWMS_26_08_13\Business.Common\obj\Debug\Business.Common.dll
+G:\New folder (5)\FWMS_26_08_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_13_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_13_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_13_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_13_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_14_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_14_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_14_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_14_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_15_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_15_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_15_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_15_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_15_09_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\FWMS_21_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_21_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_21_09_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\FWMS_21_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_21_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_23_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_23_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder (2)\FWMS_23_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder (2)\FWMS_23_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder (2)\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\New folder (2)\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder (2)\FWMS_23_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_24_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_24_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_24_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_24_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_25_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_25_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_25_09_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\FWMS_25_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_25_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_26_09_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_26_09_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_26_09_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_26_09_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_1_10_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_1_10_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_1_10_13\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\FWMS_1_10_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_1_10_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_02_10_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_02_10_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_02_10_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_02_10_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_03_10_13\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_03_10_13\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_03_10_13\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_03_10_13\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_03_10_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_03_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_03_10_2013\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\FWMS_03_10_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_03_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_10_10_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_10_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_10_10_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_10_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_19_10_2013\Business.Common\bin\Debug\Business.Common.dll
+D:\NEW Work\FWMS_19_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_19_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NEW Work\FWMS_19_10_2013\Business.Common\obj\Debug\Business.Common.dll
+D:\NEW Work\FWMS_19_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_22_10_2013\Business.Common\bin\Debug\Business.Common.dll
+D:\NEW Work\FWMS_22_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_22_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NEW Work\FWMS_22_10_2013\Business.Common\obj\Debug\Business.Common.dll
+D:\NEW Work\FWMS_22_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_26_10_2013\Business.Common\bin\Debug\Business.Common.dll
+D:\NEW Work\FWMS_26_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_26_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NEW Work\FWMS_26_10_2013\Business.Common\obj\Debug\Business.Common.dll
+D:\NEW Work\FWMS_26_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_26_10_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_26_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\FWMS_26_10_2013\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\FWMS_26_10_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\FWMS_26_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_28_10_2013\Business.Common\bin\Debug\Business.Common.dll
+D:\NEW Work\FWMS_28_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_28_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NEW Work\FWMS_28_10_2013\Business.Common\obj\Debug\Business.Common.dll
+D:\NEW Work\FWMS_28_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_30_10_2013\Business.Common\bin\Debug\Business.Common.dll
+D:\NEW Work\FWMS_30_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+D:\NEW Work\FWMS_30_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NEW Work\FWMS_30_10_2013\Business.Common\obj\Debug\Business.Common.dll
+D:\NEW Work\FWMS_30_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_30_10_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_30_10_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_30_10_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_30_10_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_30_10_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_25_12_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_25_12_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_25_12_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_25_12_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_25_12_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_28_12_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_28_12_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_28_12_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_28_12_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_28_12_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_30_12_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_30_12_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_30_12_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_30_12_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_30_12_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_31_12_2013\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_31_12_2013\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_31_12_2013\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_31_12_2013\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_31_12_2013\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_05_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_05_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_05_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_05_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_05_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder\FWMS_05_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder\FWMS_05_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder\FWMS_05_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\New folder\FWMS_05_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder\FWMS_05_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_11_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_11_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_11_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_11_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_11_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder\FWMS_12_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder\FWMS_12_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\ankur\Desktop\New folder\FWMS_12_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ankur\Desktop\New folder\FWMS_12_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\ankur\Desktop\New folder\FWMS_12_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_12_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_12_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_12_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_12_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_12_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\FWMS_16_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\FWMS_16_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\FWMS_16_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\FWMS_16_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\FWMS_16_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+C:\data\FWMS_16_01_2014\Business.Common\bin\Debug\Business.Common.dll
+C:\data\FWMS_16_01_2014\Business.Common\bin\Debug\Business.Common.pdb
+C:\data\FWMS_16_01_2014\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\data\FWMS_16_01_2014\Business.Common\obj\Debug\Business.Common.dll
+C:\data\FWMS_16_01_2014\Business.Common\obj\Debug\Business.Common.pdb
+G:\MASSIVE_07_03_14\Business.Common\bin\Debug\Business.Common.dll
+G:\MASSIVE_07_03_14\Business.Common\bin\Debug\Business.Common.pdb
+G:\MASSIVE_07_03_14\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+G:\MASSIVE_07_03_14\Business.Common\obj\Debug\Business.Common.dll
+G:\MASSIVE_07_03_14\Business.Common\obj\Debug\Business.Common.pdb
+G:\MASSIVE_10_03_14\Business.Common\bin\Debug\Business.Common.dll
+G:\MASSIVE_10_03_14\Business.Common\bin\Debug\Business.Common.pdb
+G:\MASSIVE_10_03_14\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+G:\MASSIVE_10_03_14\Business.Common\obj\Debug\Business.Common.dll
+G:\MASSIVE_10_03_14\Business.Common\obj\Debug\Business.Common.pdb
+G:\MASSIVE_13_03_14\Business.Common\bin\Debug\Business.Common.dll
+G:\MASSIVE_13_03_14\Business.Common\bin\Debug\Business.Common.pdb
+G:\MASSIVE_13_03_14\Business.Common\obj\Debug\ResolveAssemblyReference.cache
+G:\MASSIVE_13_03_14\Business.Common\obj\Debug\Business.Common.dll
+G:\MASSIVE_13_03_14\Business.Common\obj\Debug\Business.Common.pdb
+F:\MASSIVE_13_03_14\Business.Common\bin\Debug\Business.Common.dll
+F:\MASSIVE_13_03_14\Business.Common\bin\Debug\Business.Common.pdb
+F:\MASSIVE_13_03_14\Business.Common\obj\Debug\Business.Common.dll
+F:\MASSIVE_13_03_14\Business.Common\obj\Debug\Business.Common.pdb
+F:\DAYALBAGHVEG\Business.Common\bin\Debug\Business.Common.dll
+F:\DAYALBAGHVEG\Business.Common\bin\Debug\Business.Common.pdb
+F:\DAYALBAGHVEG\Business.Common\obj\Debug\Business.Common.dll
+F:\DAYALBAGHVEG\Business.Common\obj\Debug\Business.Common.pdb
+F:\Devendra yadav\Window\dayalbagh2\DAYAL\Business.Common\bin\Debug\Business.Common.dll
+F:\Devendra yadav\Window\dayalbagh2\DAYAL\Business.Common\bin\Debug\Business.Common.pdb
+F:\Devendra yadav\Window\dayalbagh2\DAYAL\Business.Common\obj\Debug\Business.Common.dll
+F:\Devendra yadav\Window\dayalbagh2\DAYAL\Business.Common\obj\Debug\Business.Common.pdb
+G:\shared\dayalbagh\DAYAL\Business.Common\bin\Debug\Business.Common.dll
+G:\shared\dayalbagh\DAYAL\Business.Common\bin\Debug\Business.Common.pdb
+G:\shared\dayalbagh\DAYAL\Business.Common\obj\Debug\Business.Common.dll
+G:\shared\dayalbagh\DAYAL\Business.Common\obj\Debug\Business.Common.pdb
+F:\Window\DEVENDRA DAYAL\Business.Common\bin\Debug\Business.Common.dll
+F:\Window\DEVENDRA DAYAL\Business.Common\bin\Debug\Business.Common.pdb
+F:\Window\DEVENDRA DAYAL\Business.Common\obj\Debug\Business.Common.dll
+F:\Window\DEVENDRA DAYAL\Business.Common\obj\Debug\Business.Common.pdb
+E:\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+E:\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+E:\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+E:\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+F:\Window\Backup\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+F:\Window\Backup\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+F:\Window\Backup\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+F:\Window\Backup\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+F:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+F:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+F:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+F:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+E:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+E:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+E:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+E:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+G:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+G:\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+G:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+G:\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Window\My Home App\tarun\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Window\My Home App\tarun\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\ECommerce\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\ECommerce\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\ECommerce\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Office Work\ECommerce\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\ECommerce\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\ECommerce\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\ECommerce\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\ECommerce\Business.Common\obj\Debug\Business.Common.pdb
+F:\NewFolder\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+F:\NewFolder\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+F:\NewFolder\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+F:\NewFolder\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+F:\NewFolder\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+D:\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+D:\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+D:\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+D:\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+C:\Users\TarunKushwah\Desktop\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+C:\Users\TarunKushwah\Desktop\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+G:\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+G:\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+G:\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+G:\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+F:\21082018\datasoft\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+F:\21082018\datasoft\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+F:\21082018\datasoft\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+F:\21082018\datasoft\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+F:\21082018\datasoft\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+H:\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+H:\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+H:\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+H:\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,924 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="OMHRD.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>OM HRD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet" />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,   900italic,700italic' rel='stylesheet' type='text/css' />
+    <script>
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <style>
+        .product-sec1 {
+            box-shadow: 0px 0px 15px 0px #D6D6D6;
+            padding: 30px 20px;
+            margin-bottom: 14px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btnSignUp").click(function () {
+                flag = 1;
+                if ($("#txtFirstname").val() == '') {
+                    flag = 0;
+                    $("#div_Fname").html("Please Fill Name");
+                } else {
+                    $("#div_Fname").html("");
+                }
+                if ($("#txtuserName").val() == '') {
+                    flag = 0;
+                    $("#div_UName").html("Enter User Name");
+                } else {
+                    $("#div_UName").html("");
+                }
+                if ($("#txtpassword").val() == '') {
+                    flag = 0;
+                    $("#div_Password").html("Enter Password");
+                } else {
+                    $("#div_Password").html("");
+                }
+                if ($("#txtcompassword").val() == '') {
+                    flag = 0;
+                    $("#div_ComPassword").html("Enter Comform Password");
+                } else {
+                    $("#div_ComPassword").html("");
+                }
+                if ($("#txtcontact").val() == '') {
+                    flag = 0;
+                    $("#div_Contact ").html("Enter Contact Number");
+                } else {
+                    $("#div_Contact ").html("");
+                }
+                if ($("#txtReferenceId").val() == '') {
+                    flag = 0;
+                    $("#div_RefId").html("Enter Reference Id");
+                } else {
+                    $("#div_RefId").html("");
+                }
+                if (flag === 0) {
+                    return false;
+                }
+                else {
+                    //return true;
+                }
+
+                var UserDetail = {};
+                UserDetail.Fname = $("#txtFirstname").val();
+                UserDetail.Lname = $("#txtLastName").val();
+                UserDetail.Email = $("#txtemail").val();
+                UserDetail.UserName = $("#txtuserName").val();
+                UserDetail.Password = $("#txtpassword").val();
+                UserDetail.ContactNo = $("#txtcontact").val();
+                UserDetail.RefId = $("#txtReferenceId").val();
+                $.ajax({
+                    url: "Webservice.asmx/SaveUser",
+                    method: 'post',
+                    contentType: "application/json; charset=utf-8",
+                    data: '{user:' + JSON.stringify(UserDetail) + '}',
+
+                    success: function (response) {
+                        if (response.d == "") {
+                            alert("Sign Up Successfully...");
+                            var url = "Default.aspx";
+                            $(location).attr('href', url);
+                        }
+                        else {
+                            alert(response.d);
+                        }
+                        return;
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+
+
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function CheckAvailability() {
+            var message = $("#message");
+            var username = $("#txtuserName").val();
+            if (username == undefined || username == null || username.trim() == "") {
+                message.css("color", "red");
+                message.html("Username is required");
+                return false;
+            }
+            var jsonData = JSON.stringify({ username: username });
+            $.ajax({
+                type: "POST",
+                url: "Webservice.asmx/CheckUserName",
+                data: jsonData,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    if (response.d) {
+                        //Username available.
+                        message.css("color", "green");
+                        message.html("Username is available");
+                    }
+                    else {
+                        //Username not available.
+                        message.css("color", "red");
+                        message.html("Username is NOT available");
+                    }
+                    return;
+                },
+                error: function (err) {
+                    alert(err);
+                }
+            });
+        };
+
+    </script>
+    <script>
+        function checkPasswordMatch() {
+            var password = $("#txtpassword").val();
+            var confirmPassword = $("#txtcompassword").val();
+
+            if (password != confirmPassword)
+                $("#div_ComPassword").html("Passwords do not match!");
+            else
+                $("#div_ComPassword").html("Passwords match.");
+        }</script>
+    <script>
+        function AvoidSpace(event) {
+            var k = event ? event.which : window.event.keyCode;
+            if (k == 32) return false;
+        }
+
+        function preventSpaceOnKeyUp(e) {
+            if (e.target.value != undefined) {
+                e.target.value = e.target.value.replace(/ /g, '');
+            }
+            return false;
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#btnForgot").click(function () {
+                flag = 1;
+                if ($("#txtForgotEmail").val() == '') {
+                    flag = 0;
+                    $("#div_FEmail ").html("Enter Email Id");
+                } else {
+                    $("#div_FEmail ").html("");
+                }
+
+                if (flag === 0) {
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnPickup").click(function () {
+                flag = 1;
+                if ($("#txtPickname").val() == '') {
+                    flag = 0;
+                    $("#div_Pickname").html("Please Fill Name");
+                } else {
+                    $("#div_Pickname").html("");
+                }
+                if ($("#ddlState").val() == '') {
+                    flag = 0;
+                    $("#div_PickCname").html("Select State");
+                } else {
+                    $("#div_PickCname").html("");
+                }
+                if ($("#ddlcity").val() == '') {
+                    flag = 0;
+                    $("#div_PickCCode").html("Select City");
+                } else {
+                    $("#div_PickCCode").html("");
+                }
+                if ($("#txtPickAdd").val() == '') {
+                    flag = 0;
+                    $("#div_PickAdd").html("Enter Address");
+                } else {
+                    $("#div_PickAdd").html("");
+                }
+                if ($("#txtPickContact").val() == '') {
+                    flag = 0;
+                    $("#div_PickContact").html("Enter Contact Number");
+                } else {
+                    $("#div_PickContact").html("");
+                }
+                if ($("#txtPickGst").val() == '') {
+                    flag = 0;
+                    $("#div_PickGstId").html("Enter Any Unique Id");
+                } else {
+                    $("#div_PickGstId").html("");
+                }
+                if ($("#txtPickPin").val() == '') {
+                    flag = 0;
+                    $("#div_PickPin").html("Enter Pin Code");
+                } else {
+                    $("#div_PickPin").html("");
+                }
+                if (flag === 0) {
+                    return false;
+                }
+                else {
+                    //return true;
+                }
+                var PickUpDetail = {};
+                PickUpDetail.FName = $("#txtPickname").val();
+                PickUpDetail.LName = $("#txtPickLname").val();
+                PickUpDetail.Address = $("#txtPickAdd").val();
+                PickUpDetail.State = $("#ddlState").val();
+                PickUpDetail.City = $("#ddlcity").val();
+                PickUpDetail.Pincode = $("#txtPickPin").val();
+                PickUpDetail.ContactNo = $("#txtPickContact").val();
+                PickUpDetail.Alternate1 = $("#txtalternate1").val();
+                PickUpDetail.Alternate2 = $("#txtalternate2").val();
+                PickUpDetail.GstinNo = $("#txtPickGst").val();
+                $.ajax({
+                    url: "Webservice.asmx/SavePicup",
+                    method: 'post',
+                    contentType: "application/json; charset=utf-8",
+                    data: '{Pick:' + JSON.stringify(PickUpDetail) + '}',
+
+                    success: function (response) {
+                        if (response.d == "") {
+                            alert("Sign Up Successfully...");
+                            var url = "Default.aspx";
+                            $(location).attr('href', url);
+                        }
+                        else {
+                            alert(response.d);
+                        }
+                        return;
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        function getState(val) {
+            $.ajax({
+                type: "POST",
+                url: "getState.php",
+                data: 'country_id=' + val,
+                success: function (data) {
+                    $("#state-list").html(data);
+                    getCity();
+                }
+            });
+        }
+        function getCity(val) {
+            $.ajax({
+                type: "POST",
+                url: "getCity.php",
+                data: 'state_id=' + val,
+                success: function (data) {
+                    $("#city-list").html(data);
+                }
+            });
+        }
+
+    </script>
+    <style>
+        .btn {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            padding: 10px 18px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        /* Green */
+        .success {
+            border-color: #4CAF50;
+            color: green;
+        }
+
+            .success:hover {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+        /* Blue */
+        .info {
+            border-color: #2196F3;
+            color: dodgerblue;
+        }
+
+            .info:hover {
+                background: #2196F3;
+                color: white;
+            }
+
+        /* Orange */
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+        }
+
+            .warning:hover {
+                background: #ff9800;
+                color: white;
+            }
+
+        /* Red */
+        .danger {
+            border-color: #f44336;
+            color: red;
+        }
+
+            .danger:hover {
+                background: #f44336;
+                color: white;
+            }
+
+        /* Gray */
+        .default {
+            border-color: #e7e7e7;
+            color: black;
+        }
+
+            .default:hover {
+                background: #e7e7e7;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" novalidate>
+        <div class="header" id="home">
+            <div class="container" style="padding: 4px;">
+                <div class="col-md-2"><a href="#" style="color: white;" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true" style="color: red;"></i>&nbsp;Log In </a></div>
+                <div class="col-md-2"><a href="#" style="color: white;" data-toggle="modal" data-target="#myModal4"><i class="fa fa-pencil-square-o" aria-hidden="true" style="color: #2fdab8;"></i>&nbsp;Join Us</a></div>
+                <div class="col-md-2"><a href="#" style="color: white;" data-toggle="modal" data-target="#PickupModel"><i class="fa fa-pencil-square-o" aria-hidden="true" style="color: #2fdab8;"></i>&nbsp;Pick Up Join Us</a></div>
+                <div class="col-md-3" style="color: white;"><i class="fa fa-phone" aria-hidden="true" style="color: red;"></i>&nbsp;Call : 011-45072882</div>
+                <div class="col-md-3"><i class="fa fa-envelope-o" aria-hidden="true" style="color: white;"></i>&nbsp;<a style="color: white;" href="mailto:admin@omhrd.com">admin@omhrd.com</a></div>
+            </div>
+        </div>
+        <div class="col-md-3 logo_agile" style="padding-top: 7px;">
+            <h3><a href="Default.aspx" style="color: black;">
+                <img src="images/nw/logo.jpg" alt=" " style="width: 60px;" />Marketing Pvt. Ltd</a></h3>
+        </div>
+        <div class="col-md-6 logo_agile" style="padding: 20px;">
+            <a class="btn default" href="E_Commerce/AboutUs.aspx"><b>About</b> </a>
+            <a class="btn default" href="E_Commerce/frmGallaryShow.aspx"><b>Gallery</b> </a>
+            <a class="btn default" href="ProductSale/Default.aspx"><b>SHOPPING AT OM HRD</b> </a>
+            <a class="btn default" href="E_Commerce/ContactUs.aspx"><b>Contact</b> </a>
+        </div>
+        <div class="col-md-3 header-middle">
+            <ul class="social-nav model-3d-0 footer-social w3_agile_social">
+                <li class="share">Share On : </li>
+                <li><a href="#" class="facebook">
+                    <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                </a></li>
+                <li><a href="#" class="twitter">
+                    <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                </a></li>
+                <li><a href="#" class="instagram">
+                    <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a></li>
+                <li><a href="#" class="pinterest">
+                    <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="ban-top">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body modal-body-sub_agile">
+                            <div class="col-md-8 modal_body_left modal_body_left1">
+                                <center><h4>
+                                <img src="../images/nw/logo.jpg" alt=" " />&nbsp;&nbsp;&nbsp;<strong>LOGIN</strong>&nbsp;<i class="glyphicon glyphicon-log-in" style="color:red" aria-hidden="true"></i></h4></center>
+                                <form method="post" novalidate>
+                                    <div class="styled-input agile-styled-input-top">
+                                        <asp:TextBox ID="txtluser" runat="server" required=""></asp:TextBox>
+                                        <label>User Name</label>
+                                        <span></span>
+                                    </div>
+                                    <div class="styled-input">
+                                        <asp:TextBox ID="txtLpassword" runat="server" TextMode="Password" required=""></asp:TextBox>
+                                        <label>Password</label>
+                                        <span></span>
+                                    </div>
+                                    <center><asp:Button ID="btnLog" runat="server" Text="Log In" OnClick="btnLog_Click" /></center>
+                                </form>
+                                <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                                    <li><a href="#" class="facebook">
+                                        <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="twitter">
+                                        <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="instagram">
+                                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="pinterest">
+                                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                    </a></li>
+                                </ul>
+                                <p><a href="#" data-toggle="modal" data-target="#myModal5" data-dismiss="myModal">Forgot Password</a></p>
+                                <div class="clearfix"></div>
+                                <p><a href="#" data-toggle="modal" data-target="#myModal4">Don't have an account?</a></p>
+                            </div>
+                            <div class="col-md-4 modal_body_right modal_body_right1">
+                                <img src="images/nw/22.jpg" alt=" " />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade product-sec1" id="myModal5" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body modal-body-sub_agile">
+                            <h3 class="agileinfo_sign">Forgot   <span>Password</span></h3>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#ForContact">Contact Number</a></li>
+                                <li><a data-toggle="tab" href="#ForEMail">Email Address</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="ForContact" class="tab-pane fade in active">
+                                    <div class="col-md-12 modal_body_left modal_body_left1">
+                                        <label>User Name </label>
+                                        <asp:TextBox ID="txtForUserContact" runat="server" required=""></asp:TextBox>
+                                        <label>Contact Number</label>
+                                        <asp:TextBox ID="txtForgotContact" runat="server" required=""></asp:TextBox>
+                                        <asp:Button ID="btnforContact" runat="server" Text="Submit" OnClick="btnforContact_Click" />
+                                    </div>
+                                </div>
+                                <div id="ForEMail" class="tab-pane fade">
+                                    <div class="col-md-12 ">
+                                        <label>User Name </label>
+                                        <asp:TextBox ID="txtForUserEmail" runat="server" required=""></asp:TextBox>
+                                        <label>Email Addtess</label>
+                                        <asp:TextBox ID="txtForgotEmail" runat="server" required=""></asp:TextBox>
+                                        <asp:Button ID="btnForgot" runat="server" Text="Submit" OnClick="btnForgot_Click" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content modal-info">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 35px;"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body modal-spa">
+                            <div class="login-grids">
+                                <div class="login">
+                                    <div class="login-bottom">
+                                        <center><p style="font-size:18px;"><img src="images/nw/logo-png.png" alt=" " style="width: 55px;" />&nbsp;&nbsp;&nbsp;Terms And Conditions</p></center>
+                                        <p style="text-align: center;">
+                                            <input type="checkbox" id="myCheck" onclick="myFunction()" />&nbsp;
+                                                    <a href="frmTermAndCondtion.aspx">Terms and Conditions</a><br />
+                                            <a href="frmPrivacyPolicy.aspx">Privacy</a><br />
+                                            <a href="frmReturnRefund.aspx">Returns Policy</a>
+                                        </p>
+                                        <center><p id="text" style="display: none"><a href="#" data-toggle="modal" data-target="#myModal2"><b style="color: #2fdab8;font-size: 15px;">Join Us</b></a></p></center>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade product-sec1" id="myModal2" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body modal-body-sub_agile">
+                            <center><h3 class="agileinfo_sign">Join  <span>Us</span></h3></center>
+                            <div class="col-md-6 modal_body_left modal_body_left1">
+                                <div class="styled-input agile-styled-input-top">
+                                    <asp:TextBox ID="txtFirstname" runat="server" required="" onkeypress="return AvoidSpace(event)"></asp:TextBox>
+                                    <label>First Name </label>
+                                    <span></span>
+                                    <div id="div_Fname" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtLastName" runat="server" required=""></asp:TextBox>
+                                    <label>Last Name</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtuserName" runat="server" required="" onkeypress="return AvoidSpace(event)" onchange="CheckAvailability()" onkeyup="ClearMessage(event)"></asp:TextBox>
+                                    <label>User Name<span style="color: red; font-weight: bold">*</span></label>
+                                    <input id="btnCheck" type="button" class="btn btn-danger" value="Show Availability" onclick="CheckAvailability()" />
+                                    <div id="div_UName" style="color: #EA0000;"></div>
+                                    <div id="message" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtpassword" runat="server" TextMode="Password" required=""></asp:TextBox>
+                                    <label>Password</label>
+                                    <span></span>
+                                    <div id="div_Password" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtcompassword" runat="server" TextMode="Password" required="" onChange="checkPasswordMatch();"></asp:TextBox>
+                                    <label>Confirm Password</label>
+                                    <span></span>
+                                    <div id="div_ComPassword" style="color: #EA0000;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 modal_body_right modal_body_right1">
+                                <div class="styled-input agile-styled-input-top">
+                                    <asp:TextBox ID="txtemail" runat="server" TextMode="Email" required=""></asp:TextBox>
+                                    <label>Email ID</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtcontact" runat="server" required=""></asp:TextBox>
+                                    <label>Contact Number</label>
+                                    <span></span>
+                                    <div id="div_Contact" style="color: #EA0000;"></div>
+                                </div>
+                                <div class="styled-input">
+                                    <asp:TextBox ID="txtReferenceId" runat="server" required=""></asp:TextBox>
+                                    <label>Reference ID</label>
+                                    <span></span>
+                                    <div id="div_RefId" style="color: #EA0000;"></div>
+                                </div>
+                                <center><a id="btnSignUp" href="#"><b style="background: black;color: white;padding: 4px 24px 4px;">Submit</b></a></center>
+                                <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                                    <li><a href="#" class="facebook">
+                                        <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="twitter">
+                                        <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="instagram">
+                                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                    </a></li>
+                                    <li><a href="#" class="pinterest">
+                                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade product-sec1" id="PickupModel" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body modal-body-sub_agile">
+                            <center><h3 class="agileinfo_sign">PickUp User  <span>Create</span></h3></center>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#PickSign">Sign Up</a></li>
+                                <li><a data-toggle="tab" href="#PickLog">Log In</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="PickSign" class="tab-pane fade in active">
+                                    <div class="col-md-6 modal_body_left modal_body_left1">
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickname" runat="server" required="" onkeypress="return AvoidSpace(event)"></asp:TextBox>
+                                            <label>First Name </label>
+                                            <span></span>
+                                            <div id="div_Pickname" style="color: #EA0000;"></div>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickLname" runat="server" required=""></asp:TextBox>
+                                            <label>Last Name</label>
+                                            <span></span>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickAdd" runat="server" required=""></asp:TextBox>
+                                            <label>Address</label>
+                                            <span></span>
+                                            <div id="div_PickAdd" style="color: #EA0000;"></div>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:DropDownList ID="ddlState" runat="server" required=""></asp:DropDownList>
+                                            <span></span>
+                                            <div id="div_PickCname" style="color: #EA0000;"></div>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:DropDownList ID="ddlcity" runat="server" required=""></asp:DropDownList>
+                                            <span></span>
+                                            <div id="div_PickCCode" style="color: #EA0000;"></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 modal_body_left modal_body_left1">
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickPin" runat="server" required=""></asp:TextBox>
+                                            <label>Pin Code</label>
+                                            <span></span>
+                                            <div id="div_PickPin" style="color: #EA0000;"></div>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickContact" runat="server" required=""></asp:TextBox>
+                                            <label>Contact Number</label>
+                                            <span></span>
+                                            <div id="div_PickContact" style="color: #EA0000;"></div>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtalternate1" runat="server" required=""></asp:TextBox>
+                                            <label>First Alternate Number</label>
+                                            <span></span>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtalternate2" runat="server" required=""></asp:TextBox>
+                                            <label>Second Alternate Number</label>
+                                            <span></span>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickGst" runat="server" required=""></asp:TextBox>
+                                            <label>Unique / GSTIN Id</label>
+                                            <span></span>
+                                            <div id="div_PickGstId" style="color: #EA0000;"></div>
+                                        </div>
+                                        <a id="btnPickup" href="#"><b style="background: black; color: white; padding: 4px 24px 4px;">Submit</b></a>
+                                    </div>
+                                </div>
+                                <div id="PickLog" class="tab-pane fade">
+                                    <div class="col-md-12 ">
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickuser" runat="server" required="" onkeypress="return AvoidSpace(event)"></asp:TextBox>
+                                            <label>User Name</label>
+                                            <span></span>
+                                        </div>
+                                        <div class="styled-input">
+                                            <asp:TextBox ID="txtPickPassword" TextMode="Password" runat="server" required=""></asp:TextBox>
+                                            <label>Password</label>
+                                            <span></span>
+                                        </div>
+                                        <asp:Button ID="btnPicklog" runat="server" Text="Log In" OnClick="btnPicklog_Click" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>Apna<span> Desh </span></h3>
+                                <h3>Apne <span>Log</span> </h3>
+                                <h3>Apna<span> Privaar</span></h3>
+                                <%--   <a class="hvr-outline-out button2" href="ProductSale/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>SHOPPING AT OM HRD</b> </a>&nbsp;&nbsp;&nbsp;
+                                <a class="hvr-outline-out button2" href="E_Commerce/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>ABOUT OM HRD</b></a>
+                                --%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>Grow <span>Together</span></h3>
+                                <p>It's time to grow our Country</p>
+                                <%--  <a class="hvr-outline-out button2" href="ProductSale/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>SHOPPING AT OM HRD</b> </a>&nbsp;&nbsp;&nbsp;
+                                <a class="hvr-outline-out button2" href="E_Commerce/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>ABOUT OM HRD</b></a>
+                                --%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>Join <span>Us</span></h3>
+                                <p>To grow our Country Or OurSelf</p>
+                                <%--       <a class="hvr-outline-out button2" href="ProductSale/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>SHOPPING AT OM HRD</b> </a>&nbsp;&nbsp;&nbsp;
+                                <a class="hvr-outline-out button2" href="E_Commerce/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>ABOUT OM HRD</b></a>
+                                --%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3><span>To join</span>Us</h3>
+                                <%--    <a class="hvr-outline-out button2" href="ProductSale/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>SHOPPING AT OM HRD</b> </a>&nbsp;&nbsp;&nbsp;
+                                <a class="hvr-outline-out button2" href="E_Commerce/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>ABOUT OM HRD</b></a>
+                                --%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>Leadership, Sales <span>Employees & Business</span></h3>
+                                <p>It's time to grow our Ourself</p>
+                                <%--       <a class="hvr-outline-out button2" href="ProductSale/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>SHOPPING AT OM HRD</b> </a>&nbsp;&nbsp;&nbsp;
+                                <a class="hvr-outline-out button2" href="E_Commerce/Default.aspx" style="background: rgb(0,0,0,0.5);"><b>ABOUT OM HRD</b></a>
+                                --%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!-- The Modal -->
+            </div>
+            <!-- //banner -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--grids-->
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer_agile_inner_info_w3l">
+                    <div class="col-md-3 footer-left">
+                    </div>
+                    <div class="col-md-9 footer-right">
+                        <div class="sign-grds">
+                            <div class="col-md-4 sign-gd">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="agile_newsletter_footer">
+                        <div class="col-sm-6 newsleft">
+                            <h3>SIGN UP FOR NEWSLETTER !</h3>
+                        </div>
+                        <div class="col-sm-6 newsright">
+                            <form action="#" method="post" novalidate>
+                                <input type="email" placeholder="Enter your email..." name="email" required="">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="copy-right">© 2018 OM HRD . All Rights Reserved | Design by Peytonsoft <a href="http://peytonsoft.com/">Peytonsoft</a></p>
+                </div>
+            </div>
+            <!-- //footer -->
+
+            <!-- login -->
+
+            <!-- //login -->
+            <a href="#home" class="scroll" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+            <!-- js -->
+            <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+            <!-- //js -->
+            <script src="js/modernizr.custom.js"></script>
+            <!-- Custom-JavaScript-File-Links -->
+            <!-- cart-js -->
+            <script src="js/minicart.min.js"></script>
+            <script>
+                // Mini Cart
+                paypal.minicart.render({
+                    action: '#'
+                });
+
+                if (~window.location.search.indexOf('reset=true')) {
+                    paypal.minicart.reset();
+                }
+            </script>
+
+            <!-- //cart-js -->
+            <!-- script for responsive tabs -->
+            <script src="js/easy-responsive-tabs.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#horizontalTab').easyResponsiveTabs({
+                        type: 'default', //Types: default, vertical, accordion           
+                        width: 'auto', //auto or any width like 600px
+                        fit: true,   // 100% fit in a container
+                        closed: 'accordion', // Start closed if in accordion view
+                        activate: function (event) { // Callback function if tab is switched
+                            var $tab = $(this);
+                            var $info = $('#tabInfo');
+                            var $name = $('span', $info);
+                            $name.text($tab.text());
+                            $info.show();
+                        }
+                    });
+                    $('#verticalTab').easyResponsiveTabs({
+                        type: 'vertical',
+                        width: 'auto',
+                        fit: true
+                    });
+                });
+            </script>
+            <!-- //script for responsive tabs -->
+            <!-- stats -->
+            <script src="js/jquery.waypoints.min.js"></script>
+            <script src="js/jquery.countup.js"></script>
+            <script>
+                $('.counter').countUp();
+            </script>
+            <!-- //stats -->
+            <!-- start-smoth-scrolling -->
+            <script type="text/javascript" src="js/move-top.js"></script>
+            <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    $(".scroll").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+                    });
+                });
+            </script>
+            <!-- here stars scrolling icon -->
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    /*
+                        var defaults = {
+                        containerID: 'toTop', // fading element id
+                        containerHoverID: 'toTopHover', // fading element hover id
+                        scrollSpeed: 1200,
+                        easingType: 'linear' 
+                        };
+                    */
+
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+
+                });
+            </script>
+            <!-- //here ends scrolling icon -->
+
+
+            <!-- for bootstrap working -->
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+        </div>
+    </form>
+</body>
+</html>

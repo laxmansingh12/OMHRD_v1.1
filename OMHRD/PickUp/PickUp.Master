@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PickUp.master.cs" Inherits="OMHRD.PickUp.PickUp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>OM HRD</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- //js -->
+    <!-- cart -->
+    <script src="js/simpleCart.min.js"></script>
+    <!-- cart -->
+    <!-- for bootstrap working -->
+    <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+    <!-- //for bootstrap working -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
+    <!-- timer -->
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <!-- //timer -->
+    <!-- animation-effect -->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="header">
+            <div class="container">
+                <div class="logo-nav">
+                    <div class="logo-nav-left1">
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header nav_2">
+                                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="Default.aspx" class="act">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile Details <b class="caret"></b></a>
+                                        <ul class="dropdown-menu multi-column columns-3">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <ul class="multi-column-dropdown">
+                                                        <li><a href="frmProfileUpdate.aspx">My Profile</a></li>
+                                                        <li><a href="ChangePassword.aspx">Change Password</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="active"><a href="AllItemsList.aspx" class="act">Product List</a></li>
+                                    <li class="active"><a href="UserList.aspx" class="act">User List</a></li>
+                                    <li class="active"><a href="SaleProduct.aspx" class="act">Sale Form</a></li>
+                                    <li class="active"><a href="OrderFrm.aspx" class="act">Order Form</a></li>
+                                    <li class="active"><a href="#" class="act">Re Purchase</a></li>
+                                    <li class="active"><a class="act" href="../E_Commerce/Default.aspx">Help Desk</a></li>
+                                    <li class="active"><a class="act" href="../Default.aspx">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-logo animated wow slideInUp" data-wow-delay=".5s">
+                    <h2><a href="Default.aspx">OM HRD <span>Marketing Pvt. Ltd</span></a></h2>
+                </div>
+                <div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
+                    <p class="copy-right">© 2018 OM HRD . All Rights Reserved | Design by Peytonsoft <a href="http://peytonsoft.com/">Peytonsoft</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
