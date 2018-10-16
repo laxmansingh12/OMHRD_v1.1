@@ -25,25 +25,21 @@ namespace OMHRD.User
         {
             if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))
             {
+                bool temp = false;
                 String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
                 SqlConnection con = new SqlConnection(strConnString);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = new SqlCommand("usp_GetOffOnLineShopping", con);
-                adapter.SelectCommand.Parameters.AddWithValue("@UserId", int.Parse(Session["loginid"].ToString()));
-                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                DataSet ds = new DataSet();
-                try
+                con.Open();
+                SqlCommand cmd = new SqlCommand("usp_GetOffOnLineShopping", con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
                 {
-                    con.Open();
-                    adapter.Fill(ds);
-                    lbltotal.Text = ds.Tables[0].ToString();
+                    lbltotal.Text = dr.GetString(1);
+
+                    temp = true;
                 }
-                catch (SqlException ex)
-                {
-                    //lblMsg.Text = se.Message;
-                }
-                finally { }
-                con.Close();
+                if (temp == false)
+
+                    con.Close();
             }
             else
             {

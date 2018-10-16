@@ -1,0 +1,5 @@
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Release\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Release\Business.SQLServer.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Release\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Release\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Release\Business.SQLServer.pdb

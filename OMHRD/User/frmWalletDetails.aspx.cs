@@ -21,6 +21,29 @@ namespace OMHRD.User
                 GetTotalSale();
             }
         }
+        //void GetTotalSale()
+        //{
+        //    int userId = int.Parse(Session["loginid"].ToString());
+        //    String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+        //    SqlConnection con = new SqlConnection(strConnString);
+        //    string selectSql = "select sum(Amount) as TotalAmount from UserOrderPaymenttbl where OrderStatus='Success' and UserId=" + userId + "";
+        //    SqlCommand com = new SqlCommand(selectSql, con);
+        //    try
+        //    {
+        //        con.Open();
+        //        using (SqlDataReader read = com.ExecuteReader())
+        //        {
+        //            while (read.Read())
+        //            {
+        //                lbltotal.Text = (read["TotalAmount"].ToString());
+        //            }
+        //        }
+        //    }
+        //    finally
+        //    {
+        //        con.Close();
+        //    }
+        //}
         void GetTotalSale()
         {
             int userId = int.Parse(Session["loginid"].ToString());

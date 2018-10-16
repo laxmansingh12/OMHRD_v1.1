@@ -1,0 +1,5 @@
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Release\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Release\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Release\Business.Common.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Release\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Release\Business.Common.pdb
