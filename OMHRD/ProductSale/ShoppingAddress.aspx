@@ -31,7 +31,6 @@
                     <asp:LinkButton runat="server" ID="lnkedit" CssClass="btn btn-success" Text="Edit" OnClick="lnkedit_Click" />
                     <asp:LinkButton runat="server" ID="btndeliver" CssClass="btn btn-success" Text="Deliver to this address" OnClick="btndeliver_Click" />
                 </div>
-
                 <div class="col-md-6" style="border: inset">
                     <h3>Shipping address</h3>
                     <asp:ListView ID="gvdShippingAdd" runat="server" Visible="true" ItemPlaceholderID="PlaceHolder1">

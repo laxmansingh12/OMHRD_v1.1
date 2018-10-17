@@ -256,6 +256,7 @@ namespace OMHRD
                     rm.Regdate = DateTime.Today;
                     rm.Status = "Waiting";
                     rm.Action = "Active";
+                    rm.PickUpWallet = 0;
                     rm.Save();
                 }
                 return string.Empty;
