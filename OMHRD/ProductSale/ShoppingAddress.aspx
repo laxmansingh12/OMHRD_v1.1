@@ -7,6 +7,25 @@
         <div class="typo-grids">
             <div class="col-md-12">
                 <div class="panel-heading">
+                    <center> <h2><u><strong>Payment Type</strong></u></h2></center>
+                </div>
+                <br />
+                <asp:UpdatePanel ID="updatepnl" runat="server">
+                    <ContentTemplate>
+                        <div class="col-md-12" style="border: inset; padding: 20px 0px 10px;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <asp:RadioButton runat="server" ID="rdWallet" Text="By OMHRD Wallet" GroupName="pay" AutoPostBack="true" OnCheckedChanged="rdWallet_CheckedChanged" />
+                            </div>
+                            <div class="col-md-5">
+                                <asp:RadioButton runat="server" ID="rdOnline" Text="By All Others" GroupName="pay" AutoPostBack="true" OnCheckedChanged="rdOnline_CheckedChanged" />
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+            <div class="col-md-12">
+                <div class="panel-heading">
                     <center> <h2><u><strong>Select a delivery address</strong></u></h2></center>
                 </div>
                 <br />
@@ -30,6 +49,7 @@
                     </asp:ListView>
                     <asp:LinkButton runat="server" ID="lnkedit" CssClass="btn btn-success" Text="Edit" OnClick="lnkedit_Click" />
                     <asp:LinkButton runat="server" ID="btndeliver" CssClass="btn btn-success" Text="Deliver to this address" OnClick="btndeliver_Click" />
+                    <asp:LinkButton runat="server" ID="lnkWallet" CssClass="btn btn-success" Text="Deliver to this address by wallet" OnClick="lnkWallet_Click" />
                 </div>
                 <div class="col-md-6" style="border: inset">
                     <h3>Shipping address</h3>
@@ -51,6 +71,7 @@
                     </asp:ListView>
                     <asp:LinkButton runat="server" ID="lnkedit2" CssClass="btn btn-success" Text="Edit" OnClick="lnkedit2_Click" />
                     <asp:LinkButton runat="server" ID="btndeliver2" CssClass="btn btn-success" Text="Deliver to this address" OnClick="btndeliver2_Click" />
+                    <asp:LinkButton runat="server" ID="lnkWallet2" CssClass="btn btn-success" Text="Deliver to this address by wallet" OnClick="lnkWallet2_Click" />
                 </div>
             </div>
         </div>

@@ -13,6 +13,33 @@ namespace OMHRD.ProductSale {
     public partial class ShoppingAddress {
         
         /// <summary>
+        /// updatepnl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatepnl;
+        
+        /// <summary>
+        /// rdWallet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdWallet;
+        
+        /// <summary>
+        /// rdOnline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdOnline;
+        
+        /// <summary>
         /// ListView1 control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace OMHRD.ProductSale {
         protected global::System.Web.UI.WebControls.LinkButton btndeliver;
         
         /// <summary>
+        /// lnkWallet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkWallet;
+        
+        /// <summary>
         /// gvdShippingAdd control.
         /// </summary>
         /// <remarks>
@@ -65,5 +101,14 @@ namespace OMHRD.ProductSale {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btndeliver2;
+        
+        /// <summary>
+        /// lnkWallet2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkWallet2;
     }
 }

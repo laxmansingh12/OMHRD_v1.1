@@ -43,7 +43,7 @@ namespace Business.SQLServer
                                  CreateParameter("@RegDate", SqlDbType.DateTime, RegDate),
                                  CreateParameter("@Status", SqlDbType.VarChar, Status),
                                   CreateParameter("@Action", SqlDbType.VarChar, Action),
-
+                                   CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet),
                                  CreateParameter("@PickupID", SqlDbType.Int, PickupID));
             }
             else
@@ -67,6 +67,7 @@ namespace Business.SQLServer
                                  CreateParameter("@RegDate", SqlDbType.DateTime, RegDate),
                                  CreateParameter("@Status", SqlDbType.VarChar, Status),
                                  CreateParameter("@Action", SqlDbType.VarChar, Action),
+                                    CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet),
                                   CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet));
             }
             if (cmd != null)

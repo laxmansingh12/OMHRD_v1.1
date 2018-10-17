@@ -13,10 +13,17 @@ namespace OMHRD.ProductSale
 {
     public partial class ShoppingAddress : System.Web.UI.Page
     {
+        string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+        static decimal totalAmount;
+        static string orderNo;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                lnkWallet.Visible = false;
+                btndeliver.Visible = false;
+                btndeliver2.Visible = false;
+                lnkWallet2.Visible = false;
                 FIllAddress();
                 FIllShippingAddress();
                 Member_detail(int.Parse(Session["loginid"].ToString()));
@@ -77,12 +84,13 @@ namespace OMHRD.ProductSale
             }
         }
 
+
         protected void btndeliver_Click(object sender, EventArgs e)
         {
             try
             {
                 int UserID = int.Parse(Session["loginid"].ToString());
-                string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+                // string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
                 SqlConnection cn = new SqlConnection(constr);
                 SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
                 SqlDataAdapter adptr = new SqlDataAdapter(cmd);
@@ -93,9 +101,8 @@ namespace OMHRD.ProductSale
                 adptr.Fill(ds);
                 cn.Close();
 
-                string orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
-                decimal totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
-
+                orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
+                totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
                 #region 
                 string websiteUrl = Request.Url.Host;
                 string reqParams = string.Empty;
@@ -135,13 +142,65 @@ namespace OMHRD.ProductSale
             catch (Exception ex)
             { }
         }
+        protected void lnkWallet_Click(object sender, EventArgs e)
+        {
+            int UserID = int.Parse(Session["loginid"].ToString());
+            // string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+            SqlConnection cn = new SqlConnection(constr);
+            SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
+            SqlDataAdapter adptr = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@User_id", UserID);
+            cn.Open();
+            adptr.Fill(ds);
+            cn.Close();
+            orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
+            totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
 
+            #region
+            USERPROFILEMASTER User = USERPROFILEMASTER.GetByRegistration_ID(UserID);
+            if (User.Registration_ID > 0)
+            {
+                decimal UserAmount = User.UserWallet;
+                decimal TransferAmount = totalAmount;
+                if (UserAmount <= TransferAmount)
+                {
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Insufulset amount in User account.!!!')</script>", false);
+                    return;
+                }
+
+                USERPROFILEMASTER lm = USERPROFILEMASTER.GetByRegistration_ID(2);
+                if (lm.Registration_ID > 0)
+                {
+                    USERPROFILEMASTER lmm = new USERPROFILEMASTER();
+                    decimal PreviousAmount = lm.UserWallet;
+                    decimal Amount = totalAmount;
+                    decimal TotalAmount = PreviousAmount + Amount;
+                    lmm.WalletRecharge(lm.Registration_ID, TotalAmount);
+                    {
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Payment successful..!!!')</script>", false);
+                    }
+                }
+                decimal MyAmount = User.UserWallet;
+                decimal TranferAmount = totalAmount;
+                decimal FinalAmount = MyAmount - TranferAmount;
+                User.WalletRecharge(User.Registration_ID, FinalAmount);
+            }
+
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Some technical error...!!!')</script>", false);
+            }
+            #endregion
+
+        }
         protected void btndeliver2_Click(object sender, EventArgs e)
         {
             try
             {
                 int UserID = int.Parse(Session["loginid"].ToString());
-                string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+
                 SqlConnection cn = new SqlConnection(constr);
                 SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
                 SqlDataAdapter adptr = new SqlDataAdapter(cmd);
@@ -152,7 +211,7 @@ namespace OMHRD.ProductSale
                 adptr.Fill(ds);
                 cn.Close();
 
-                string orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
+                orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
                 decimal totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
 
                 #region 
@@ -205,7 +264,6 @@ namespace OMHRD.ProductSale
             else
             { Response.Redirect("../User/frmMyProfile.aspx"); }
         }
-
         protected void lnkedit2_Click(object sender, EventArgs e)
         {
             USERPROFILEMASTER um = USERPROFILEMASTERCollection.GetAll().Find(x => x.Registration_ID == int.Parse(Session["loginid"].ToString()));
@@ -215,6 +273,29 @@ namespace OMHRD.ProductSale
             }
             else
             { Response.Redirect("../User/frmMyProfile.aspx"); }
+        }
+
+        protected void rdWallet_CheckedChanged(object sender, EventArgs e)
+        {
+            btndeliver.Visible = false;
+            btndeliver2.Visible = false;
+            lnkWallet2.Visible = true;
+            lnkWallet.Visible = true;
+        }
+
+        protected void rdOnline_CheckedChanged(object sender, EventArgs e)
+        {
+            btndeliver.Visible = true;
+            btndeliver2.Visible = true;
+            lnkWallet2.Visible = false;
+            lnkWallet.Visible = false;
+        }
+
+
+
+        protected void lnkWallet2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

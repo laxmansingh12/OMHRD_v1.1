@@ -430,6 +430,7 @@
 </head>
 <body>
     <form id="form1" runat="server" novalidate="false">
+        <asp:ScriptManager ID="scriptmanager1" runat="server"></asp:ScriptManager>
         <div class="header">
             <div class="container">
                 <div class="header-grid">
