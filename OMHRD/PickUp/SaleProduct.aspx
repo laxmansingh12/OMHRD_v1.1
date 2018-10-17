@@ -15,7 +15,7 @@
                     <div class="col-md-4">
                         <div>
                             <label>User </label>
-                            <asp:DropDownList ID="ddlUser" runat="server" CssClass="form-control"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlUser" runat="server" CssClass="form-control" OnSelectedIndexChanged="ddlUser_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-md-4">

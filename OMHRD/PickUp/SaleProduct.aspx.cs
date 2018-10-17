@@ -23,6 +23,7 @@ namespace OMHRD.PickUp
             GetMaxbillid();
             if (!IsPostBack)
             {
+                grid();
                 fillCategory();
                 fillUser();
                 btndallbill.Visible = false;
@@ -265,7 +266,7 @@ namespace OMHRD.PickUp
                 dm.INVOICE_ID = int.Parse(did);
                 dm.Delete();
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Data Delete....');</Script>", false);
-                Response.Redirect("frmSale.aspx");
+                Response.Redirect("SaleProduct.aspx");
                 grid();
             }
             catch (Exception ex)
@@ -451,13 +452,13 @@ namespace OMHRD.PickUp
                 int UserId = ddlUser.SelectedIndex;
                 List<ProductInvoice_Master> _Pro = ProductInvoice_MasterCollection.GetAll().FindAll(x => x.BILL_ID == billid);
                 #region Company
-                string CompanyName = USERPROFILEMASTER.GetByRegistration_ID(1).First_Name;
-                string CompanyAddress = USERPROFILEMASTER.GetByRegistration_ID(1).Address;
-                string CompanyState = USERPROFILEMASTER.GetByRegistration_ID(1).StateName;
-                string CompanyCity = USERPROFILEMASTER.GetByRegistration_ID(1).CityName;
-                string ZipCode = USERPROFILEMASTER.GetByRegistration_ID(1).ZipCode;
-                string CompanyGST = USERPROFILEMASTER.GetByRegistration_ID(1).GstinVerified;
-                string CompanyContact = USERPROFILEMASTER.GetByRegistration_ID(1).ContactNumber;
+                string CompanyName = USERPROFILEMASTER.GetByUser_Name("OMHRD").First_Name;
+                string CompanyAddress = USERPROFILEMASTER.GetByUser_Name("OMHRD").Address;
+                string CompanyState = USERPROFILEMASTER.GetByUser_Name("OMHRD").StateName;
+                string CompanyCity = USERPROFILEMASTER.GetByUser_Name("OMHRD").CityName;
+                string ZipCode = USERPROFILEMASTER.GetByUser_Name("OMHRD").ZipCode;
+                string CompanyGST = USERPROFILEMASTER.GetByUser_Name("OMHRD").GstinVerified;
+                string CompanyContact = USERPROFILEMASTER.GetByUser_Name("OMHRD").ContactNumber;
                 #endregion
                 #region Seller
                 string ShipName = USERPROFILEMASTER.GetByRegistration_ID(UserId).First_Name + " " + USERPROFILEMASTER.GetByRegistration_ID(UserId).Last_Name;
@@ -475,6 +476,14 @@ namespace OMHRD.PickUp
                 string PermanentCity = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShipCityName;
                 string PermanentZip = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShippingZip;
                 string Gstin = USERPROFILEMASTER.GetByRegistration_ID(UserId).GstinVerified;
+                #endregion
+                #region PickUp
+                int PicupId = int.Parse(Session["PickupID"].ToString());
+                string PickUpName = PickupMaster.GetByPickupID(PicupId).FirstName + " " + PickupMaster.GetByPickupID(PicupId).LastName;
+                string PickUpAddress = PickupMaster.GetByPickupID(PicupId).Address;
+                string PickUpContact = PickupMaster.GetByPickupID(PicupId).ContactNo;
+                string CenterName = PickupMaster.GetByPickupID(PicupId).CenterName;
+                string CenterCode = PickupMaster.GetByPickupID(PicupId).CenterCode;
                 #endregion
                 #region BillDetail
                 System.Guid guid = System.Guid.NewGuid();
@@ -507,7 +516,7 @@ namespace OMHRD.PickUp
                 this.ReportViewer1.LocalReport.EnableExternalImages = true;
                 ReportViewer1.LocalReport.ReportPath = Server.MapPath("/Report/PickUpSale.rdlc");
                 ReportDataSource datasource = new ReportDataSource("BillGenrate", _Pro);
-                ReportParameter[] rpt = new ReportParameter[28];
+                ReportParameter[] rpt = new ReportParameter[33];
                 rpt[0] = new ReportParameter("CompanyName", CompanyName);
                 rpt[1] = new ReportParameter("CompanyAddress", CompanyAddress);
                 rpt[2] = new ReportParameter("CompanyState", CompanyState);
@@ -536,6 +545,11 @@ namespace OMHRD.PickUp
                 rpt[25] = new ReportParameter("Email", Email);
                 rpt[26] = new ReportParameter("TotalAmountWord", rupee);
                 rpt[27] = new ReportParameter("PaymentMod", "Wallet");
+                rpt[28] = new ReportParameter("PickUpName", PickUpName);
+                rpt[29] = new ReportParameter("PickUpAddress", PickUpAddress);
+                rpt[30] = new ReportParameter("PickUpContact", PickUpContact);
+                rpt[31] = new ReportParameter("CenterName", CenterName);
+                rpt[32] = new ReportParameter("CenterCode", CenterCode);
                 this.ReportViewer1.LocalReport.SetParameters(rpt);
                 this.ReportViewer1.LocalReport.DataSources.Clear();
                 this.ReportViewer1.LocalReport.DataSources.Add(datasource);
@@ -713,13 +727,18 @@ namespace OMHRD.PickUp
             if (OTP == Comfirmotp)
             {
                 Tranfer();
-               
+
             }
             else
             {
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('OTP not matched !!...');</Script>", false);
                 return;
             }
+        }
+
+        protected void ddlUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ClearControls(this);
         }
     }
 }
