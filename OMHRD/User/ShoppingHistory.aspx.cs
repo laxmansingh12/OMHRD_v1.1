@@ -20,26 +20,30 @@ namespace OMHRD.User
                 GetTotalSale();
             }
         }
-
         void GetTotalSale()
         {
             if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))
             {
-                bool temp = false;
                 String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
                 SqlConnection con = new SqlConnection(strConnString);
-                con.Open();
-                SqlCommand cmd = new SqlCommand("usp_GetOffOnLineShopping", con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+                SqlCommand com = new SqlCommand("usp_GetOffOnLineShopping", con);
+                com.Parameters.AddWithValue("@UserId", int.Parse(Session["loginid"].ToString()));
+                com.CommandType = CommandType.StoredProcedure;
+                try
                 {
-                    lbltotal.Text = dr.GetString(1);
-
-                    temp = true;
+                    con.Open();
+                    using (SqlDataReader read = com.ExecuteReader())
+                    {
+                        while (read.Read())
+                        {
+                            lbltotal.Text = (read["TotalAmount"].ToString());
+                        }
+                    }
                 }
-                if (temp == false)
-
+                finally
+                {
                     con.Close();
+                }
             }
             else
             {
@@ -47,6 +51,7 @@ namespace OMHRD.User
                 return;
             }
         }
+
         void GetAddtoCartDetail()
         {
             if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))

@@ -444,7 +444,7 @@ namespace OMHRD.PickUp
             try
             {
                 int UserId = ddlUser.SelectedIndex;
-                List<ProductInvoice_Master> _bill = ProductInvoice_MasterCollection.GetAll().FindAll(x => x.BILL_ID == billid);
+                List<ProductInvoice_Master> _Pro = ProductInvoice_MasterCollection.GetAll().FindAll(x => x.BILL_ID == billid);
                 #region Company
                 string CompanyName = USERPROFILEMASTER.GetByRegistration_ID(1).First_Name;
                 string CompanyAddress = USERPROFILEMASTER.GetByRegistration_ID(1).Address;
@@ -458,16 +458,16 @@ namespace OMHRD.PickUp
                 string ShipName = USERPROFILEMASTER.GetByRegistration_ID(UserId).First_Name + " " + USERPROFILEMASTER.GetByRegistration_ID(UserId).Last_Name;
                 string ShipAdd1 = USERPROFILEMASTER.GetByRegistration_ID(UserId).Address;
                 string ShipAdd2 = USERPROFILEMASTER.GetByRegistration_ID(UserId).AddressLine2;
-                string ShipCity = USERPROFILEMASTER.GetByRegistration_ID(UserId).CityName;
                 string ShipState = USERPROFILEMASTER.GetByRegistration_ID(UserId).StateName;
+                string ShipCity = USERPROFILEMASTER.GetByRegistration_ID(UserId).CityName;
                 string ShipZip = USERPROFILEMASTER.GetByRegistration_ID(UserId).ZipCode;
                 string Contry = USERPROFILEMASTER.GetByRegistration_ID(UserId).COUNTRY;
 
                 string BillName = USERPROFILEMASTER.GetByRegistration_ID(UserId).First_Name + " " + USERPROFILEMASTER.GetByRegistration_ID(UserId).Last_Name;
                 string PermanentAdd1 = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShippingAddress;
                 string PermanentAdd2 = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShippingAddressLine2;
-                string PermanentCity = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShipCityName;
                 string PermanentState = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShippStateName;
+                string PermanentCity = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShipCityName;
                 string PermanentZip = USERPROFILEMASTER.GetByRegistration_ID(UserId).ShippingZip;
                 string Gstin = USERPROFILEMASTER.GetByRegistration_ID(UserId).GstinVerified;
                 #endregion
@@ -476,12 +476,11 @@ namespace OMHRD.PickUp
                 String id = guid.ToString();
                 string OrderId = id;
                 DateTime dt = System.DateTime.Today;
-                string InvoiNo = "";
+                string InvoiNo = ProductBill_Master.GetByBILL_ID(billid).BILLNO;
                 string InvoiDate = dt.ToString();
                 string Phone = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
                 string Email = USERPROFILEMASTER.GetByRegistration_ID(UserId).Email;
                 #endregion
-                string BillNo = OrderBillMaster.GetByOrderBILL_ID(billid).BILLNO;
                 decimal totamt = Math.Round(ProductBill_Master.GetByBILL_ID(billid).TOTAL, 0);
                 var values = totamt.ToString(CultureInfo.InvariantCulture).Split('.');
                 Int64 rup = Convert.ToInt64(values[0]);
@@ -501,38 +500,38 @@ namespace OMHRD.PickUp
                 }
                 ReportViewer1.ProcessingMode = ProcessingMode.Local;
                 this.ReportViewer1.LocalReport.EnableExternalImages = true;
-                ReportViewer1.LocalReport.ReportPath = Server.MapPath("/Report/PickUpOrder.rdlc");
-                ReportDataSource datasource = new ReportDataSource("BillGenrate", _bill);
-                //ReportParameter[] rpt = new ReportParameter[28];
-                //rpt[0] = new ReportParameter("CompanyName", CompanyName);
-                //rpt[1] = new ReportParameter("CompanyAddress", CompanyAddress);
-                //rpt[2] = new ReportParameter("CompanyState", CompanyState);
-                //rpt[3] = new ReportParameter("CompanyCity", CompanyCity);
-                //rpt[4] = new ReportParameter("ZipCode", ZipCode);
-                //rpt[5] = new ReportParameter("CompanyGST", CompanyGST);
-                //rpt[6] = new ReportParameter("CompanyContact", CompanyContact);
-                //rpt[7] = new ReportParameter("ShipName", ShipName);
-                //rpt[8] = new ReportParameter("ShipAdd1", ShipAdd1);
-                //rpt[9] = new ReportParameter("ShipAdd2", ShipAdd2);
-                //rpt[10] = new ReportParameter("ShipCity", ShipCity);
-                //rpt[11] = new ReportParameter("ShipState", ShipState);
-                //rpt[12] = new ReportParameter("ShipZip", ShipZip);
-                //rpt[13] = new ReportParameter("Contry", Contry);
-                //rpt[14] = new ReportParameter("BillName", BillName);
-                //rpt[15] = new ReportParameter("PermanentAdd1", PermanentAdd1);
-                //rpt[16] = new ReportParameter("PermanentAdd2", PermanentAdd2);
-                //rpt[17] = new ReportParameter("PermanentCity", PermanentCity);
-                //rpt[18] = new ReportParameter("PermanentState", PermanentState);
-                //rpt[19] = new ReportParameter("PermanentZip", PermanentZip);
-                //rpt[20] = new ReportParameter("Gstin", Gstin);
-                //rpt[21] = new ReportParameter("OrderId", OrderId);
-                //rpt[22] = new ReportParameter("InvoiNo", InvoiNo);
-                //rpt[23] = new ReportParameter("InvoiDate", InvoiDate);
-                //rpt[24] = new ReportParameter("Phone", Phone);
-                //rpt[25] = new ReportParameter("Email", Email);
-                //rpt[26] = new ReportParameter("TotalAmountWord", rupee);
-                //rpt[27] = new ReportParameter("@PaymentMod", "Wallet");
-                //this.ReportViewer1.LocalReport.SetParameters(rpt);
+                ReportViewer1.LocalReport.ReportPath = Server.MapPath("/Report/PickUpSale.rdlc");
+                ReportDataSource datasource = new ReportDataSource("BillGenrate", _Pro);
+                ReportParameter[] rpt = new ReportParameter[28];
+                rpt[0] = new ReportParameter("CompanyName", CompanyName);
+                rpt[1] = new ReportParameter("CompanyAddress", CompanyAddress);
+                rpt[2] = new ReportParameter("CompanyState", CompanyState);
+                rpt[3] = new ReportParameter("CompanyCity", CompanyCity);
+                rpt[4] = new ReportParameter("ZipCode", ZipCode);
+                rpt[5] = new ReportParameter("CompanyGST", CompanyGST);
+                rpt[6] = new ReportParameter("CompanyContact", CompanyContact);
+                rpt[7] = new ReportParameter("ShipName", ShipName);
+                rpt[8] = new ReportParameter("ShipAdd1", ShipAdd1);
+                rpt[9] = new ReportParameter("ShipAdd2", ShipAdd2);
+                rpt[10] = new ReportParameter("ShipCity", ShipCity);
+                rpt[11] = new ReportParameter("ShipState", ShipState);
+                rpt[12] = new ReportParameter("ShipZip", ShipZip);
+                rpt[13] = new ReportParameter("Contry", Contry);
+                rpt[14] = new ReportParameter("BillName", BillName);
+                rpt[15] = new ReportParameter("PermanentAdd1", PermanentAdd1);
+                rpt[16] = new ReportParameter("PermanentAdd2", PermanentAdd2);
+                rpt[17] = new ReportParameter("PermanentCity", PermanentCity);
+                rpt[18] = new ReportParameter("PermanentState", PermanentState);
+                rpt[19] = new ReportParameter("PermanentZip", PermanentZip);
+                rpt[20] = new ReportParameter("Gstin", Gstin);
+                rpt[21] = new ReportParameter("OrderId", OrderId);
+                rpt[22] = new ReportParameter("InvoiNo", InvoiNo);
+                rpt[23] = new ReportParameter("InvoiDate", InvoiDate);
+                rpt[24] = new ReportParameter("Phone", Phone);
+                rpt[25] = new ReportParameter("Email", Email);
+                rpt[26] = new ReportParameter("TotalAmountWord", rupee);
+                rpt[27] = new ReportParameter("PaymentMod", "Wallet");
+                this.ReportViewer1.LocalReport.SetParameters(rpt);
                 this.ReportViewer1.LocalReport.DataSources.Clear();
                 this.ReportViewer1.LocalReport.DataSources.Add(datasource);
                 this.ReportViewer1.LocalReport.Refresh();
@@ -579,7 +578,7 @@ namespace OMHRD.PickUp
             #endregion
             ProductBill_Master bm = new ProductBill_Master();
             bm.BILL_ID = ProductBill_Master.MaxId() + 1;
-            bm.BILLNO = "OMHRD000" + bm.BILL_ID.ToString();
+            bm.BILLNO = "OMHRD" + Session["PickupID"] + "000" + bm.BILL_ID.ToString();
             bm.TOTAL = Math.Round(totalamt, 0);
             bm.STATUS = "Wallet";
             bm.BILLDATE = DateTime.Today.Date;
