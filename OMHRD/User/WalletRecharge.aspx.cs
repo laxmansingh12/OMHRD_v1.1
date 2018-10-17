@@ -21,7 +21,7 @@ namespace OMHRD.User
 
         public void grid()
         {
-            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()));
+            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
             gdvNotice.DataBind();
 
         }
@@ -113,6 +113,7 @@ namespace OMHRD.User
                     cm.User_id = int.Parse(ddlUser.SelectedValue);
                     cm.Amount = decimal.Parse(txtamount.Text.Trim());
                     cm.Date = System.DateTime.Now;
+                    cm.Status = "User";
                     cm.Save();
                     Tranfer();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Transfer Successfully....');</Script>", false);
@@ -125,16 +126,24 @@ namespace OMHRD.User
                     cm.User_id = int.Parse(ddlUser.SelectedValue);
                     cm.Amount = decimal.Parse(txtamount.Text.Trim());
                     cm.Date = System.DateTime.Now;
+                    cm.Status = "User";
                     cm.Save();
-                    grid();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Update Successfully...');</Script>", false);
                 }
+                grid();
                 ClearInputs(Page.Controls);
             }
             catch (Exception ex)
             {
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert(error);</script>", false);
             }
+        }
+
+        protected void gdvNotice_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grid();
+            gdvNotice.PageIndex = e.NewPageIndex;
+            gdvNotice.DataBind();
         }
     }
 }

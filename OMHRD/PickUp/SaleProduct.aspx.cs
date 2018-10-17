@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,14 +17,18 @@ namespace OMHRD.PickUp
     public partial class SaleProduct : System.Web.UI.Page
     {
         int billid = 0;
-        static decimal maxrate = 0;
+        static decimal maxrate = 0; public static string OTP;
         protected void Page_Load(object sender, EventArgs e)
         {
             GetMaxbillid();
             if (!IsPostBack)
             {
-                fillCategory(); fillUser();
-
+                fillCategory();
+                fillUser();
+                btndallbill.Visible = false;
+                btnOtp.Visible = false;
+                txtComfirmotp.Visible = false;
+                btnWelletpay.Visible = false;
             }
         }
         public void fillCategory()
@@ -540,7 +545,8 @@ namespace OMHRD.PickUp
             { }
         }
         List<Bill> _bill = new List<Bill>();
-        protected void btndallbill_Click(object sender, EventArgs e)
+
+        public void MakePayment()
         {
             grid();
             decimal totalamt = 0;
@@ -591,6 +597,129 @@ namespace OMHRD.PickUp
             bm.Save();
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Save Successfully...');</Script>", false);
             PrintBill();
+        }
+        protected void btndallbill_Click(object sender, EventArgs e)
+        {
+            MakePayment();
+        }
+        public string Sendmsg(string msg, string mobno)
+        {
+            string UserName = "socialhub";
+            string Password = "well03come";
+            string senderid = "OMHRDA";
+            string http = "https://www.auruminfo.com/Rest/AIwebservice/Bulk?";
+            string parameters = "user=" + UserName + "&password=" + Password + "&mobilenumber=" + mobno + "&message=" + msg + "&sid=" + senderid + "&mtype=n";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(http + parameters);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            System.IO.StreamReader respStreamReader = new System.IO.StreamReader(response.GetResponseStream());
+            respStreamReader.Close();
+            return respStreamReader.ToString();
+        }
+        protected void btnOtp_Click(object sender, EventArgs e)
+        {
+            string numbers = "1234567890";
+            string characters = numbers;
+            if (numbers == "1")
+            {
+                characters += numbers;
+            }
+            int length = int.Parse("5");
+            string otp = string.Empty;
+            for (int i = 0; i < length; i++)
+            {
+                string character = string.Empty;
+                do
+                {
+                    int index = new Random().Next(0, characters.Length);
+                    character = characters.ToCharArray()[index].ToString();
+                } while (otp.IndexOf(character) != -1);
+                otp += character;
+            }
+            ViewState["GenerateOTP"] = otp;
+            OTP = ViewState["GenerateOTP"].ToString();
+            int UserId = ddlUser.SelectedIndex;
+            string Contact = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
+            Sendmsg("Your OTP is " + " " + OTP, Contact);
+            txtComfirmotp.Visible = true;
+            btnWelletpay.Visible = true;
+        }
+
+        protected void rdCash_CheckedChanged(object sender, EventArgs e)
+        {
+            btndallbill.Visible = true;
+            btnOtp.Visible = false;
+            txtComfirmotp.Visible = false;
+        }
+
+        protected void rdWalllet_CheckedChanged(object sender, EventArgs e)
+        {
+            btndallbill.Visible = false;
+            btnOtp.Visible = true;
+            txtComfirmotp.Visible = false;
+        }
+        public void Tranfer()
+        {
+            try
+            {
+                decimal totalamt = 0;
+                int UserId = ddlUser.SelectedIndex;
+                USERPROFILEMASTER User = USERPROFILEMASTER.GetByRegistration_ID(UserId);
+                if (User.Registration_ID > 0)
+                {
+                    foreach (GridViewRow gv in gdvNotice.Rows)
+                    {
+                        totalamt += decimal.Parse(gv.Cells[4].Text.ToString());
+                    }
+                    decimal UserAmount = User.UserWallet;
+                    decimal TransferAmount = totalamt;
+                    if (UserAmount <= TransferAmount)
+                    {
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Insufulset amount in User account.!!!')</script>", false);
+                        return;
+                    }
+
+                    PickupMaster lm = PickupMaster.GetByPickupID(int.Parse(Session["PickupID"].ToString()));
+                    if (lm.PickupID > 0)
+                    {
+                        PickupMaster lmm = new PickupMaster();
+                        decimal PreviousAmount = lm.PickUpWallet;
+                        decimal Amount = totalamt;
+                        decimal TotalAmount = PreviousAmount + Amount;
+                        lmm.PaymentByWallet(lm.PickupID, TotalAmount);
+                        {
+                            ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Payment successful..!!!')</script>", false);
+                        }
+                    }
+                    decimal MyAmount = User.UserWallet;
+                    decimal TranferAmount = totalamt;
+                    decimal FinalAmount = MyAmount - TranferAmount;
+                    User.WalletRecharge(User.Registration_ID, FinalAmount);
+                    MakePayment();
+                }
+
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Old Password is not Correct...!!!')</script>", false);
+                }
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('" + ex.Message + "')</script>", false);
+            }
+        }
+        protected void btnWelletpay_Click(object sender, EventArgs e)
+        {
+            string Comfirmotp = txtComfirmotp.Text.Trim();
+            if (OTP == Comfirmotp)
+            {
+                Tranfer();
+               
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('OTP not matched !!...');</Script>", false);
+                return;
+            }
         }
     }
 }

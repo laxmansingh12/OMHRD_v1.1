@@ -111,6 +111,7 @@ namespace OMHRD.PickUp
             um.Regdate = PickupMaster.GetByPickupID(um.PickupID).Regdate;
             um.Status = PickupMaster.GetByPickupID(um.PickupID).Status;
             um.Action = PickupMaster.GetByPickupID(um.PickupID).Action;
+            um.PickUpWallet = PickupMaster.GetByPickupID(um.PickupID).PickUpWallet;
             um.Save();
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Save Sucessfull...!!');</script>", false);
             Response.Redirect("frmProfileUpdate.aspx");

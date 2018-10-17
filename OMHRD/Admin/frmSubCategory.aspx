@@ -43,14 +43,15 @@
                 </div>
             </div>
 
-            <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="3" BackColor="#DEBA84" BorderColor="#DEBA84"
-                BorderStyle="None" BorderWidth="1px"
-                CellSpacing="2" OnPageIndexChanging="gdvNotice_PageIndexChanging">
-                <HeaderStyle BackColor="#003366" Font-Bold="True" ForeColor="White" />
+            <br />
+            <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="4" OnPageIndexChanging="gdvNotice_PageIndexChanging" ForeColor="#333333" GridLines="None">
+                <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <AlternatingRowStyle BackColor="White" />
-                <RowStyle BackColor="#DEDEDC" Height="20px" />
-                <PagerStyle BackColor="#003366" ForeColor="White" HorizontalAlign="Center" />
-                <SelectedRowStyle ForeColor="White" BackColor="#A7CE54" />
+                <RowStyle BackColor="#EFF3FB" Height="20px" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <SelectedRowStyle ForeColor="#333333" BackColor="#D1DDF1" Font-Bold="True" />
                 <Columns>
                     <asp:TemplateField HeaderText="SrNo">
                         <ItemTemplate>
@@ -61,7 +62,7 @@
                         </ItemTemplate>
                         <ItemStyle Width="50px" />
                     </asp:TemplateField>
-                    <asp:BoundField DataField="Category_Name" HeaderText="Caterogy Name" SortExpression="File" />
+                    <asp:BoundField DataField="Category_Name" HeaderText="Caterogy" SortExpression="File" />
                     <asp:BoundField DataField="SubCategory_NAME" HeaderText="Sub Category" SortExpression="File" />
                     <asp:TemplateField HeaderText="Action">
                         <ItemTemplate>
@@ -72,6 +73,10 @@
                         <ItemStyle Width="100px" />
                     </asp:TemplateField>
                 </Columns>
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         </div>
     </div>

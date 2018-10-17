@@ -101,24 +101,23 @@
 
             </asp:GridView>
             <br />
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-2">
-                        <div>
-                            <label>Extra Charge </label>
-                            <asp:TextBox ID="txtextra" runat="server" Text="0" Enabled="true" CssClass="form-control"></asp:TextBox>
-                        </div>
+            <asp:Panel runat="server" ID="Payment">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Payment Option</label>
+                        <asp:RadioButton runat="server" ID="rdCash" GroupName="Payment" Text="Cash" CssClass="btn btn-success" AutoPostBack="true" OnCheckedChanged="rdCash_CheckedChanged" />
+                        <asp:Button ID="btndallbill" runat="server" Text="Pay" CssClass="btn btn-success" OnClick="btndallbill_Click" />
                     </div>
-                    <br />
-                    <div class="col-md-3">
-                        <div>
-                            <asp:Button ID="btndallbill" runat="server" Text="Send Order" CssClass="btn btn-success" OnClick="btndallbill_Click" />
-                        </div>
+                    <div class="col-md-4">
+                        <asp:RadioButton runat="server" ID="rdWalllet" GroupName="Payment" Text="Walllet" CssClass="btn btn-success" AutoPostBack="true" OnCheckedChanged="rdWalllet_CheckedChanged" />
+                        <asp:Button ID="btnOtp" runat="server" Text="Generate OTP" CssClass="btn btn-success" OnClick="btnOtp_Click" />
+                    </div>
+                    <div class="col-md-4">
+                        <asp:TextBox runat="server" ID="txtComfirmotp" placeholder="Enter the OTP" CssClass="form-control"></asp:TextBox>
+                        <asp:Button ID="btnWelletpay" runat="server" Text="Payment" CssClass="btn btn-success" OnClick="btnWelletpay_Click" />
                     </div>
                 </div>
-            </div>
-
+            </asp:Panel>
             <br />
 
             <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="945px"></rsweb:ReportViewer>

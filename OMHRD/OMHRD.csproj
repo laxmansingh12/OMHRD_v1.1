@@ -216,6 +216,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\AddGallery.aspx" />
     <Content Include="Admin\AdminProfileShow.aspx" />
+    <Content Include="Admin\AdminWalletRecharge.aspx" />
     <Content Include="Admin\css\animate.min.css" />
     <Content Include="Admin\css\bootstrap.css" />
     <Content Include="Admin\css\flexslider.css" />
@@ -1045,6 +1046,13 @@
     </Compile>
     <Compile Include="Admin\AdminProfileShow.aspx.designer.cs">
       <DependentUpon>AdminProfileShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminWalletRecharge.aspx.cs">
+      <DependentUpon>AdminWalletRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminWalletRecharge.aspx.designer.cs">
+      <DependentUpon>AdminWalletRecharge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

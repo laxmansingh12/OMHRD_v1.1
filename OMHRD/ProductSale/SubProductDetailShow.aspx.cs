@@ -1,6 +1,9 @@
 ﻿using Business.Object;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -42,12 +45,36 @@ namespace OMHRD.ProductSale
         {
             //List<ITEM_MASTER> fp = ITEM_MASTERCollection.GetAll().Where(x => (catid == 0 || x.CATEGORY_ID == catid) && (subcatid == 0 || x.SubCategory_ID == subcatid)).ToList();
             //if (fp.Count > 0)
-            List<ITEM_MASTER> fp = ITEM_MASTERCollection.GetAll().Where(x => (subcatid == 0 || x.SubCategory_ID == subcatid)).ToList();
-            if (fp.Count > 0)
+            //List<ITEM_MASTER> fp = ITEM_MASTERCollection.GetAll().Where(x => (subcatid == 0 || x.SubCategory_ID == subcatid)).ToList();
+            //if (fp.Count > 0)
+            //{
+            //    ListView1.DataSource = fp;
+            //    ListView1.DataBind();
+            //}
+
+            String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand myCmd = new SqlCommand("usp_GetByFiltertem", con);
+            myCmd.CommandType = CommandType.StoredProcedure;
+            myCmd.Parameters.AddWithValue("@SubcateID", subcatid);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = new SqlCommand("usp_GetByFiltertem", con);
+            DataSet ds = new DataSet();
+
+            try
             {
-                ListView1.DataSource = fp;
-                ListView1.DataBind();
+                con.Open();
+                adapter.Fill(ds);
+                ListView1.DataSource = ds.Tables[0];
             }
+            catch (SqlException se)
+            {
+                //lblMsg.Text = se.Message;
+            }
+            finally { }
+            ListView1.DataBind();
+            con.Close();
+
         }
     }
 }

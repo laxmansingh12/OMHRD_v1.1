@@ -29,6 +29,7 @@ namespace Business.Object
         public DateTime Regdate { get; set; }
         public string Status { get; set; }
         public string Action { get; set; }
+        public decimal PickUpWallet { get; set; }//
         #endregion
 
         #region Methods
@@ -52,6 +53,7 @@ namespace Business.Object
             Regdate = GetDateTime(row, "Regdate");
             Status = GetString(row, "Status");
             Action = GetString(row, "Action");
+            PickUpWallet = GetDecimal(row, "PickUpWallet");
             return base.MapData(row);
         }
         public static PickupMaster GetByPickupID(int PickupID)
@@ -59,6 +61,10 @@ namespace Business.Object
             PickupMaster obj = new PickupMaster();
             obj.MapData(new PickUpMasterDataSevice().PickUpMasterGetByPickupID(PickupID));
             return obj;
+        }
+        public void PaymentByWallet(int PickupID, decimal PickUpWallet)
+        {
+            new PickUpMasterDataSevice().GetByPaymentByWallet(PickupID, PickUpWallet);
         }
         public static PickupMaster GetByCenterCode(string CenterCode)
         {
@@ -73,7 +79,7 @@ namespace Business.Object
 
         public void Save(IDbTransaction txn)
         {
-            new PickUpMasterDataSevice().PickUpMasterSave(PickupID, FirstName, LastName, UserName, Password, CenterName, CenterCode, Address, Pincode, City, State, ContactNo, Alternate1, Alternate2, GstinNo, Regdate, Status, Action);
+            new PickUpMasterDataSevice().PickUpMasterSave(PickupID, FirstName, LastName, UserName, Password, CenterName, CenterCode, Address, Pincode, City, State, ContactNo, Alternate1, Alternate2, GstinNo, Regdate, Status, Action, PickUpWallet);
         }
         public static PickupMaster GetByPASSWORD(string Password)
         {

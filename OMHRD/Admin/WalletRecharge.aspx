@@ -8,41 +8,52 @@
             <div class="panel-heading" style="padding-right: 7px;">
                 <h2><strong>Wallet Recharge</strong></h2>
             </div>
-            <div class="col-md-4">
-                <label>User </label>
-                <asp:DropDownList ID="ddlUser" runat="server" CssClass="form-control" required=""></asp:DropDownList>
-            </div>
-            <div class="col-md-4">
-                <label>Amount </label>
-                <asp:TextBox ID="txtamount" runat="server" CssClass="form-control" required=""></asp:TextBox>
-            </div>
-            <br />
-            <div class="col-md-4">
-                <center><asp:Button ID="btnsubmit" runat="server" Text="Submit" style="width:125px;"  CausesValidation="False" CommandName="Transfer" OnClientClick="return confirm('Are you sure you want to transfer this Amount ?');" CssClass="btn btn-success" OnClick="btnsubmit_Click" /></center>
-            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <label>User </label>
+                            <asp:DropDownList ID="ddlUser" runat="server" CssClass="form-control" required=""></asp:DropDownList>
+                        </div>
+                        <div>
+                            <label>Amount </label>
+                            <asp:TextBox ID="txtamount" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                        </div>
+                        <br />
+                        <div>
+                            <center><asp:Button ID="btnsubmit" runat="server" Text="Submit" style="width:125px;"  CausesValidation="False" CommandName="Transfer" OnClientClick="return confirm('Are you sure you want to transfer this Amount ?');" CssClass="btn btn-success" OnClick="btnsubmit_Click" /></center>
+                        </div>
+                    </div>
 
-            <br />
-            <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="3" BackColor="#DEBA84" BorderColor="#DEBA84"
-                BorderStyle="None" BorderWidth="1px"
-                CellSpacing="2" OnPageIndexChanging="gdvNotice_PageIndexChanging">
-                <HeaderStyle BackColor="#003366" Font-Bold="True" ForeColor="White" />
-                <AlternatingRowStyle BackColor="White" />
-                <RowStyle BackColor="#DEDEDC" Height="20px" />
-                <PagerStyle BackColor="#003366" ForeColor="White" HorizontalAlign="Center" />
-                <SelectedRowStyle ForeColor="White" BackColor="#A7CE54" />
-                <Columns>
-                    <asp:TemplateField HeaderText="Sl.#">
-                        <ItemTemplate>
-                            <asp:Label ID="labelSrNo" runat="server" Text="<%# Container.DataItemIndex+1 %>"></asp:Label>
-                            <asp:Label ID="labelNOTICE_ID" runat="server" Text='<%# Bind("Id") %>' Visible="False"></asp:Label>
-                        </ItemTemplate>
-                        <ItemStyle Width="50px" />
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="User_id" HeaderText="User Name" SortExpression="File" />
-                    <asp:BoundField DataField="Amount" HeaderText="Amount" SortExpression="File" />
-                    <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="File" />
-                </Columns>
-            </asp:GridView>
+                    <div class="col-md-6">
+                        <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="4" OnPageIndexChanging="gdvNotice_PageIndexChanging" ForeColor="#333333" GridLines="None">
+                            <EditRowStyle BackColor="#2461BF" />
+                            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <AlternatingRowStyle BackColor="White" />
+                            <RowStyle BackColor="#EFF3FB" Height="20px" />
+                            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                            <SelectedRowStyle ForeColor="#333333" BackColor="#D1DDF1" Font-Bold="True" />
+                            <Columns>
+                                <asp:TemplateField HeaderText="Sl.#">
+                                    <ItemTemplate>
+                                        <asp:Label ID="labelSrNo" runat="server" Text="<%# Container.DataItemIndex+1 %>"></asp:Label>
+                                        <asp:Label ID="labelNOTICE_ID" runat="server" Text='<%# Bind("Id") %>' Visible="False"></asp:Label>
+                                    </ItemTemplate>
+                                    <ItemStyle Width="50px" />
+                                </asp:TemplateField>
+                                <asp:BoundField DataField="User_id" HeaderText="User Name" SortExpression="File" />
+                                <asp:BoundField DataField="Amount" HeaderText="Amount" SortExpression="File" />
+                                <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="File" />
+                            </Columns>
+                            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                        </asp:GridView>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>

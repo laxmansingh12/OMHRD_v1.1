@@ -163,8 +163,6 @@
                                 </div>
                                 <h4><a href='productdetail.aspx?st=<%# DataBinder.Eval(Container.DataItem,"ITEM_ID") %>'>
                                     <%# DataBinder.Eval(Container.DataItem,"ITEMNAME").ToString().Length>15?DataBinder.Eval(Container.DataItem,"ITEMNAME").ToString().Substring(0,15): DataBinder.Eval(Container.DataItem,"ITEMNAME").ToString() %> </a></h4>
-                                <%--<asp:Label ID="lblUnitcode<%# Eval("ITEM_ID") %>" CssClass="UnitCode" runat="server" Text='<%# Eval("UnitCode") %>' ClientIDMode="Static"></asp:Label>--%>
-                                <%--<asp:Label ID="lblUnitcode" CssClass="UnitCode" runat="server" Text='<%# Eval("UnitCode") %>' ClientIDMode="Static"></asp:Label>--%>
                                 <p><%# DataBinder.Eval(Container.DataItem,"Description").ToString().Length>15?DataBinder.Eval(Container.DataItem,"Description").ToString().Substring(0,15):DataBinder.Eval(Container.DataItem,"Description").ToString() %></p>
                                 <div class="new-collections-grid1-left simpleCart_shelfItem">
                                     <p>
@@ -182,7 +180,7 @@
         </div>
     </div>
     <br />
-  
+
 
     <div class="collections-bottom">
         <div class="container">

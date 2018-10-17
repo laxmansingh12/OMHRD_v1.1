@@ -102,6 +102,7 @@ namespace OMHRD.Admin
             rm.Regdate = PickupMaster.GetByPickupID(rm.PickupID).Regdate;
             rm.Status = "Approve";
             rm.Action = "Active";
+            rm.PickUpWallet = 0;
             rm.Save();
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Change Sucessfull...!!');</script>", false);
             Sendmsg("Your OMHRD PickUp User Name is " + " " + rm.UserName + " " + "And  Password is" + rm.Password, rm.ContactNo.Trim());

@@ -103,13 +103,22 @@ namespace OMHRD.PickUp {
         protected global::System.Web.UI.WebControls.GridView gdvNotice;
         
         /// <summary>
-        /// txtextra control.
+        /// Payment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtextra;
+        protected global::System.Web.UI.WebControls.Panel Payment;
+        
+        /// <summary>
+        /// rdCash control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdCash;
         
         /// <summary>
         /// btndallbill control.
@@ -119,6 +128,42 @@ namespace OMHRD.PickUp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btndallbill;
+        
+        /// <summary>
+        /// rdWalllet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdWalllet;
+        
+        /// <summary>
+        /// btnOtp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnOtp;
+        
+        /// <summary>
+        /// txtComfirmotp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtComfirmotp;
+        
+        /// <summary>
+        /// btnWelletpay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnWelletpay;
         
         /// <summary>
         /// ReportViewer1 control.

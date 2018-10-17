@@ -21,16 +21,7 @@ namespace OMHRD.ProductSale
                 BindSliderRepeater(); BindFooterSlider(); FIllNewCollection();
             }
         }
-        //public void FIllNewCollection()
-        //{
-        //    List<ITEM_MASTER> fp = ITEM_MASTERCollection.GetAll();
-        //    if (fp.Count > 0)
-        //    {
-        //        ListView1.DataSource = fp;
-        //        ListView1.DataBind();
-        //    }
-        //}
-
+     
         void FIllNewCollection()
         {
             String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;

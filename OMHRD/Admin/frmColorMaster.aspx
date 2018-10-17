@@ -9,36 +9,40 @@
                 <h2><strong>Add Color</strong></h2>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <label>Color Name : </label>
-                        <asp:TextBox ID="txtcolor" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <div>
+                            <label>Color Name  </label>
+                            <asp:TextBox ID="txtcolor" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                        </div>
                     </div>
-                    <div>
-                        <label>Color Code : </label>
-                        <asp:TextBox ID="txtcolorCode" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                    <div class="col-md-3">
+                        <div>
+                            <label>Color Code  </label>
+                            <asp:TextBox ID="txtcolorCode" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <label>Remark</label>
-                        <asp:TextBox ID="txtremark" runat="server" CssClass="form-control"></asp:TextBox>
+                    <div class="col-md-3">
+                        <div>
+                            <label>Remark</label>
+                            <asp:TextBox ID="txtremark" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
                     </div>
-                    <br />
-                    <div>
+                    <div class="col-md-3">
+                        <br />
                         <center><asp:Button ID="btnsubmit" runat="server" Text="Submit" CssClass="btn btn-success" style="width:125px;" OnClick="btnsubmit_Click" /></center>
                     </div>
                 </div>
             </div>
             <br />
-            <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="3" BackColor="#DEBA84" BorderColor="#DEBA84"
-                BorderStyle="None" BorderWidth="1px"
-                CellSpacing="2" OnPageIndexChanging="gdvNotice_PageIndexChanging">
-                <HeaderStyle BackColor="#003366" Font-Bold="True" ForeColor="White" />
+            <asp:GridView ID="gdvNotice" runat="server" AllowPaging="True" AutoGenerateColumns="False" Width="100%" CellPadding="4" OnPageIndexChanging="gdvNotice_PageIndexChanging" ForeColor="#333333" GridLines="None">
+                <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <AlternatingRowStyle BackColor="White" />
-                <RowStyle BackColor="#DEDEDC" Height="20px" />
-                <PagerStyle BackColor="#003366" ForeColor="White" HorizontalAlign="Center" />
-                <SelectedRowStyle ForeColor="White" BackColor="#A7CE54" />
+                <RowStyle BackColor="#EFF3FB" Height="20px" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <SelectedRowStyle ForeColor="#333333" BackColor="#D1DDF1" Font-Bold="True" />
                 <Columns>
                     <asp:TemplateField HeaderText="SrNo">
                         <ItemTemplate>
@@ -61,6 +65,10 @@
                         <ItemStyle Width="100px" />
                     </asp:TemplateField>
                 </Columns>
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         </div>
     </div>

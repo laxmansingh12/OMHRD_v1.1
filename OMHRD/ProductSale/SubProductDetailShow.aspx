@@ -1,6 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProductSale/ProductSale.Master" AutoEventWireup="true" CodeBehind="SubProductDetailShow.aspx.cs" Inherits="OMHRD.ProductSale.SubProductDetailShow" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script>
+        function addToCart(productId, Unitcode, Color) {
+            var userid = $("#loggedinUserId").val();
+            if (userid == null || userid == "" || userid == undefined) {
+                $("#hdnreturnUrl").val(window.location.href);
+                $('#myModal5').modal('toggle');
+            }
+            else {
+                $.ajax({
+                    url: "../Webservice.asmx/addtocart?productid=" + productId + "&userid=" + userid + "&quantity=1" + "&unitcode=" + Unitcode + "&Color=" + Color,
+                    method: 'get',
+                    success: function (response) {
+                        alert("Product Add to Cart");
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+            }
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="new-collections">
@@ -29,7 +50,13 @@
                                 </a></h4>
                                 <p><%# Eval("Description").ToString().Length>10?Eval("Description").ToString().Substring(0,10): Eval("Description").ToString() %></p>
                                 <div class="new-collections-grid1-left simpleCart_shelfItem">
-                                    <p><span class="item_price">&#8377;<%# Eval("Price") %></span><a class="item_add" href="#">add to cart </a></p>
+                                    <%--<p><span class="item_price">&#8377;<%# Eval("Price") %></span><a class="item_add" href="#">add to cart </a></p>--%>
+
+                                  <p>
+                                        <span class="item_price">&#8377;<%# DataBinder.Eval(Container.DataItem,"DisscountPrice") %></span>
+                                        <a class="item_add" id="btnAdditem" onclick="addToCart(<%# DataBinder.Eval(Container.DataItem,"ITEM_ID") %>,<%# "'" + DataBinder.Eval(Container.DataItem,"UnitCode")+"'" %>,<%# "'" + DataBinder.Eval(Container.DataItem,"Color_Code")+"'" %>)" href="javascript:void(0)">add to cart </a>
+                                    </p>
+                          
                                 </div>
                             </div>
                         </div>

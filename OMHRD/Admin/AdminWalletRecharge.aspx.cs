@@ -8,22 +8,21 @@ using System.Web.UI.WebControls;
 
 namespace OMHRD.Admin
 {
-    public partial class WalletRecharge : System.Web.UI.Page
+    public partial class AdminWalletRecharge : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 grid();
-                fillUser();
             }
         }
 
         public void grid()
         {
-            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
+            int AdminId = int.Parse(Session["loginid"].ToString());
+            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.Status == "Self").OrderByDescending(x => x.Id).ToList();
             gdvNotice.DataBind();
-
         }
         private void ClearInputs(ControlCollection ctrls)
         {
@@ -37,61 +36,25 @@ namespace OMHRD.Admin
                 btnsubmit.Text = "Submit";
             }
         }
-        public void fillUser()
-        {
-            try
-            {
-                List<USERPROFILEMASTER> _state = USERPROFILEMASTERCollection.GetAll();
-                USERPROFILEMASTER sm = new USERPROFILEMASTER();
-                sm.Registration_ID = 0;
-                sm.User_Name = "-select User-";
-                _state.Insert(0, sm);
-                ddlUser.DataSource = _state;
-                ddlUser.DataTextField = "User_Name";
-                ddlUser.DataValueField = "Registration_ID";
-                ddlUser.DataBind();
-            }
-            catch (Exception ex)
-            {
-                string script = "<script>alert('" + ex.Message + "');</script>";
-            }
-        }
         public void Tranfer()
         {
             try
             {
-                USERPROFILEMASTER User = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString()));
-                if (User.Registration_ID > 0)
+                USERPROFILEMASTER lm = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString()));
+                if (lm.Registration_ID > 0)
                 {
-                    decimal UserAmount = User.UserWallet;
-                    decimal TransferAmount = decimal.Parse(txtamount.Text.Trim());
-                    if (UserAmount <= TransferAmount)
+                    USERPROFILEMASTER lmm = new USERPROFILEMASTER();
+                    decimal PreviousAmount = lm.UserWallet;
+                    decimal Amount = decimal.Parse(txtamount.Text.Trim());
+                    decimal TotalAmount = PreviousAmount + Amount;
+                    lmm.WalletRecharge(lm.Registration_ID, TotalAmount);
                     {
-                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Insufulset amount in your accoun.!!!')</script>", false);
-                        return;
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Wallet recharge successful..!!!')</script>", false);
                     }
-
-                    USERPROFILEMASTER lm = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(ddlUser.SelectedValue));
-                    if (lm.Registration_ID > 0)
-                    {
-                        USERPROFILEMASTER lmm = new USERPROFILEMASTER();
-                        decimal PreviousAmount = lm.UserWallet;
-                        decimal Amount = decimal.Parse(txtamount.Text.Trim());
-                        decimal TotalAmount = PreviousAmount + Amount;
-                        lmm.WalletRecharge(lm.Registration_ID, TotalAmount);
-                        {
-                            ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Wallet recharge successful..!!!')</script>", false);
-                        }
-                    }
-                    decimal MyAmount = User.UserWallet;
-                    decimal TranferAmount = decimal.Parse(txtamount.Text.Trim());
-                    decimal FinalAmount = MyAmount - TranferAmount;
-                    User.WalletRecharge(User.Registration_ID, FinalAmount);
                 }
-
                 else
                 {
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Old Password is not Correct...!!!')</script>", false);
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Some technical issues. Please contact our support team...!!!')</script>", false);
                 }
             }
             catch (Exception ex)
@@ -99,7 +62,6 @@ namespace OMHRD.Admin
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('" + ex.Message + "')</script>", false);
             }
         }
-
 
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
@@ -110,10 +72,10 @@ namespace OMHRD.Admin
                 {
                     cm.Id = WalletRechargeMaster.MaxId() + 1;
                     cm.ByUser_id = int.Parse(Session["loginid"].ToString());
-                    cm.User_id = int.Parse(ddlUser.SelectedValue);
+                    cm.User_id = int.Parse(Session["loginid"].ToString());
                     cm.Amount = decimal.Parse(txtamount.Text.Trim());
                     cm.Date = System.DateTime.Now;
-                    cm.Status = "User";
+                    cm.Status = "Self";
                     cm.Save();
                     Tranfer();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Transfer Successfully....');</Script>", false);
@@ -123,10 +85,9 @@ namespace OMHRD.Admin
                     cm = WalletRechargeMaster.GetById(int.Parse(ViewState["id"].ToString()));
                     cm.Id = int.Parse(ViewState["id"].ToString());
                     cm.ByUser_id = int.Parse(Session["loginid"].ToString());
-                    cm.User_id = int.Parse(ddlUser.SelectedValue);
+                    cm.User_id = int.Parse(Session["loginid"].ToString());
                     cm.Amount = decimal.Parse(txtamount.Text.Trim());
                     cm.Date = System.DateTime.Now;
-                    cm.Status = "User";
                     cm.Save();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Update Successfully...');</Script>", false);
                 }

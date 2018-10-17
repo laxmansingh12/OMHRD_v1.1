@@ -12,28 +12,30 @@ namespace Business.SQLServer
         public WalletRechargeDataService(IDbTransaction txn) : base(txn) { }
         #endregion
         #region Methods
-        public void WalletRechargeSave(int Id, int ByUser_id, int User_id, decimal Amount, DateTime Date)
+        public void WalletRechargeSave(int Id, int ByUser_id, int User_id, decimal Amount, DateTime Date, string Status)
         {
             SqlCommand cmd;
             // NoofPaper,NoofPratical,MaxMarks,MinMarks,
             DataSet ds = WalletRechargeGetById(Id);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
-                ExecuteNonQuery(out cmd, @"UPDATE WalletRecharge set ByUser_id=@ByUser_id, User_id=@User_id, Amount=@Amount,Date=@Date where Id=@Id",
-                      CreateParameter("@ByUser_id", SqlDbType.Int, ByUser_id),
-                    CreateParameter("@User_id", SqlDbType.Int, User_id),
-                         CreateParameter("@Amount", SqlDbType.Decimal, Amount),
-                            CreateParameter("@Date", SqlDbType.DateTime, Date),
-                         CreateParameter("@Id", SqlDbType.Int, Id));
+                ExecuteNonQuery(out cmd, @"UPDATE WalletRecharge set ByUser_id=@ByUser_id, User_id=@User_id, Amount=@Amount,Date=@Date,Status=@Status where Id=@Id",
+                       CreateParameter("@ByUser_id", SqlDbType.Int, ByUser_id),
+                       CreateParameter("@User_id", SqlDbType.Int, User_id),
+                       CreateParameter("@Amount", SqlDbType.Decimal, Amount),
+                       CreateParameter("@Date", SqlDbType.DateTime, Date),
+                       CreateParameter("@Status", SqlDbType.VarChar, Status),
+                       CreateParameter("@Id", SqlDbType.Int, Id));
             }
             else
             {
-                ExecuteNonQuery(out cmd, @"INSERT INTO WalletRecharge VALUES (@Id,@ByUser_id,@User_id,@Amount,@Date)",
+                ExecuteNonQuery(out cmd, @"INSERT INTO WalletRecharge VALUES (@Id,@ByUser_id,@User_id,@Amount,@Date,@Status)",
                          CreateParameter("@Id", SqlDbType.Int, Id),
-                            CreateParameter("@ByUser_id", SqlDbType.Int, ByUser_id),
+                         CreateParameter("@ByUser_id", SqlDbType.Int, ByUser_id),
                          CreateParameter("@User_id", SqlDbType.Int, User_id),
                          CreateParameter("@Amount", SqlDbType.Decimal, Amount),
-                          CreateParameter("@Date", SqlDbType.DateTime, Date));
+                         CreateParameter("@Date", SqlDbType.DateTime, Date),
+                         CreateParameter("@Status", SqlDbType.VarChar, Status));
 
             }
             if (cmd != null)

@@ -19,13 +19,13 @@ namespace Business.SQLServer
 
         #endregion
         #region Methods
-        public void PickUpMasterSave(int PickupID, string FirstName, string LastName, string UserName, string Password, string CenterName, string CenterCode, string Address, string Pincode, int City, int State, string ContactNo, string Alternate1, string Alternate2, string GstinNo, DateTime RegDate, string Status,string Action)
+        public void PickUpMasterSave(int PickupID, string FirstName, string LastName, string UserName, string Password, string CenterName, string CenterCode, string Address, string Pincode, int City, int State, string ContactNo, string Alternate1, string Alternate2, string GstinNo, DateTime RegDate, string Status, string Action, decimal PickUpWallet)
         {
             SqlCommand cmd;
             DataSet ds = PickUpMasterGetByPickupID(PickupID);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
-                ExecuteNonQuery(out cmd, "Update PicupMaster set [FirstName]=@FirstName,[LastName]=@LastName, [UserName]=@UserName,[Password]=@Password,[CenterName]=@CenterName, [CenterCode]=@CenterCode,[Address]=@Address ,[Pincode]=@Pincode,[City]=@City ,[State]=@State,[ContactNo]=@ContactNo,[Alternate1]=@Alternate1,[Alternate2]=@Alternate2,[GstinNo]=@GstinNo,[Regdate]=@Regdate,[Status]=@Status,[Action]=@Action WHERE PickupID=@PickupID",
+                ExecuteNonQuery(out cmd, "Update PicupMaster set [FirstName]=@FirstName,[LastName]=@LastName, [UserName]=@UserName,[Password]=@Password,[CenterName]=@CenterName, [CenterCode]=@CenterCode,[Address]=@Address ,[Pincode]=@Pincode,[City]=@City ,[State]=@State,[ContactNo]=@ContactNo,[Alternate1]=@Alternate1,[Alternate2]=@Alternate2,[GstinNo]=@GstinNo,[Regdate]=@Regdate,[Status]=@Status,[Action]=@Action,[PickUpWallet]=@PickUpWallet WHERE PickupID=@PickupID",
                                  CreateParameter("@FirstName", SqlDbType.VarChar, FirstName),
                                  CreateParameter("@LastName", SqlDbType.VarChar, LastName),
                                  CreateParameter("@UserName", SqlDbType.VarChar, UserName),
@@ -42,12 +42,13 @@ namespace Business.SQLServer
                                  CreateParameter("@GstinNo", SqlDbType.VarChar, GstinNo),
                                  CreateParameter("@RegDate", SqlDbType.DateTime, RegDate),
                                  CreateParameter("@Status", SqlDbType.VarChar, Status),
-                                 CreateParameter("@Action", SqlDbType.VarChar, Action),
+                                  CreateParameter("@Action", SqlDbType.VarChar, Action),
+
                                  CreateParameter("@PickupID", SqlDbType.Int, PickupID));
             }
             else
             {
-                ExecuteNonQuery(out cmd, "Insert into PicupMaster values(@PickupID,@FirstName,@LastName,@UserName,@Password,@CenterName, @CenterCode, @Address, @Pincode, @City, @State, @ContactNo,@Alternate1,@Alternate2, @GstinNo,@RegDate,@Status,@Action)",
+                ExecuteNonQuery(out cmd, "Insert into PicupMaster values(@PickupID,@FirstName,@LastName,@UserName,@Password,@CenterName, @CenterCode, @Address, @Pincode, @City, @State, @ContactNo,@Alternate1,@Alternate2, @GstinNo,@RegDate,@Status,@Action,@PickUpWallet)",
                                  CreateParameter("@PickupID", SqlDbType.Int, PickupID),
                                  CreateParameter("@FirstName", SqlDbType.VarChar, FirstName),
                                  CreateParameter("@LastName", SqlDbType.VarChar, LastName),
@@ -65,7 +66,8 @@ namespace Business.SQLServer
                                  CreateParameter("@GstinNo", SqlDbType.VarChar, GstinNo),
                                  CreateParameter("@RegDate", SqlDbType.DateTime, RegDate),
                                  CreateParameter("@Status", SqlDbType.VarChar, Status),
-                                 CreateParameter("@Action", SqlDbType.VarChar, Action));
+                                 CreateParameter("@Action", SqlDbType.VarChar, Action),
+                                  CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet));
             }
             if (cmd != null)
                 cmd.Dispose();
@@ -83,6 +85,13 @@ namespace Business.SQLServer
         {
             return ExecuteDataSet("select * from PicupMaster where PickupID=@PickupID", null,
                 CreateParameter("@PickupID", SqlDbType.Int, PickupID));
+        }
+        public void GetByPaymentByWallet(int PickupID, decimal PickUpWallet)
+        {
+            SqlCommand cmd;
+            ExecuteNonQuery(out cmd, "update PicupMaster set [PickUpWallet]=@PickUpWallet where [PickupID]=@PickupID",
+                  CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet),
+                  CreateParameter("@PickupID", SqlDbType.Int, PickupID));
         }
         public DataSet PickUpMasterGetByPASSWORD(string Password)
         {

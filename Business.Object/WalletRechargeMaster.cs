@@ -10,11 +10,11 @@ namespace Business.Object
         #region
 
         public int Id { get; set; }
-         public int ByUser_id { get; set; }
+        public int ByUser_id { get; set; }
         public int User_id { get; set; }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
-
+        public string Status { get; set; }
         #endregion
         #region Methods
 
@@ -25,7 +25,7 @@ namespace Business.Object
             User_id = GetInt(row, "User_id");
             Amount = GetDecimal(row, "Amount");
             Date = GetDateTime(row, "Date");
-
+            Status = GetString(row, "Status");
             return base.MapData(row);
         }
         public void Save()
@@ -47,7 +47,7 @@ namespace Business.Object
 
         public void Save(IDbTransaction txn)
         {
-            new WalletRechargeDataService().WalletRechargeSave(Id, ByUser_id, User_id, Amount, Date);
+            new WalletRechargeDataService().WalletRechargeSave(Id, ByUser_id, User_id, Amount, Date, Status);
         }
         public void Delete()
         {
