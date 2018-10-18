@@ -28,7 +28,7 @@ namespace OMHRD.PickUp
 
                 List<ProductInvoice_Master> _Pro = new List<ProductInvoice_Master>();
 
-                //ReportViewer1.LocalReport.ReportPath = Server.MapPath("/Report/PickUpSale.rdlc");
+                ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Report/PickUpSale.rdlc");
                 ReportDataSource datasource = new ReportDataSource("BillGenrate", _Pro);
 
                 this.ReportViewer1.LocalReport.DataSources.Clear();
