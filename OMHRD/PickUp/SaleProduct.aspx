@@ -120,7 +120,10 @@
             </asp:Panel>
             <br />
 
-            <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="945px"></rsweb:ReportViewer>
+            <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="945px">
+                <LocalReport ReportPath="PickUpSale.rdlc">
+                </LocalReport>
+            </rsweb:ReportViewer>
         </div>
     </div>
 
