@@ -23,6 +23,17 @@ namespace OMHRD.PickUp
             GetMaxbillid();
             if (!IsPostBack)
             {
+
+                //PrintBill();
+
+                List<ProductInvoice_Master> _Pro = new List<ProductInvoice_Master>();
+
+                ReportViewer1.LocalReport.ReportPath = Server.MapPath("/Report/PickUpSale.rdlc");
+                ReportDataSource datasource = new ReportDataSource("BillGenrate", _Pro);
+
+                this.ReportViewer1.LocalReport.DataSources.Clear();
+                this.ReportViewer1.LocalReport.DataSources.Add(datasource);
+
                 grid();
                 fillCategory();
                 fillUser();
@@ -62,7 +73,7 @@ namespace OMHRD.PickUp
                 _state.Insert(0, sm);
                 ddlUser.DataSource = _state;
                 ddlUser.DataTextField = "User_Name";
-                ddlUser.DataValueField = "User_Name";
+                ddlUser.DataValueField = "Registration_ID";
                 ddlUser.DataBind();
             }
             catch (Exception ex)
@@ -449,7 +460,8 @@ namespace OMHRD.PickUp
         {
             try
             {
-                int UserId = ddlUser.SelectedIndex;
+                int UserId = 0;
+                Int32.TryParse(ddlUser.SelectedValue, out UserId);
                 List<ProductInvoice_Master> _Pro = ProductInvoice_MasterCollection.GetAll().FindAll(x => x.BILL_ID == billid);
                 #region Company
                 string CompanyName = USERPROFILEMASTER.GetByUser_Name("OMHRD").First_Name;

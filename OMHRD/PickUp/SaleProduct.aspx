@@ -121,7 +121,7 @@
             <br />
 
             <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="945px">
-                <LocalReport ReportPath="PickUpSale.rdlc">
+                <LocalReport ReportPath="./Report/PickUpSale.rdlc">
                 </LocalReport>
             </rsweb:ReportViewer>
         </div>

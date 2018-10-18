@@ -97,3 +97,6 @@ D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Release\RdlCom
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Release\RdlCompile.compiled
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Release\OMHRD.dll
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Release\OMHRD.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ReportViewer.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\OMHRD\obj\Release\OMHRD.csprojResolveAssemblyReference.cache
