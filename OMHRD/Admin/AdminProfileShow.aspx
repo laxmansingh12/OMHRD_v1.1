@@ -173,8 +173,7 @@
             var tb13 = $('<%= "#" + txtShipAdd.ClientID%>').val();
             var tb14 = $('<%= "#" + txtShipAdd2.ClientID%>').val();
             var tb15 = $('<%= "#" + txtShipZipCode.ClientID%>').val();
-            if ($('<%="#"+checkAddress.ClientID%>').is(":checked"))
-            {
+            if ($('<%="#"+checkAddress.ClientID%>').is(":checked")) {
                 $('<%= "#" + txtShipFname.ClientID%>').val(tb1);
                 $('<%= "#" + txtShipLname.ClientID%>').val(tb2);
                 $('<%= "#" + txtShipAdd.ClientID%>').val(tb3);
@@ -216,9 +215,9 @@
             <div class="col-md-6">
                 <p>&nbsp;</p>
                 <div>
-                    <h2 style="font-size: 16px;">Print <a href="#">ID Card</a></h2>
+                    <h2>Print <a href="#">ID Card</a></h2>
                     <br />
-                    <h2 style="font-size: 16px;">Amount in wallet  <i class="fa fa-inr" style="font-size: 18px; color: red"></i>
+                    <h2>Amount in wallet  <i class="fa fa-inr" style="font-size: 18px; color: red"></i>
                         <asp:Label runat="server" ID="lblWallet"></asp:Label></h2>
                 </div>
             </div>

@@ -233,16 +233,16 @@
                                                 <div class="col-sm-12">
                                                     <ul class="multi-column-dropdown">
                                                         <li><a href="AdminWalletRecharge.aspx">Self Recharge</a></li>
-                                                        <li><a href="WalletRecharge.aspx">Usre Recharge</a></li>
+                                                        <li><a href="WalletRecharge.aspx">User Recharge</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </ul>
                                     </li>
+                                    <li class="active"><a href="ShoppingHistory.aspx" class="act">Payment Details</a></li>
                                     <li class="active"><a href="frmFamilyTreeHierarchyChart.aspx" class="act">Genealogy</a></li>
                                     <li class="active"><a class="buttonblink" href="../ProductSale/Default.aspx" style="color: white">OMHRD Shopping Mall</a></li>
-                                    <li class="active"><a href="ShoppingHistory.aspx" class="act">Shopping History</a></li>
                                     <li class="active"><a href="USerList.aspx" class="act">User Details</a></li>
                                     <li class="active"><a href="PpaymentReceive.aspx" class="act">Payment Recive</a></li>
                                     <li class="active"><a class="act" href="frmpayout.aspx">Payout</a></li>

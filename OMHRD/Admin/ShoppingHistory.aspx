@@ -4,20 +4,82 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+
+        <div class="panel panel-primary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&nbsp;</p>
+                    <h3 style="float: left; color: #1292aa;">MY AMOUNT DETAILS</h3>
+                    <br />
+                    <div>
+                        <br />
+                        <h2><font color="red"></font></h2>
+                    </div>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <p>&nbsp;</p>
+                    <div>
+                        <h2>Amount in wallet  <i class="fa fa-inr" style="font-size: 18px; color: red"></i></h2>
+                    </div>
+                </div>
+            </div>
+            <form id="Refresh" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="padding-right: 7px;">
+                                <h3><strong>Amount in wallet</strong> <a href="Default.aspx"><span class="glyphicon glyphicon-refresh"></span></a></h3>
+                            </div>
+                            <div>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Amount in wallet : <i class="fa fa-inr" style="font-size: 18px; color: red"></i></th>
+                                            <th>
+                                                <asp:Label runat="server" ID="lblWallet"></asp:Label>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3><strong>Shopping Details</strong></h3>
+                            </div>
+                            <div class="table-responsive allowTextWrap">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Total Shopping : </th>
+                                            <th>
+                                                <asp:Label runat="server" ID="Label3"></asp:Label>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h4>Your Orders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  <strong>My Total Shopping : &#8377;<asp:Label runat="server" ID="lbltotal"></asp:Label></strong></h4>
             </div>
-
             <div class="row">
                 <div class="col-md-12">
-
                     <asp:ListView ID="ListView1" runat="server" Visible="true" ItemPlaceholderID="PlaceHolder1">
                         <LayoutTemplate>
                             <asp:PlaceHolder ID="PlaceHolder1" runat="server" />
                         </LayoutTemplate>
-
                         <ItemTemplate>
                             <div class="col-sm-12">
                                 <div class="new-collections-grid1 animated wow slideInUp product-detail" data-wow-delay=".5s">

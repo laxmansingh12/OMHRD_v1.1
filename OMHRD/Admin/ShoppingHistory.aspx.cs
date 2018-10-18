@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Object;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -16,6 +17,8 @@ namespace OMHRD.Admin
         {
             if (!IsPostBack)
             {
+                decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
+                lblWallet.Text = Am.ToString();
                 GetAddtoCartDetail();
                 GetTotalSale();
             }
@@ -23,25 +26,33 @@ namespace OMHRD.Admin
 
         void GetTotalSale()
         {
-            int userId = int.Parse(Session["loginid"].ToString());
-            String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
-            SqlConnection con = new SqlConnection(strConnString);
-            string selectSql = "select sum(Amount) as TotalAmount from UserOrderPaymenttbl where OrderStatus='Success' and UserId="+ userId + "";
-            SqlCommand com = new SqlCommand(selectSql, con);
-            try
+            if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))
             {
-                con.Open();
-                using (SqlDataReader read = com.ExecuteReader())
+                String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+                SqlConnection con = new SqlConnection(strConnString);
+                SqlCommand com = new SqlCommand("usp_GetOffOnLineShopping", con);
+                com.Parameters.AddWithValue("@UserId", int.Parse(Session["loginid"].ToString()));
+                com.CommandType = CommandType.StoredProcedure;
+                try
                 {
-                    while (read.Read())
+                    con.Open();
+                    using (SqlDataReader read = com.ExecuteReader())
                     {
-                        lbltotal.Text = (read["TotalAmount"].ToString());
+                        while (read.Read())
+                        {
+                            lbltotal.Text = (read["TotalAmount"].ToString());
+                        }
                     }
                 }
+                finally
+                {
+                    con.Close();
+                }
             }
-            finally
+            else
             {
-                con.Close();
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('User not login');</Script>", false);
+                return;
             }
         }
 

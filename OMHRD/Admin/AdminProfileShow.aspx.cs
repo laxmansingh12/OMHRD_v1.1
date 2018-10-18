@@ -23,7 +23,7 @@ namespace OMHRD.Admin
                 fillNEWUSER();
                 BinddropParentUser();
                 Member_detail(int.Parse(Session["loginid"].ToString()));
-                decimal Am = PaymentMaster.GetByUser_Name(Session["UserName"].ToString()).Amount;
+                decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
                 lblWallet.Text = Am.ToString();
             }
         }
