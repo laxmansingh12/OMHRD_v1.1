@@ -297,12 +297,11 @@ F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.dll
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb

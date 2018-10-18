@@ -402,13 +402,13 @@ F:\Office Work\Aspx\BackUp\OMHRD\Business.SQLServer\bin\Debug\Business.Common.dl
 F:\Office Work\Aspx\BackUp\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.dll
 F:\Office Work\Aspx\BackUp\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.pdb
 F:\Office Work\Aspx\BackUp\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.csprojResolveAssemblyReference.cache
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.Common.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.Common.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.SQLServer.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.SQLServer\obj\Debug\Business.SQLServer.pdb

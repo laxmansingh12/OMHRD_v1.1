@@ -997,15 +997,6 @@ F:\Office Work\Aspx\BackUp\OMHRD\Business.Object\bin\Debug\Business.SQLServer.pd
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Object\bin\Debug\Business.Common.pdb
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Object\obj\Debug\Business.Object.dll
 F:\Office Work\Aspx\BackUp\OMHRD\Business.Object\obj\Debug\Business.Object.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.csprojResolveAssemblyReference.cache
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Common.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.SQLServer.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.SQLServer.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Common.pdb
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.dll
-D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.csprojResolveAssemblyReference.cache
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.pdb
@@ -1015,3 +1006,12 @@ F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.SQL
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Common.pdb
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.dll
 F:\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.csprojResolveAssemblyReference.cache
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Object.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Common.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.SQLServer.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.SQLServer.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\bin\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.dll
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Object\obj\Debug\Business.Object.pdb
