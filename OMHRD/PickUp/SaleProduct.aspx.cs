@@ -662,7 +662,8 @@ namespace OMHRD.PickUp
                 otp += character;
             }
             ViewState["GenerateOTP"] = otp;
-            OTP = ViewState["GenerateOTP"].ToString();
+            //  OTP = ViewState["GenerateOTP"].ToString();
+            OTP = "00000";
             int UserId = ddlUser.SelectedIndex;
             string Contact = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
             Sendmsg("Your OTP is " + " " + OTP, Contact);

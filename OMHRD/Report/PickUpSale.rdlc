@@ -1172,17 +1172,20 @@
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox6">
+                            <Textbox Name="Textbox70">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Total CGST </Value>
+                                      <Value>Total CGST</Value>
                                       <Style>
-                                        <FontSize>9pt</FontSize>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontFamily>Times New Roman</FontFamily>
                                         <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -1191,7 +1194,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox6</rd:DefaultName>
+                              <rd:DefaultName>Textbox70</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -1218,7 +1221,7 @@
                         <TablixCell />
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox76">
+                            <Textbox Name="Textbox94">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
@@ -1229,7 +1232,6 @@
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
-                                        <Format>'₹'0;('₹'0)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -1238,7 +1240,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox76</rd:DefaultName>
+                              <rd:DefaultName>Textbox94</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -1248,7 +1250,6 @@
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
                                 <PaddingBottom>2pt</PaddingBottom>
-                                <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
                               </Style>
                             </Textbox>
                           </CellContents>
@@ -1599,8 +1600,10 @@
                       <Group Name="Details" />
                       <TablixMembers>
                         <TablixMember />
-                        <TablixMember />
                       </TablixMembers>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>Before</KeepWithGroup>
                     </TablixMember>
                     <TablixMember>
                       <KeepWithGroup>Before</KeepWithGroup>
