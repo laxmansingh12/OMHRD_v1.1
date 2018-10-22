@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="AddtoCartDataService.cs" />
     <Compile Include="FrontBannerService.cs" />
+    <Compile Include="PickUpItemEnterMasterService.cs" />
     <Compile Include="ProductBill_MasterDataService.cs" />
     <Compile Include="ProductInvoice_MasterDataService.cs" />
     <Compile Include="OrderBillMasterDataService.cs" />

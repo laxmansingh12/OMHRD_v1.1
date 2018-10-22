@@ -305,3 +305,4 @@ D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debu
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\bin\Debug\Business.Common.pdb
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.dll
 D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.pdb
+D:\Software Work\Office Work\Aspx\Running Project\OMHRD\Business.Common\obj\Debug\Business.Common.csprojResolveAssemblyReference.cache

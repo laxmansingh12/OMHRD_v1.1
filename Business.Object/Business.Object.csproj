@@ -81,6 +81,8 @@
     <Compile Include="Bill.cs" />
     <Compile Include="FrontBannerMaster.cs" />
     <Compile Include="FrontBannerMasterCollection.cs" />
+    <Compile Include="PickUpItemMaster.cs" />
+    <Compile Include="PickUpItemMasterCollection.cs" />
     <Compile Include="ProductBill_Master.cs" />
     <Compile Include="ProductBill_MasterCollection.cs" />
     <Compile Include="ProductInvoice_Master.cs" />

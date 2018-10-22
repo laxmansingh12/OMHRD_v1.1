@@ -24,6 +24,10 @@
                 <h2 style="font-size: 12px;">We recommend that you change your password often. </h2>
                 <br />
             </div>
+            <div class="col-md-6">
+                <h2>Amount in wallet  <i class="fa fa-inr" style="font-size: 18px; color: red"></i>
+                    <asp:Label runat="server" ID="lblWallet"></asp:Label></h2>
+            </div>
         </div>
 
         <form id="Refresh" method="post">

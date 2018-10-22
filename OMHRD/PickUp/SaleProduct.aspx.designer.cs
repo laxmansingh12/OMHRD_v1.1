@@ -40,6 +40,15 @@ namespace OMHRD.PickUp {
         protected global::System.Web.UI.WebControls.TextBox txtItemCode;
         
         /// <summary>
+        /// txtrate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtrate;
+        
+        /// <summary>
         /// txtcgst control.
         /// </summary>
         /// <remarks>
@@ -67,15 +76,6 @@ namespace OMHRD.PickUp {
         protected global::System.Web.UI.WebControls.TextBox txtigst;
         
         /// <summary>
-        /// txtrate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtrate;
-        
-        /// <summary>
         /// numqty control.
         /// </summary>
         /// <remarks>
@@ -92,6 +92,15 @@ namespace OMHRD.PickUp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsave;
+        
+        /// <summary>
+        /// btnreset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnreset;
         
         /// <summary>
         /// gdvNotice control.

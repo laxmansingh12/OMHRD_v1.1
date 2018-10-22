@@ -658,6 +658,7 @@
     <Content Include="PickUp\images\si.jpg" />
     <Content Include="PickUp\images\si1.jpg" />
     <Content Include="PickUp\images\si2.jpg" />
+    <Content Include="PickUp\ItemEntry.aspx" />
     <Content Include="PickUp\js\bootstrap-3.1.1.min.js" />
     <Content Include="PickUp\js\classie.js" />
     <Content Include="PickUp\js\imagezoom.js" />
@@ -1346,6 +1347,13 @@
     </Compile>
     <Compile Include="PickUp\frmProfileUpdate.aspx.designer.cs">
       <DependentUpon>frmProfileUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp\ItemEntry.aspx.cs">
+      <DependentUpon>ItemEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickUp\ItemEntry.aspx.designer.cs">
+      <DependentUpon>ItemEntry.aspx</DependentUpon>
     </Compile>
     <Compile Include="PickUp\OrderFrm.aspx.cs">
       <DependentUpon>OrderFrm.aspx</DependentUpon>

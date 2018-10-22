@@ -75,6 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </li>
                                     <li class="active"><a href="AllItemsList.aspx" class="act">Product List</a></li>
                                     <li class="active"><a href="UserList.aspx" class="act">User List</a></li>
+                                     <li class="active"><a href="ItemEntry.aspx" class="act">Product Entry</a></li>
                                     <li class="active"><a href="SaleProduct.aspx" class="act">Sale Form</a></li>
                                     <li class="active"><a href="OrderFrm.aspx" class="act">Order Form</a></li>
                                     <li class="active"><a href="#" class="act">Re Purchase</a></li>

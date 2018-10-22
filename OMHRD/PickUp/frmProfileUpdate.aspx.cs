@@ -16,6 +16,8 @@ namespace OMHRD.PickUp
             {
                 fillstate();
                 Member_detail(int.Parse(Session["PickupID"].ToString()));
+                decimal Am = PickupMaster.GetByPickupID(int.Parse(Session["PickupID"].ToString())).PickUpWallet;
+                lblWallet.Text = Am.ToString();
             }
         }
         public void fillstate()

@@ -33,8 +33,6 @@ namespace OMHRD.PickUp
 
                 this.ReportViewer1.LocalReport.DataSources.Clear();
                 this.ReportViewer1.LocalReport.DataSources.Add(datasource);
-
-                grid();
                 fillCategory();
                 fillUser();
                 btndallbill.Visible = false;
@@ -47,14 +45,14 @@ namespace OMHRD.PickUp
         {
             try
             {
-                List<ITEM_MASTER> _state = ITEM_MASTERCollection.GetAll();
-                ITEM_MASTER sm = new ITEM_MASTER();
-                sm.ITEM_ID = 0;
-                sm.ITEMNAME = "-select Category-";
+                List<PickUpItemMaster> _state = PickUpItemMasterCollection.GetAll();
+                PickUpItemMaster sm = new PickUpItemMaster();
+                sm.Id = 0;
+                sm.ITEMNAME = "-select Item-";
                 _state.Insert(0, sm);
                 ddlItem.DataSource = _state;
                 ddlItem.DataTextField = "ITEMNAME";
-                ddlItem.DataValueField = "ITEM_ID";
+                ddlItem.DataValueField = "Id";
                 ddlItem.DataBind();
             }
             catch (Exception ex)
@@ -91,21 +89,22 @@ namespace OMHRD.PickUp
                     {
                         int ItemId = int.Parse(ddlItem.SelectedValue);
                         int User = ddlUser.SelectedIndex;
-                        txtItemCode.Text = ITEM_MASTER.GetByITEM_ID(ItemId).HSNCODE;
-                        txtrate.Text = ITEM_MASTER.GetByITEM_IDRATE(ItemId).Price.ToString();
+
+                        txtItemCode.Text = PickUpItemMaster.GetByOrderId(ItemId).HSNCODE;
+                        txtrate.Text = PickUpItemMaster.GetByOrderId(ItemId).RATE_PER.ToString();
                         int UserState = USERPROFILEMASTER.GetByRegistration_ID(User).State;
                         int PicUpState = PickupMaster.GetByPickupID(int.Parse(Session["PickupID"].ToString())).State;
                         if (UserState == PicUpState)
                         {
                             txtigst.Text = "0";
-                            txtcgst.Text = ITEM_MASTER.GetByITEM_ID(ItemId).CGST.ToString();
-                            txtsgst.Text = ITEM_MASTER.GetByITEM_ID(ItemId).SGST.ToString();
+                            txtcgst.Text = PickUpItemMaster.GetByOrderId(ItemId).CGST.ToString();
+                            txtsgst.Text = PickUpItemMaster.GetByOrderId(ItemId).SGST.ToString();
                         }
                         else
                         {
                             txtcgst.Text = "0";
                             txtsgst.Text = "0";
-                            txtigst.Text = ITEM_MASTER.GetByITEM_ID(ItemId).IGST.ToString();
+                            txtigst.Text = PickUpItemMaster.GetByOrderId(ItemId).IGST.ToString();
                         }
                     }
                     else
@@ -178,8 +177,8 @@ namespace OMHRD.PickUp
                     }
                     ln.INVOICE_ID = ProductInvoice_Master.MaxId() + 1;
                     ln.ITEM_ID = int.Parse(ddlItem.SelectedValue);
-                    ln.ITEMNAME = ITEM_MASTER.GetByITEM_ID(ln.ITEM_ID).ITEMNAME;
-                    ln.HSNCODE = ITEM_MASTER.GetByITEM_ID(ln.ITEM_ID).HSNCODE;
+                    ln.ITEMNAME = PickUpItemMaster.GetByOrderId(ln.ITEM_ID).ITEMNAME;
+                    ln.HSNCODE = PickUpItemMaster.GetByOrderId(ln.ITEM_ID).HSNCODE;
                     ln.QUANTITY = decimal.Parse(numqty.Text);
                     ln.RATE_PER = decimal.Parse(txtrate.Text.Trim());
                     ln.TOTAL = total;
@@ -210,8 +209,8 @@ namespace OMHRD.PickUp
                     ln = ProductInvoice_Master.GetByINVOICE_ID(int.Parse(ViewState["id"].ToString()));
                     ln.INVOICE_ID = int.Parse(ViewState["id"].ToString());
                     ln.ITEM_ID = int.Parse(ddlItem.SelectedValue);
-                    ln.ITEMNAME = ITEM_MASTER.GetByITEM_ID(ln.ITEM_ID).ITEMNAME;
-                    ln.HSNCODE = ITEM_MASTER.GetByITEM_ID(ln.ITEM_ID).HSNCODE;
+                    ln.ITEMNAME = PickUpItemMaster.GetByOrderId(ln.ITEM_ID).ITEMNAME;
+                    ln.HSNCODE = PickUpItemMaster.GetByOrderId(ln.ITEM_ID).HSNCODE;
                     ln.QUANTITY = decimal.Parse(numqty.Text);
                     ln.RATE_PER = decimal.Parse(txtrate.Text.Trim());
                     ln.TOTAL = total;
@@ -256,7 +255,7 @@ namespace OMHRD.PickUp
             string nid = ViewState["id"].ToString();
             ProductInvoice_Master dm = ProductInvoice_Master.GetByINVOICE_ID(int.Parse(nid));
             ddlItem.SelectedValue = dm.ITEM_ID.ToString();
-            txtItemCode.Text = ITEM_MASTER.GetByITEM_ID(ddlItem.SelectedIndex).CODE;
+            txtItemCode.Text = PickUpItemMaster.GetByOrderId(int.Parse(ddlItem.SelectedValue)).HSNCODE;
             txtcgst.Text = dm.CGST_RATE.ToString();
             txtsgst.Text = dm.SGST_RATE.ToString();
             txtigst.Text = dm.IGST_RATE.ToString();
@@ -623,7 +622,7 @@ namespace OMHRD.PickUp
             bm.Save();
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Save Successfully...');</Script>", false);
             PrintBill();
-            Page.Response.Redirect(Page.Request.Url.ToString(), true);
+
         }
         protected void btndallbill_Click(object sender, EventArgs e)
         {
@@ -674,16 +673,32 @@ namespace OMHRD.PickUp
 
         protected void rdCash_CheckedChanged(object sender, EventArgs e)
         {
-            btndallbill.Visible = true;
-            btnOtp.Visible = false;
-            txtComfirmotp.Visible = false;
+            if (ddlUser.SelectedIndex == 0)
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Please select user.!!!')</script>", false);
+                return;
+            }
+            else
+            {
+                btndallbill.Visible = true;
+                btnOtp.Visible = false;
+                txtComfirmotp.Visible = false;
+            }
         }
 
         protected void rdWalllet_CheckedChanged(object sender, EventArgs e)
         {
-            btndallbill.Visible = false;
-            btnOtp.Visible = true;
-            txtComfirmotp.Visible = false;
+            if (ddlUser.SelectedIndex == 0)
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Please select user.!!!')</script>", false);
+                return;
+            }
+            else
+            {
+                btndallbill.Visible = false;
+                btnOtp.Visible = true;
+                txtComfirmotp.Visible = false;
+            }
         }
         public void Tranfer()
         {
@@ -741,7 +756,10 @@ namespace OMHRD.PickUp
             if (OTP == Comfirmotp)
             {
                 Tranfer();
-
+                btndallbill.Visible = false;
+                btnOtp.Visible = false;
+                txtComfirmotp.Visible = false;
+                btnWelletpay.Visible = false;
             }
             else
             {
@@ -753,6 +771,11 @@ namespace OMHRD.PickUp
         protected void ddlUser_SelectedIndexChanged(object sender, EventArgs e)
         {
             ClearControls(this);
+        }
+
+        protected void btnreset_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Request.Url.AbsoluteUri);
         }
     }
 }
