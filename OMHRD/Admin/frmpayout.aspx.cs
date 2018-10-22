@@ -115,6 +115,7 @@ namespace OMHRD.AdminPanel
             {
                 ddlmonth.Items.Add(new ListItem(dt.AddMonths(-1 * i).ToString("MMMM-yyyy"), dt.AddMonths(-1 * i).ToString("ddMMyyyy")));
             }
+            ddlmonth.Items.Insert(0, new ListItem("--Select Date --", "0"));
         }
         public void TotalAmount()
         {
@@ -214,11 +215,14 @@ namespace OMHRD.AdminPanel
                 taxableTDS = Math.Round(taxableTDS, 2);
             }
         }
+
+
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
 
             try
             {
+
                 PeyoutMaster cm = new PeyoutMaster();
                 if (btnsubmit.Text == "Submit")
                 {
@@ -226,6 +230,10 @@ namespace OMHRD.AdminPanel
                     if (dropActive.SelectedIndex == 0)
                     { }
                     cm.User_ID = dropActive.SelectedIndex;
+                    for (int i = 0; i < gdvActiveUser.Rows.Count; i++)
+                    {
+
+                    }
                     cm.TotalAmount = decimal.Parse(txttotalAmount.Text);
 
                     cm.TDS = decimal.Parse(txtTds.Text);

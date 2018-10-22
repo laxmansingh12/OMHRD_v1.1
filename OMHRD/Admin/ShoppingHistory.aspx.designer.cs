@@ -22,22 +22,13 @@ namespace OMHRD.Admin {
         protected global::System.Web.UI.WebControls.Label lblWallet;
         
         /// <summary>
-        /// Label3 control.
+        /// lblOnlinetotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// lbltotal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotal;
+        protected global::System.Web.UI.WebControls.Label lblOnlinetotal;
         
         /// <summary>
         /// ListView1 control.

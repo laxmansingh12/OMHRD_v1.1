@@ -20,11 +20,11 @@ namespace OMHRD.Admin
                 decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
                 lblWallet.Text = Am.ToString();
                 GetAddtoCartDetail();
-                GetTotalSale();
+                GetTotalOnlineSale();
             }
         }
 
-        void GetTotalSale()
+        void GetTotalOnlineSale()
         {
             if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))
             {
@@ -40,7 +40,7 @@ namespace OMHRD.Admin
                     {
                         while (read.Read())
                         {
-                            lbltotal.Text = (read["TotalAmount"].ToString());
+                            lblOnlinetotal.Text = (read["TotalAmount"].ToString());
                         }
                     }
                 }

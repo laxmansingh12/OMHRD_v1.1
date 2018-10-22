@@ -56,7 +56,7 @@
                                         <tr>
                                             <th>Total Shopping : </th>
                                             <th>
-                                                <asp:Label runat="server" ID="Label3"></asp:Label>
+                                                <asp:Label runat="server" ID="lblOnlinetotal"></asp:Label>
                                             </th>
                                         </tr>
                                     </tbody>
@@ -71,8 +71,7 @@
 
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h4>Your Orders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <strong>My Total Shopping : &#8377;<asp:Label runat="server" ID="lbltotal"></asp:Label></strong></h4>
+                <h4>Your Orders</h4>
             </div>
             <div class="row">
                 <div class="col-md-12">

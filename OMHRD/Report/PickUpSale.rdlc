@@ -13,19 +13,19 @@
                       <Width>0.82699cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>3.3552cm</Width>
+                      <Width>3.36279cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.50081cm</Width>
+                      <Width>1.71481cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.38098cm</Width>
+                      <Width>1.36292cm</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>1.50679cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.02342cm</Width>
+                      <Width>1.05889cm</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>1.39472cm</Width>
@@ -37,7 +37,7 @@
                       <Width>1.36809cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>1.18694cm</Width>
+                      <Width>1.26191cm</Width>
                     </TablixColumn>
                     <TablixColumn>
                       <Width>1.42505cm</Width>
@@ -833,6 +833,7 @@
                                       <Value>=Fields!RATE_PER.Value</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
+                                        <Format>'₹'0;('₹'0)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -851,6 +852,7 @@
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
                                 <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
                               </Style>
                             </Textbox>
                           </CellContents>
@@ -1622,7 +1624,7 @@
                 <DataSetName>BillGenrate</DataSetName>
                 <Top>0.03175cm</Top>
                 <Height>5.59375cm</Height>
-                <Width>17.73181cm</Width>
+                <Width>18.04577cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1634,7 +1636,7 @@
             <Top>13.32006cm</Top>
             <Left>0.03043cm</Left>
             <Height>5.6255cm</Height>
-            <Width>17.73184cm</Width>
+            <Width>18.04577cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3695,11 +3697,11 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>1.26146cm</Height>
+                      <Height>1.39375cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox193">
+                            <Textbox Name="Textbox6">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
@@ -3741,7 +3743,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox193</rd:DefaultName>
+                              <rd:DefaultName>Textbox6</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -3757,7 +3759,7 @@
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox195">
+                            <Textbox Name="Textbox9">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
@@ -3797,7 +3799,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox195</rd:DefaultName>
+                              <rd:DefaultName>Textbox9</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -3813,7 +3815,7 @@
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox197">
+                            <Textbox Name="Textbox13">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
@@ -3852,7 +3854,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox197</rd:DefaultName>
+                              <rd:DefaultName>Textbox13</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -3879,16 +3881,12 @@
                 </TablixColumnHierarchy>
                 <TablixRowHierarchy>
                   <TablixMembers>
-                    <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
-                    </TablixMember>
-                    <TablixMember>
-                      <Group Name="Details1" />
-                    </TablixMember>
+                    <TablixMember />
+                    <TablixMember />
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <Top>0.11642cm</Top>
-                <Height>2.07313cm</Height>
+                <Height>2.20542cm</Height>
                 <Width>17.71377cm</Width>
                 <Style>
                   <Border>
@@ -3900,7 +3898,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>18.94628cm</Top>
             <Left>0.03043cm</Left>
-            <Height>2.18955cm</Height>
+            <Height>2.32184cm</Height>
             <Width>17.71378cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -3911,8 +3909,8 @@
           </Rectangle>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
-        <Height>21.13583cm</Height>
-        <Width>17.78353cm</Width>
+        <Height>21.26812cm</Height>
+        <Width>18.0762cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3920,10 +3918,10 @@
         </Style>
       </Rectangle>
     </ReportItems>
-    <Height>8.32119in</Height>
+    <Height>8.37328in</Height>
     <Style />
   </Body>
-  <Width>7.01542in</Width>
+  <Width>7.11662in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

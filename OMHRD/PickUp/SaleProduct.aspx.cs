@@ -623,6 +623,7 @@ namespace OMHRD.PickUp
             bm.Save();
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Save Successfully...');</Script>", false);
             PrintBill();
+            Page.Response.Redirect(Page.Request.Url.ToString(), true);
         }
         protected void btndallbill_Click(object sender, EventArgs e)
         {
