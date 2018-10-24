@@ -47,25 +47,55 @@ namespace OMHRD.User
                 string script = "<script>alert('" + ex.Message + "');</script>";
             }
         }
-        public void fillNEWUSER()
+        //public void fillNEWUSER()
+        //{
+        //    try
+        //    {
+        //        string UserName = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).User_Name;
+        //        List<USERPROFILEMASTER> _state = USERPROFILEMASTERCollection.GetByReference_Id(UserName).Where(x => x.UserParentId.HasValue == false || x.UserParentId.Value <= 0).ToList();
+        //        USERPROFILEMASTER sm = new USERPROFILEMASTER();
+        //        sm.Registration_ID = 0;
+        //        sm.User_Name = "- Our Reference Person-";
+        //        _state.Insert(0, sm);
+        //        dropNewUser.DataSource = _state;
+        //        dropNewUser.DataTextField = "User_Name";
+        //        dropNewUser.DataValueField = "Registration_ID";
+        //        dropNewUser.DataBind();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        string script = "<script>alert('" + ex.Message + "');</script>";
+        //    }
+        //}
+        public DataTable OurRefence()
         {
+            string RefenceName = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).User_Name;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DB"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("GetNotLinkReferenceUsers", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Reference_Id", RefenceName);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
             try
             {
-                string UserName = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).User_Name;
-                List<USERPROFILEMASTER> _state = USERPROFILEMASTERCollection.GetByReference_Id(UserName).Where(x => x.UserParentId.HasValue == false || x.UserParentId.Value <= 0).ToList();
-                USERPROFILEMASTER sm = new USERPROFILEMASTER();
-                sm.Registration_ID = 0;
-                sm.User_Name = "- Our Reference Person-";
-                _state.Insert(0, sm);
-                dropNewUser.DataSource = _state;
-                dropNewUser.DataTextField = "User_Name";
-                dropNewUser.DataValueField = "Registration_ID";
-                dropNewUser.DataBind();
+                con.Open();
+                da.Fill(ds);
+                con.Close();
             }
             catch (Exception ex)
             {
-                string script = "<script>alert('" + ex.Message + "');</script>";
+
             }
+            return ds.Tables[0];
+        }
+        public void fillNEWUSER()
+        {
+            var dt = OurRefence();
+            dropNewUser.DataTextField = "User_Name";
+            dropNewUser.DataValueField = "Registration_ID";
+            dropNewUser.DataSource = dt;
+            dropNewUser.DataBind();
+            dropNewUser.Items.Insert(0, new ListItem("- Our Reference Person-", "0"));
         }
         public DataTable GetItems()
         {
@@ -318,10 +348,12 @@ namespace OMHRD.User
                 um.SmartDeliveryDate = DateTime.Parse(lblSmartDeliveryDate.Text);
                 um.Website = txtwebsite.Text;
                 um.Address = txtAddress.Text;
-                um.AddressLine2 = txtAddressline2.Text;
+                //um.AddressLine2 = txtAddressline2.Text;
+                //um.State = int.Parse(DropState.SelectedValue);
+                //um.City = int.Parse(DropCity.SelectedValue);
                 um.State = int.Parse(DropState.SelectedValue);
+                fillcity();
                 um.City = int.Parse(DropCity.SelectedValue);
-
                 um.StateOther = txtStateOther.Text;
                 um.ZipCode = txtZipCode.Text;
                 um.ShippingFirstName = txtShipFname.Text;
@@ -329,6 +361,7 @@ namespace OMHRD.User
                 um.ShippingAddress = txtShipAdd.Text;
                 um.ShippingAddressLine2 = txtShipAdd2.Text;
                 um.ShippingState = int.Parse(dropShipstate.SelectedValue);
+                fillShippingCity();
                 um.ShippingCity = int.Parse(dropShipCity.SelectedValue);
 
                 um.ShippingZip = txtShipZipCode.Text;

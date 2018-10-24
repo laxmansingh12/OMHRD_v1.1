@@ -62,6 +62,12 @@ namespace Business.Object
             obj.MapData(new PickUpMasterDataSevice().PickUpMasterGetByPickupID(PickupID));
             return obj;
         }
+        public static PickupMaster GetByPickupName(string  UserName)
+        {
+            PickupMaster obj = new PickupMaster();
+            obj.MapData(new PickUpMasterDataSevice().PickUpMasterGetByPickupUserName(UserName));
+            return obj;
+        }
         public void PaymentByWallet(int PickupID, decimal PickUpWallet)
         {
             new PickUpMasterDataSevice().GetByPaymentByWallet(PickupID, PickUpWallet);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Object;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,12 @@ namespace OMHRD.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                lblProfileName.Text = " Wellcome," + " " + USERPROFILEMASTER.GetByUser_Name(Session["UserName"] == null ? string.Empty : Session["UserName"].ToString()).User_Name;
+                decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
+                lblWallet.Text = Am.ToString();
+            }
         }
     }
 }

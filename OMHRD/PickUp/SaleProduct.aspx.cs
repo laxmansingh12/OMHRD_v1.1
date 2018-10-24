@@ -17,7 +17,9 @@ namespace OMHRD.PickUp
     public partial class SaleProduct : System.Web.UI.Page
     {
         int billid = 0;
-        static decimal maxrate = 0; public static string OTP;
+        static decimal maxrate = 0;
+        public static string OTP;
+        static string PaymentMod;
         protected void Page_Load(object sender, EventArgs e)
         {
             GetMaxbillid();
@@ -276,7 +278,7 @@ namespace OMHRD.PickUp
                 dm.INVOICE_ID = int.Parse(did);
                 dm.Delete();
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Data Delete....');</Script>", false);
-                Response.Redirect("SaleProduct.aspx");
+                // Response.Redirect("SaleProduct.aspx");
                 grid();
             }
             catch (Exception ex)
@@ -505,6 +507,7 @@ namespace OMHRD.PickUp
                 string InvoiDate = dt.ToString();
                 string Phone = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
                 string Email = USERPROFILEMASTER.GetByRegistration_ID(UserId).Email;
+
                 #endregion
                 decimal totamt = Math.Round(ProductBill_Master.GetByBILL_ID(billid).TOTAL, 0);
                 var values = totamt.ToString(CultureInfo.InvariantCulture).Split('.');
@@ -555,7 +558,8 @@ namespace OMHRD.PickUp
                 rpt[24] = new ReportParameter("Phone", Phone);
                 rpt[25] = new ReportParameter("Email", Email);
                 rpt[26] = new ReportParameter("TotalAmountWord", rupee);
-                rpt[27] = new ReportParameter("PaymentMod", "Wallet");
+
+                rpt[27] = new ReportParameter("PaymentMod", PaymentMod);
                 rpt[28] = new ReportParameter("PickUpName", PickUpName);
                 rpt[29] = new ReportParameter("PickUpAddress", PickUpAddress);
                 rpt[30] = new ReportParameter("PickUpContact", PickUpContact);
@@ -666,7 +670,7 @@ namespace OMHRD.PickUp
             OTP = "00000";
             int UserId = ddlUser.SelectedIndex;
             string Contact = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
-            Sendmsg("Your OTP is " + " " + OTP, Contact);
+           // Sendmsg("Your OTP is " + " " + OTP, Contact);
             txtComfirmotp.Visible = true;
             btnWelletpay.Visible = true;
         }
@@ -680,6 +684,7 @@ namespace OMHRD.PickUp
             }
             else
             {
+                PaymentMod = "Cash";
                 btndallbill.Visible = true;
                 btnOtp.Visible = false;
                 txtComfirmotp.Visible = false;
@@ -695,6 +700,7 @@ namespace OMHRD.PickUp
             }
             else
             {
+                PaymentMod = "Wallet";
                 btndallbill.Visible = false;
                 btnOtp.Visible = true;
                 txtComfirmotp.Visible = false;

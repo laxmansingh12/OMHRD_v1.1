@@ -43,6 +43,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class="header">
             <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="background-color: black; color: white;">
+                            <marquee behavior="scroll" direction="lift" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+                            <h3><a href="Default.aspx">  <asp:Label runat="server" ID="lblProfileName" style="color: white;"></asp:Label> </a></h3>
+                       </marquee>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="background-color: black; color: white; padding: 2px;">
+                            <h3>Amount in wallet : <i class="fa fa-inr" style="font-size: 18px; color: red"></i>
+                                <asp:Label runat="server" ID="lblWallet"></asp:Label></h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="logo-nav">
                     <div class="logo-nav-left1">
                         <nav class="navbar navbar-default">
@@ -75,10 +90,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </li>
                                     <li class="active"><a href="AllItemsList.aspx" class="act">Product List</a></li>
                                     <li class="active"><a href="UserList.aspx" class="act">User List</a></li>
-                                     <li class="active"><a href="ItemEntry.aspx" class="act">Product Entry</a></li>
+                                    <li class="active"><a href="ItemEntry.aspx" class="act">Product Entry</a></li>
                                     <li class="active"><a href="SaleProduct.aspx" class="act">Sale Form</a></li>
                                     <li class="active"><a href="OrderFrm.aspx" class="act">Order Form</a></li>
-                                    <li class="active"><a href="#" class="act">Re Purchase</a></li>
+                                    <li class="active"><a href="WalletRecharge.aspx" class="act">Wallet Recharge</a></li>
                                     <li class="active"><a class="act" href="../E_Commerce/Default.aspx">Help Desk</a></li>
                                     <li class="active"><a class="act" href="../Default.aspx">Log Out</a></li>
                                 </ul>

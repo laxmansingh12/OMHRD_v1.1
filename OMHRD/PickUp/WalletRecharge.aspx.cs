@@ -135,5 +135,10 @@ namespace OMHRD.PickUp
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert(error);</script>", false);
             }
         }
+
+        protected void gdvNotice_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
+        }
     }
 }

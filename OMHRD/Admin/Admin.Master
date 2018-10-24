@@ -131,6 +131,21 @@
         <asp:ScriptManager ID="scriptmanager1" runat="server"></asp:ScriptManager>
         <div class="header">
             <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="background-color: black; color: white;">
+                            <marquee behavior="scroll" direction="lift" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+                            <h3><a href="Default.aspx">  <asp:Label runat="server" ID="lblProfileName" style="color: white;"></asp:Label> </a></h3>
+                       </marquee>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="background-color: black; color: white; padding: 2px;">
+                            <h3>Amount in wallet : <i class="fa fa-inr" style="font-size: 18px; color: red"></i>
+                                <asp:Label runat="server" ID="lblWallet"></asp:Label></h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="logo-nav">
                     <div class="logo-nav-left1">
                         <nav class="navbar navbar-default">

@@ -472,7 +472,7 @@
                         </asp:UpdatePanel>
 
                         <div class="panel-heading" style="padding-right: 7px;">
-                            <h2><strong>NEW USER POSITION</strong></h2>
+                            <h2><strong>ACTIVE USER POSITION</strong></h2>
                         </div>
                         <div class="table-responsive allowTextWrap">
                             <table class="table">

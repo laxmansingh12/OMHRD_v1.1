@@ -6,27 +6,10 @@
     <div class="container">
 
         <div class="panel panel-primary">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&nbsp;</p>
-                    <h3 style="float: left; color: #1292aa;">MY AMOUNT DETAILS</h3>
-                    <br />
-                    <div>
-                        <br />
-                        <h2><font color="red"></font></h2>
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6">
-                    <p>&nbsp;</p>
-                    <div>
-                        <h2>Amount in wallet  <i class="fa fa-inr" style="font-size: 18px; color: red"></i></h2>
-                    </div>
-                </div>
-            </div>
+
             <form id="Refresh" method="post">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="panel panel-primary">
                             <div class="panel-heading" style="padding-right: 7px;">
                                 <h3><strong>Amount in wallet</strong> <a href="Default.aspx"><span class="glyphicon glyphicon-refresh"></span></a></h3>
@@ -45,10 +28,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3><strong>Shopping Details</strong></h3>
+                                <h3><strong>Total Shopping</strong></h3>
+                            </div>
+                            <div class="table-responsive allowTextWrap">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Total Online Shopping : </th>
+                                            <th>
+                                                <asp:Label ID="lblUSerId" runat="server"></asp:Label>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Total Offline Shopping : </th>
+                                            <th>
+                                                <asp:Label ID="Label4" runat="server"></asp:Label>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Total Shopping : </th>
+                                            <th>
+                                                <asp:Label runat="server" ID="lblOnlinetotal"></asp:Label>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3><strong>Last 3 months Shopping 	 </strong></h3>
                             </div>
                             <div class="table-responsive allowTextWrap">
                                 <table class="table">
@@ -56,7 +70,7 @@
                                         <tr>
                                             <th>Total Shopping : </th>
                                             <th>
-                                                <asp:Label runat="server" ID="lblOnlinetotal"></asp:Label>
+                                                <asp:Label runat="server" ID="Label3"></asp:Label>
                                             </th>
                                         </tr>
                                     </tbody>

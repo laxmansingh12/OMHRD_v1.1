@@ -39,9 +39,9 @@
                         </div>
                         <div class="col-md-6">
                             <label>First Name :</label>
-                            <asp:TextBox ID="txtFname" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtFname" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
                             <label>Last Name</label>
-                            <asp:TextBox ID="txtLName" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtLName" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
                             <label>User Name :</label>
                             <asp:Label ID="lblUsername" runat="server" CssClass="form-control"></asp:Label>
                             <label>Center Name :</label>
@@ -49,18 +49,18 @@
                             <label>Center  Code : </label>
                             <asp:Label ID="lblCCode" runat="server" CssClass="form-control"></asp:Label>
                             <label>Address :</label>
-                            <asp:TextBox ID="txtadd" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtadd" runat="server" Enabled="false" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
                             <label>Pincode  :</label>
-                            <asp:TextBox ID="txtPincode" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtPincode" Enabled="false" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                         <div class="col-md-6">
                             <label>State : </label>
-                            <asp:DropDownList runat="server" ID="DropState" CssClass="form-control" OnSelectedIndexChanged="DropState_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                            <asp:DropDownList runat="server" Enabled="false" ID="DropState" CssClass="form-control" OnSelectedIndexChanged="DropState_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
                             <label>City :</label>
-                            <asp:DropDownList runat="server" ID="DropCity" CssClass="form-control"></asp:DropDownList>
+                            <asp:DropDownList runat="server" Enabled="false" ID="DropCity" CssClass="form-control"></asp:DropDownList>
                             <div class="col-md-4">
                                 <label>Contact Number : </label>
-                                <asp:TextBox ID="txtContact" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="txtContact" Enabled="false" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col-md-4">
                                 <label>Alternate No. : </label>
@@ -71,7 +71,7 @@
                                 <asp:TextBox ID="txtAlternate2" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
                             <label>Gstin / Unique Id : </label>
-                            <asp:TextBox ID="txtgst" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtgst" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
                             <label>Registration Date :</label>
                             <asp:Label ID="lblRegdate" runat="server" CssClass="form-control"></asp:Label>
                             <label>Status :</label>

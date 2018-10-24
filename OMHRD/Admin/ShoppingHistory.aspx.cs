@@ -17,8 +17,15 @@ namespace OMHRD.Admin
         {
             if (!IsPostBack)
             {
-                decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
-                lblWallet.Text = Am.ToString();
+                if (Session["loginid"] != null && !string.IsNullOrEmpty(Session["loginid"].ToString()))
+                {
+                    decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
+                    lblWallet.Text = Am.ToString();
+                }
+                else
+                {
+                    Response.Redirect("../Default.aspx");
+                }
                 GetAddtoCartDetail();
                 GetTotalOnlineSale();
             }

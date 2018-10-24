@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Object;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,12 @@ namespace OMHRD.PickUp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                lblProfileName.Text = " Wellcome," + " " + PickupMaster.GetByPickupName(Session["Pickuser"] == null ? string.Empty : Session["Pickuser"].ToString()).UserName;
+                decimal Am = PickupMaster.GetByPickupID(int.Parse(Session["PickupID"].ToString())).PickUpWallet;
+                lblWallet.Text = Am.ToString();
+            }
         }
     }
 }

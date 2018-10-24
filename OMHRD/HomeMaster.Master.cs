@@ -137,7 +137,7 @@ namespace OMHRD
                 {
                     Session["Pickuser"] = this.txtPickuser.Text.Trim();
                     Session["PickupID"] = um.PickupID;
-                    Response.Redirect("PickUp/frmProfileUpdate.aspx");
+                    Response.Redirect("PickUp/SaleProduct.aspx");
                     ClearControls(this);
                 }
             }

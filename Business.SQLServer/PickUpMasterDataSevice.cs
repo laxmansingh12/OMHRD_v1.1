@@ -67,7 +67,7 @@ namespace Business.SQLServer
                                  CreateParameter("@RegDate", SqlDbType.DateTime, RegDate),
                                  CreateParameter("@Status", SqlDbType.VarChar, Status),
                                  CreateParameter("@Action", SqlDbType.VarChar, Action),
-                                    CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet),
+                              
                                   CreateParameter("@PickUpWallet", SqlDbType.Decimal, PickUpWallet));
             }
             if (cmd != null)
@@ -87,6 +87,12 @@ namespace Business.SQLServer
             return ExecuteDataSet("select * from PicupMaster where PickupID=@PickupID", null,
                 CreateParameter("@PickupID", SqlDbType.Int, PickupID));
         }
+        public DataSet PickUpMasterGetByPickupUserName(string  UserName)
+        {
+            return ExecuteDataSet("select * from PicupMaster where UserName=@UserName", null,
+                CreateParameter("@UserName", SqlDbType.VarChar, UserName));
+        }
+
         public void GetByPaymentByWallet(int PickupID, decimal PickUpWallet)
         {
             SqlCommand cmd;
