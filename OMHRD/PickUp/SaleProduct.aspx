@@ -68,7 +68,7 @@
                             <asp:TextBox ID="numqty" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <div>
                             <br />
                             <asp:Button ID="btnPickAddtocart" runat="server" Text="Add To Cart" CssClass="btn btn-success" OnClick="btnPickAddtocart_Click" />
@@ -123,7 +123,7 @@
                         <asp:TextBox runat="server" ID="txtComfirmotp" placeholder="Enter the OTP" CssClass="form-control"></asp:TextBox>
                         <asp:Button ID="btnWelletpay" runat="server" Text="Payment" CssClass="btn btn-success" OnClick="btnWelletpay_Click" />
                     </div>
-                     <asp:Button ID="btnsave" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="btnsave_Click" />
+                  <%--  <asp:Button ID="btnsave" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="btnsave_Click" />--%>
                 </div>
             </asp:Panel>
             <br />

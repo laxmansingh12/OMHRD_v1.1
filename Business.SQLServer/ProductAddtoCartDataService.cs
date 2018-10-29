@@ -82,7 +82,11 @@ namespace Business.SQLServer
             return ExecuteDataSet("Delete from ProductAddtoCart where Cart_id=@Cart_id", null,
                 CreateParameter("@Cart_id", SqlDbType.Int, Cart_id));
         }
-
+        public DataSet AddtoCartMaster_GetByDeleteUserId(int User_id)
+        {
+            return ExecuteDataSet("Delete from ProductAddtoCart where User_id=@User_id", null,
+                CreateParameter("@User_id", SqlDbType.Int, User_id));
+        }
         #endregion
 
     }

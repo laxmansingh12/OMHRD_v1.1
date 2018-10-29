@@ -12,14 +12,14 @@ namespace Business.SQLServer
         public ProductInvoice_MasterDataService(IDbTransaction txn) : base(txn) { }
         #endregion
         #region Methods
-        public void ProductInvoice_Master_Save(int INVOICE_ID, int ITEM_ID, string ITEMNAME, string HSNCODE, decimal QUANTITY, decimal RATE_PER, decimal TOTAL, decimal CGST_AMT, decimal SGST_AMT, decimal IGST_AMT, int BILL_ID, string REMARKS, decimal CGST_RATE, decimal SGST_RATE, decimal IGST_RATE, DateTime INVOICE_DATE, string Bil_Stutas,int RECEIVER_ID)
+        public void ProductInvoice_Master_Save(int INVOICE_ID, int ITEM_ID, string ITEMNAME, string HSNCODE, decimal QUANTITY, decimal RATE_PER, decimal TOTAL, decimal CGST_AMT, decimal SGST_AMT, decimal IGST_AMT, int BILL_ID, string REMARKS, decimal CGST_RATE, decimal SGST_RATE, decimal IGST_RATE, DateTime INVOICE_DATE, string Bil_Stutas,int RECEIVER_ID,string UnitCode,string Color_Code)
         {
             SqlCommand cmd;
             // NoofPaper,NoofPratical,MaxMarks,MinMarks,
             DataSet ds = ProductInvoice_Master_GetByINVOICE_ID(INVOICE_ID);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
-                ExecuteNonQuery(out cmd, @"UPDATE ProductInvoice_Master set ITEM_ID=@ITEM_ID,ITEMNAME=@ITEMNAME,HSNCODE=@HSNCODE, QUANTITY=@QUANTITY,RATE_PER=@RATE_PER,TOTAL=@TOTAL,CGST_AMT=@CGST_AMT,SGST_AMT=@SGST_AMT,IGST_AMT=@IGST_AMT,BILL_ID=@BILL_ID,REMARKS=@REMARKS,CGST_RATE=@CGST_RATE, SGST_RATE=@SGST_RATE, IGST_RATE=@IGST_RATE,INVOICE_DATE=@INVOICE_DATE,Bil_Stutas=@Bil_Stutas,RECEIVER_ID=@RECEIVER_ID where INVOICE_ID=@INVOICE_ID",
+                ExecuteNonQuery(out cmd, @"UPDATE ProductInvoice_Master set ITEM_ID=@ITEM_ID,ITEMNAME=@ITEMNAME,HSNCODE=@HSNCODE, QUANTITY=@QUANTITY,RATE_PER=@RATE_PER,TOTAL=@TOTAL,CGST_AMT=@CGST_AMT,SGST_AMT=@SGST_AMT,IGST_AMT=@IGST_AMT,BILL_ID=@BILL_ID,REMARKS=@REMARKS,CGST_RATE=@CGST_RATE, SGST_RATE=@SGST_RATE, IGST_RATE=@IGST_RATE,INVOICE_DATE=@INVOICE_DATE,Bil_Stutas=@Bil_Stutas,RECEIVER_ID=@RECEIVER_ID,UnitCode=@UnitCode,Color_Code=@Color_Code where INVOICE_ID=@INVOICE_ID",
                          CreateParameter("@ITEM_ID", SqlDbType.Int, ITEM_ID),
                          CreateParameter("@ITEMNAME", SqlDbType.VarChar, ITEMNAME),
                          CreateParameter("@HSNCODE", SqlDbType.VarChar, HSNCODE),
@@ -37,11 +37,13 @@ namespace Business.SQLServer
                          CreateParameter("@INVOICE_DATE", SqlDbType.Date, INVOICE_DATE),
                          CreateParameter("@Bil_Stutas", SqlDbType.VarChar, Bil_Stutas),
                          CreateParameter("@RECEIVER_ID", SqlDbType.Int, RECEIVER_ID),
+                         CreateParameter("@UnitCode", SqlDbType.VarChar, UnitCode),
+                         CreateParameter("@Color_Code", SqlDbType.VarChar, Color_Code),
                          CreateParameter("@INVOICE_ID", SqlDbType.Int, INVOICE_ID));
             }
             else
             {
-                ExecuteNonQuery(out cmd, @"INSERT INTO ProductInvoice_Master VALUES (@INVOICE_ID, @ITEM_ID,@ITEMNAME,@HSNCODE, @QUANTITY, @RATE_PER, @TOTAL, @CGST_AMT, @SGST_AMT, @IGST_AMT, @BILL_ID, @REMARKS, @CGST_RATE, @SGST_RATE, @IGST_RATE, @INVOICE_DATE, @Bil_Stutas,@RECEIVER_ID)",
+                ExecuteNonQuery(out cmd, @"INSERT INTO ProductInvoice_Master VALUES (@INVOICE_ID, @ITEM_ID,@ITEMNAME,@HSNCODE, @QUANTITY, @RATE_PER, @TOTAL, @CGST_AMT, @SGST_AMT, @IGST_AMT, @BILL_ID, @REMARKS, @CGST_RATE, @SGST_RATE, @IGST_RATE, @INVOICE_DATE, @Bil_Stutas,@RECEIVER_ID,@UnitCode,@Color_Code)",
                          CreateParameter("@INVOICE_ID", SqlDbType.Int, INVOICE_ID),
                          CreateParameter("@ITEM_ID", SqlDbType.Int, ITEM_ID),
                          CreateParameter("@ITEMNAME", SqlDbType.VarChar, ITEMNAME),
@@ -59,7 +61,9 @@ namespace Business.SQLServer
                          CreateParameter("@IGST_RATE", SqlDbType.Decimal, IGST_RATE),
                          CreateParameter("@INVOICE_DATE", SqlDbType.Date, INVOICE_DATE),
                          CreateParameter("@Bil_Stutas", SqlDbType.VarChar, Bil_Stutas),
-                         CreateParameter("@RECEIVER_ID", SqlDbType.Int, RECEIVER_ID));
+                         CreateParameter("@RECEIVER_ID", SqlDbType.Int, RECEIVER_ID),
+                          CreateParameter("@UnitCode", SqlDbType.VarChar, UnitCode),
+                         CreateParameter("@Color_Code", SqlDbType.VarChar, Color_Code));
 
             }
             if (cmd != null)

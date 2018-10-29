@@ -85,6 +85,10 @@ namespace Business.Object
         {
             new ProductAddtoCartDataService().AddtoCartMaster_GetByDelete(Cart_id);
         }
+        public void UserDelete(int User_id)
+        {
+            new ProductAddtoCartDataService().AddtoCartMaster_GetByDeleteUserId(User_id);
+        }
 
         public static int GetMaxID()
         {
