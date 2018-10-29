@@ -51,10 +51,10 @@ namespace Business.Object
             PickupID = GetInt(row, "PickupID");
             return base.MapData(row);
         }
-        public static PickUpItemMaster GetByOrderId(int Id)
+        public static PickUpItemMaster GetByOrderId(int ITEM_ID)
         {
             PickUpItemMaster obj = new PickUpItemMaster();
-            obj.MapData(new PickUpItemEnterMasterService().PickUpItemGetByOrderId(Id));
+            obj.MapData(new PickUpItemEnterMasterService().PickUpItemGetByOrderId(ITEM_ID));
             return obj;
         }
         public void Save()

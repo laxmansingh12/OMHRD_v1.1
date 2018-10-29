@@ -76,8 +76,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddtoCartMaster.cs" />
-    <Compile Include="AddtoCartMasterCollection.cs" />
+    <Compile Include="ProductAddtoCartMaster.cs" />
+    <Compile Include="ProductAddtoCartMasterCollection.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="FrontBannerMaster.cs" />
     <Compile Include="FrontBannerMasterCollection.cs" />

@@ -20,6 +20,11 @@ namespace OMHRD.PickUp
         static decimal maxrate = 0;
         public static string OTP;
         static string PaymentMod;
+
+        DataView dvUnitPrice { get { return Session["dvUnitPrice"] as DataView; } }
+        string _selectedColorCode { get { return Session["_selectedColorCode"] as string; } }
+        string _selectedSizeCode { get { return Session["_selectedSizeCode"] as string; } }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             GetMaxbillid();
@@ -54,8 +59,39 @@ namespace OMHRD.PickUp
                 _state.Insert(0, sm);
                 ddlItem.DataSource = _state;
                 ddlItem.DataTextField = "ITEMNAME";
-                ddlItem.DataValueField = "Id";
+                ddlItem.DataValueField = "ITEM_Id";
                 ddlItem.DataBind();
+            }
+            catch (Exception ex)
+            {
+                string script = "<script>alert('" + ex.Message + "');</script>";
+            }
+        }
+
+        public void BindSizeColorDropdown(string productId)
+        {
+            try
+            {
+                string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+                using (SqlConnection conn = new SqlConnection(constr))
+                {
+                    string query = "SELECT Id, (UnitCode + ' - ' + ISNULL(Color_Code,'')) AS Text, UnitCode,ISNULL(Color_Code,'') as Color_Code,Price from dbo.ItemUnitRel where itemId = " + productId;
+                    conn.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
+
+                    DataSet units = new DataSet();
+                    da.Fill(units, "UnitColor");
+                    Session["dvUnitPrice"] = units.Tables[0].AsDataView();
+                    ddlSizeColor.DataSource = dvUnitPrice;
+                    ddlSizeColor.DataTextField = "Text";
+                    ddlSizeColor.DataValueField = "Id";
+                    ddlSizeColor.DataBind();
+                    ddlSizeColor.SelectedIndex = 0;
+                    SetSelectedPrice(ddlSizeColor.SelectedValue);
+
+                    conn.Close();
+                }
+
             }
             catch (Exception ex)
             {
@@ -122,6 +158,7 @@ namespace OMHRD.PickUp
                     txtsgst.Text = "0";
                     txtigst.Text = "0";
                 }
+                BindSizeColorDropdown(ddlItem.SelectedValue);
             }
             catch (Exception ew) { }
         }
@@ -670,7 +707,7 @@ namespace OMHRD.PickUp
             OTP = "00000";
             int UserId = ddlUser.SelectedIndex;
             string Contact = USERPROFILEMASTER.GetByRegistration_ID(UserId).ContactNumber;
-           // Sendmsg("Your OTP is " + " " + OTP, Contact);
+            // Sendmsg("Your OTP is " + " " + OTP, Contact);
             txtComfirmotp.Visible = true;
             btnWelletpay.Visible = true;
         }
@@ -782,6 +819,78 @@ namespace OMHRD.PickUp
         protected void btnreset_Click(object sender, EventArgs e)
         {
             Response.Redirect(Request.Url.AbsoluteUri);
+        }
+
+        protected void ddlSizeColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetSelectedPrice(ddlSizeColor.SelectedValue);
+        }
+
+        private void SetSelectedPrice(string sizeColorId)
+        {
+
+            if (!string.IsNullOrWhiteSpace(sizeColorId) && dvUnitPrice != null)
+            {
+                var dv = dvUnitPrice;
+                dv.RowFilter = null;
+                // dv.RowStateFilter = DataViewRowState.ModifiedCurrent;
+                dv.RowFilter = "Id = " + sizeColorId;
+                // dv.RowStateFilter = DataViewRowState.ModifiedCurrent;
+                var row = dv.ToTable().Rows[0];
+                Session["_selectedSizeCode"] = row["UnitCode"].ToString();
+                Session["_selectedColorCode"] = row["Color_Code"].ToString();
+                txtrate.Text = row["Price"].ToString();
+            }
+            else
+            {
+                Session["_selectedSizeCode"] = "";
+                Session["_selectedColorCode"] = "";
+                txtrate.Text = "";
+            }
+        }
+
+        public void BindProductAddToCart()
+        {
+            int userId = int.Parse(ddlUser.SelectedValue);
+            gdvNotice.DataSource = ProductAddtoCartMasterCollection.GetAll().FindAll(x => x.User_id == userId);
+            gdvNotice.DataBind();
+        }
+        protected void btnPickAddtocart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ProductAddtoCartMaster ln = new ProductAddtoCartMaster();
+                if (btnPickAddtocart.Text == "Add To Cart")
+                {
+                    ln.Cart_id = ProductAddtoCartMaster.GetMaxID() + 1;
+                    ln.User_id = int.Parse(ddlUser.SelectedValue);
+                    ln.Product_id = int.Parse(ddlItem.SelectedValue);
+                    ln.Quantity = decimal.Parse(numqty.Text);
+                    ln.Color_Code = _selectedColorCode;
+                    ln.UnitCode = _selectedSizeCode;
+                    ln.Save();
+                }
+                else if (btnPickAddtocart.Text == "Update")
+                {
+                    ln = ProductAddtoCartMaster.GetByCart_id(int.Parse(ViewState["ProductAddToCartID"].ToString()));
+                    ln.Cart_id = int.Parse(ViewState["ProductAddToCartID"].ToString());
+                    ln.User_id = int.Parse(ddlUser.SelectedValue);
+                    ln.Product_id = int.Parse(ddlItem.SelectedValue);
+                    ln.Quantity = decimal.Parse(numqty.Text);
+                    ln.Color_Code = _selectedColorCode;
+                    ln.UnitCode = _selectedSizeCode;
+                    ln.Save();
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Update Successfully...');</Script>", false);
+                }
+                BindProductAddToCart();
+                ddlItem.SelectedIndex = 0;
+                btnPickAddtocart.Text = "Add To Cart";
+                ClearControls(this);
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert(error);</script>", false);
+            }
         }
     }
 }

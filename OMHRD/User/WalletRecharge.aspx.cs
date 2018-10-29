@@ -14,16 +14,21 @@ namespace OMHRD.User
         {
             if (!IsPostBack)
             {
-                grid();
+                BindBymeRecharge();
+                BindOtherRecharge();
                 fillUser();
             }
         }
 
-        public void grid()
+        public void BindBymeRecharge()
         {
-            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
-            gdvNotice.DataBind();
-
+            gdvBymeRecharge.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
+            gdvBymeRecharge.DataBind();
+        }
+        public void BindOtherRecharge()
+        {
+            GridView1.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.User_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
+            GridView1.DataBind();
         }
         private void ClearInputs(ControlCollection ctrls)
         {
@@ -130,7 +135,7 @@ namespace OMHRD.User
                     cm.Save();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Update Successfully...');</Script>", false);
                 }
-                grid();
+                BindBymeRecharge();
                 ClearInputs(Page.Controls);
             }
             catch (Exception ex)
@@ -141,9 +146,9 @@ namespace OMHRD.User
 
         protected void gdvNotice_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            grid();
-            gdvNotice.PageIndex = e.NewPageIndex;
-            gdvNotice.DataBind();
+            BindBymeRecharge();
+            gdvBymeRecharge.PageIndex = e.NewPageIndex;
+            gdvBymeRecharge.DataBind();
         }
     }
 }

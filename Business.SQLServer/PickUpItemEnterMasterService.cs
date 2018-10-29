@@ -63,10 +63,10 @@ namespace Business.SQLServer
             return ExecuteDataSet("Select * from PickUpItemEntry ", null, null);
         }
 
-        public DataSet PickUpItemGetByOrderId(int Id)
+        public DataSet PickUpItemGetByOrderId(int ITEM_ID)
         {
-            return ExecuteDataSet("select * from PickUpItemEntry where Id=@Id", null,
-                CreateParameter("@Id", SqlDbType.Int, Id));
+            return ExecuteDataSet("select * from PickUpItemEntry where ITEM_ID=@ITEM_ID", null,
+                CreateParameter("@ITEM_ID", SqlDbType.Int, ITEM_ID));
         }
 
         public DataSet PickUpItemGetMaxID()

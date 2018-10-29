@@ -14,7 +14,7 @@ namespace OMHRD.PickUp
         {
             if (!IsPostBack)
             {
-                lblProfileName.Text = " Wellcome," + " " + PickupMaster.GetByPickupName(Session["Pickuser"] == null ? string.Empty : Session["Pickuser"].ToString()).UserName;
+                lblProfileName.Text = " Wellcome," + " " + PickupMaster.GetByPickupName(Session["Pickuser"] == null ? string.Empty : Session["Pickuser"].ToString()).FirstName + " " + PickupMaster.GetByPickupName(Session["Pickuser"] == null ? string.Empty : Session["Pickuser"].ToString()).LastName;
                 decimal Am = PickupMaster.GetByPickupID(int.Parse(Session["PickupID"].ToString())).PickUpWallet;
                 lblWallet.Text = Am.ToString();
             }

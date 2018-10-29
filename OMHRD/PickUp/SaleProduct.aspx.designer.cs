@@ -40,6 +40,15 @@ namespace OMHRD.PickUp {
         protected global::System.Web.UI.WebControls.TextBox txtItemCode;
         
         /// <summary>
+        /// ddlSizeColor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSizeColor;
+        
+        /// <summary>
         /// txtrate control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace OMHRD.PickUp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox numqty;
+        
+        /// <summary>
+        /// btnPickAddtocart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPickAddtocart;
         
         /// <summary>
         /// btnsave control.

@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="frmpayout.aspx.cs" Inherits="OMHRD.AdminPanel.frmpayout" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function confirmAlreadyExist() {
+            var isGenerated = parseInt($("#hdnPayoutGenerated").val()) > 0;
+            if (isGenerated) {
+                return confirm("Payout is already generated for this month, do you want to regerate ?");
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -81,7 +93,7 @@
                                 </Columns>
                             </asp:GridView>
                         </div>
-                        <center><asp:Button ID="btnsubmit" runat="server" Width="150px" Text="Submit" CssClass="btn btn-success" OnClick="btnsubmit_Click" /></center>
+                        <center><asp:Button ID="btnsubmit" runat="server" OnClientClick="return confirmAlreadyExist()" Width="150px" Text="Submit" CssClass="btn btn-success" OnClick="btnsubmit_Click" /></center>
 
                     </div>
 
@@ -89,4 +101,5 @@
             </div>
         </div>
     </div>
+    <asp:HiddenField ID="hdnPayoutGenerated" ClientIDMode="Static" Value="0" runat="server" />
 </asp:Content>

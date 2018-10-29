@@ -75,7 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddtoCartDataService.cs" />
+    <Compile Include="ProductAddtoCartDataService.cs" />
     <Compile Include="FrontBannerService.cs" />
     <Compile Include="PickUpItemEnterMasterService.cs" />
     <Compile Include="ProductBill_MasterDataService.cs" />

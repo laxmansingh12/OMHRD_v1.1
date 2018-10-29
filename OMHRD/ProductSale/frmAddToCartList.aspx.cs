@@ -72,7 +72,7 @@ namespace OMHRD.ProductSale
                 GridViewRow gv = (GridViewRow)lb.NamingContainer;
                 ViewState["id"] = ((Label)gv.FindControl("labelNOTICE_ID")).Text;
                 string did = ViewState["id"].ToString();
-                AddtoCartMaster dm = new AddtoCartMaster();
+                ProductAddtoCartMaster dm = new ProductAddtoCartMaster();
                 dm.Cart_id = int.Parse(did);
                 dm.Delete();
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Product Remove....');</Script>", false);
@@ -91,8 +91,8 @@ namespace OMHRD.ProductSale
             {
                 int ProId = Convert.ToInt32(e.CommandArgument);
                 int UserId = int.Parse(Session["loginid"].ToString());
-                AddtoCartMaster dm = new AddtoCartMaster();
-                var product = AddtoCartMaster.GetByUser_idProductID(UserId, ProId);
+                ProductAddtoCartMaster dm = new ProductAddtoCartMaster();
+                var product = ProductAddtoCartMaster.GetByUser_idProductID(UserId, ProId);
                 int Cartid = product.Cart_id;
                 dm.Cart_id = Cartid;
                 dm.Delete();

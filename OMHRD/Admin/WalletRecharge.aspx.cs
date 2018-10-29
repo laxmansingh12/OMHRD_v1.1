@@ -14,16 +14,21 @@ namespace OMHRD.Admin
         {
             if (!IsPostBack)
             {
-                grid();
+                BindBymeRecharge();
+                BindOtherRecharge();
                 fillUser();
             }
         }
 
-        public void grid()
+        public void BindBymeRecharge()
         {
-            gdvNotice.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
-            gdvNotice.DataBind();
-
+            gdvBymeRecharge.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.ByUser_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
+            gdvBymeRecharge.DataBind();
+        }
+        public void BindOtherRecharge()
+        {
+            GridView1.DataSource = WalletRechargeMasterCollection.GetAll().FindAll(x => x.User_id == int.Parse(Session["loginid"].ToString()) && x.Status == "User").OrderByDescending(x => x.Id).ToList();
+            GridView1.DataBind();
         }
         private void ClearInputs(ControlCollection ctrls)
         {
@@ -41,12 +46,12 @@ namespace OMHRD.Admin
         {
             try
             {
-                List<USERPROFILEMASTER> _state = USERPROFILEMASTERCollection.GetAll();
+                List<USERPROFILEMASTER> _user = USERPROFILEMASTERCollection.GetAll();
                 USERPROFILEMASTER sm = new USERPROFILEMASTER();
                 sm.Registration_ID = 0;
                 sm.User_Name = "-select User-";
-                _state.Insert(0, sm);
-                ddlUser.DataSource = _state;
+                _user.Insert(0, sm);
+                ddlUser.DataSource = _user;
                 ddlUser.DataTextField = "User_Name";
                 ddlUser.DataValueField = "Registration_ID";
                 ddlUser.DataBind();
@@ -99,8 +104,6 @@ namespace OMHRD.Admin
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('" + ex.Message + "')</script>", false);
             }
         }
-
-
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
             try
@@ -130,7 +133,7 @@ namespace OMHRD.Admin
                     cm.Save();
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<Script>alert('Update Successfully...');</Script>", false);
                 }
-                grid();
+                BindBymeRecharge();
                 ClearInputs(Page.Controls);
             }
             catch (Exception ex)
@@ -141,9 +144,9 @@ namespace OMHRD.Admin
 
         protected void gdvNotice_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            grid();
-            gdvNotice.PageIndex = e.NewPageIndex;
-            gdvNotice.DataBind();
+            BindBymeRecharge();
+            gdvBymeRecharge.PageIndex = e.NewPageIndex;
+            gdvBymeRecharge.DataBind();
         }
     }
 }

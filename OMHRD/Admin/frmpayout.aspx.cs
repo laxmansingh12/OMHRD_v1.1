@@ -43,7 +43,7 @@ namespace OMHRD.AdminPanel
             string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("Select Code, convert( varchar(20),Percentage) + '% ( ' + convert(varchar(20),MinReference) + ' to ' + convert(varchar(20), MaxReference)   + ' Members )' AS Text from PayoutLevelSetting"))
+                using (SqlCommand cmd = new SqlCommand("Select Code, convert( varchar(20),Percentage) + '% ( ' + convert(varchar(20),MinReference) + ' to ' + convert(varchar(20), ISNULL(MaxReference,''))   + ' Members )' AS Text from PayoutLevelSetting"))
                 {
                     cmd.CommandType = CommandType.Text;
                     cmd.Connection = con;
@@ -78,6 +78,11 @@ namespace OMHRD.AdminPanel
         }
         public void GetQualifier()
         {
+            var selectedMonthDate = DateTime.ParseExact(ddlmonth.SelectedValue, "ddMMyyyy", CultureInfo.InvariantCulture);
+            //SELECT count(1) FROM PayoutAmount WHERE PayoutMonth= @PayoutMonth and PayoutYear= @PayoutYear
+            if (hdnPayoutGenerated.Value == "")
+            {
+            }
             decimal TotalSale = decimal.Parse(txttotalAmount.Text);
             string PayoutLevel = ddlPayPercent.SelectedValue;
             String strConnString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
@@ -87,6 +92,8 @@ namespace OMHRD.AdminPanel
             cmd.CommandText = "usp_CalculatePayoutAmount";
             cmd.Parameters.AddWithValue("@TotalSale", TotalSale);
             cmd.Parameters.AddWithValue("@PayoutLevelCode", PayoutLevel);
+            cmd.Parameters.AddWithValue("@PayoutMonth", selectedMonthDate.Month);
+            cmd.Parameters.AddWithValue("@PayoutYear", selectedMonthDate.Year);
             cmd.Connection = con;
             try
             {

@@ -25,6 +25,7 @@ namespace Business.Object
         public decimal IGST_RATE { get; set; }
         public DateTime INVOICE_DATE { get; set; }
         public string Bil_Stutas { get; set; }
+        public int RECEIVER_ID { get; set; }
         #endregion
         #region Methods
 
@@ -47,6 +48,7 @@ namespace Business.Object
             IGST_RATE = GetDecimal(row, "IGST_RATE");
             INVOICE_DATE = GetDateTime(row, "INVOICE_DATE");
             Bil_Stutas = GetString(row, "Bil_Stutas");
+            RECEIVER_ID = GetInt(row, "RECEIVER_ID");
             return base.MapData(row);
         }
         public void Save()
@@ -76,7 +78,7 @@ namespace Business.Object
 
         public void Save(IDbTransaction txn)
         {
-            new ProductInvoice_MasterDataService().ProductInvoice_Master_Save(INVOICE_ID, ITEM_ID, ITEMNAME, HSNCODE, QUANTITY, RATE_PER, TOTAL, CGST_AMT, SGST_AMT, IGST_AMT, BILL_ID, REMARKS, CGST_RATE, SGST_RATE, IGST_RATE, INVOICE_DATE, Bil_Stutas);
+            new ProductInvoice_MasterDataService().ProductInvoice_Master_Save(INVOICE_ID, ITEM_ID, ITEMNAME, HSNCODE, QUANTITY, RATE_PER, TOTAL, CGST_AMT, SGST_AMT, IGST_AMT, BILL_ID, REMARKS, CGST_RATE, SGST_RATE, IGST_RATE, INVOICE_DATE, Bil_Stutas, RECEIVER_ID);
         }
         public void DeleteByBILL_ID()
         {

@@ -184,6 +184,33 @@ namespace OMHRD {
         protected global::System.Web.UI.WebControls.TextBox txtReferenceId;
         
         /// <summary>
+        /// txtPickuser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPickuser;
+        
+        /// <summary>
+        /// txtPickPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPickPassword;
+        
+        /// <summary>
+        /// btnPicklog control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPicklog;
+        
+        /// <summary>
         /// txtPickname control.
         /// </summary>
         /// <remarks>
@@ -272,33 +299,6 @@ namespace OMHRD {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPickGst;
-        
-        /// <summary>
-        /// txtPickuser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPickuser;
-        
-        /// <summary>
-        /// txtPickPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPickPassword;
-        
-        /// <summary>
-        /// btnPicklog control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPicklog;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

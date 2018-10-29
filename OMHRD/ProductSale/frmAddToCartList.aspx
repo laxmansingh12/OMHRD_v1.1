@@ -64,7 +64,7 @@
     <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-                <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                <li><a href="Default.aspx"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
                 <li class="active">Shopping Cart</li>
             </ol>
         </div>
@@ -80,7 +80,7 @@
                             </LayoutTemplate>
                             <ItemTemplate>
                                 <div class="col-sm-12">
-                                    <div class="new-collections-grid1 animated wow slideInUp product-detail" data-wow-delay=".5s">
+                                    <div class="product-detail" data-wow-delay=".5s">
                                         <div class="col-sm-2">
                                             <a href='productdetail.aspx?st=<%# Eval("ItemId") %>'>
                                                 <img src='<%# "../images/ItemImages/" +DataBinder.Eval(Container.DataItem, "Image")%>' style="height: 60px;" alt=" " class="img-responsive" /></a>

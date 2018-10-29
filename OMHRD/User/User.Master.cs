@@ -12,7 +12,7 @@ namespace OMHRD.User
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblProfileName.Text = " Wellcome," + " " + USERPROFILEMASTER.GetByUser_Name(Session["UserName"] == null ? string.Empty : Session["UserName"].ToString()).User_Name;
+            lblProfileName.Text = " Wellcome," + " " + USERPROFILEMASTER.GetByUser_Name(Session["UserName"] == null ? string.Empty : Session["UserName"].ToString()).First_Name + " " + USERPROFILEMASTER.GetByUser_Name(Session["UserName"] == null ? string.Empty : Session["UserName"].ToString()).Last_Name;
             decimal Am = USERPROFILEMASTER.GetByRegistration_ID(int.Parse(Session["loginid"].ToString())).UserWallet;
             lblWallet.Text = Am.ToString();
         }

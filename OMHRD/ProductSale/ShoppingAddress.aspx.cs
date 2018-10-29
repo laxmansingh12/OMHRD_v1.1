@@ -20,10 +20,10 @@ namespace OMHRD.ProductSale
         {
             if (!IsPostBack)
             {
-                lnkWallet.Visible = false;
-                btndeliver.Visible = false;
-                btndeliver2.Visible = false;
-                lnkWallet2.Visible = false;
+                //lnkWallet.Visible = false;
+                //btndeliver.Visible = false;
+                //btndeliver2.Visible = false;
+                //lnkWallet2.Visible = false;
                 FIllAddress();
                 FIllShippingAddress();
                 Member_detail(int.Parse(Session["loginid"].ToString()));
@@ -90,7 +90,6 @@ namespace OMHRD.ProductSale
             try
             {
                 int UserID = int.Parse(Session["loginid"].ToString());
-                // string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
                 SqlConnection cn = new SqlConnection(constr);
                 SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
                 SqlDataAdapter adptr = new SqlDataAdapter(cmd);
@@ -145,20 +144,6 @@ namespace OMHRD.ProductSale
         protected void lnkWallet_Click(object sender, EventArgs e)
         {
             int UserID = int.Parse(Session["loginid"].ToString());
-            // string constr = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
-            SqlConnection cn = new SqlConnection(constr);
-            SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
-            SqlDataAdapter adptr = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@User_id", UserID);
-            cn.Open();
-            adptr.Fill(ds);
-            cn.Close();
-            orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
-            totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
-
-            #region
             USERPROFILEMASTER User = USERPROFILEMASTER.GetByRegistration_ID(UserID);
             if (User.Registration_ID > 0)
             {
@@ -169,8 +154,20 @@ namespace OMHRD.ProductSale
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Insufulset amount in User account.!!!')</script>", false);
                     return;
                 }
-
-                USERPROFILEMASTER lm = USERPROFILEMASTER.GetByRegistration_ID(2);
+                #region
+                SqlConnection cn = new SqlConnection(constr);
+                SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
+                SqlDataAdapter adptr = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@User_id", UserID);
+                cn.Open();
+                adptr.Fill(ds);
+                cn.Close();
+                orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
+                totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
+                #endregion
+                USERPROFILEMASTER lm = USERPROFILEMASTER.GetByUser_Name("OMHRD");
                 if (lm.Registration_ID > 0)
                 {
                     USERPROFILEMASTER lmm = new USERPROFILEMASTER();
@@ -186,14 +183,36 @@ namespace OMHRD.ProductSale
                 decimal TranferAmount = totalAmount;
                 decimal FinalAmount = MyAmount - TranferAmount;
                 User.WalletRecharge(User.Registration_ID, FinalAmount);
-            }
+                #region SaveUserOrderPayment
+                using (SqlConnection conn = new SqlConnection(constr))
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand("Insert Into UserOrderPaymenttbl (Orderid, TrackingId, BankRefNo, OrderStatus,FailureMessage,PaymentMod,CardName,StatusCode,StatusMessage,ResponseCode,PaymentDate,Amount,UserId) Values (@Orderid, @TrackingId, @BankRefNo, @OrderStatus,@FailureMessage,@PaymentMod,@CardName,@StatusCode,@StatusMessage,@ResponseCode,@PaymentDate,@Amount,@UserId)", conn);
+                    da.InsertCommand.Parameters.Add("@Orderid", SqlDbType.Int).Value = 0;
+                    da.InsertCommand.Parameters.Add("@TrackingId", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@BankRefNo", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@OrderStatus", SqlDbType.Text).Value = "Success";
 
+                    da.InsertCommand.Parameters.Add("@FailureMessage", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@PaymentMod", SqlDbType.Text).Value = "Wallet";
+                    da.InsertCommand.Parameters.Add("@CardName", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@StatusCode", SqlDbType.Int).Value = 0;
+
+                    da.InsertCommand.Parameters.Add("@StatusMessage", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@ResponseCode", SqlDbType.Int).Value = 0;
+                    da.InsertCommand.Parameters.Add("@PaymentDate", SqlDbType.DateTime).Value = System.DateTime.Now;
+                    da.InsertCommand.Parameters.Add("@Amount", SqlDbType.Decimal).Value = totalAmount;
+                    da.InsertCommand.Parameters.Add("@UserId", SqlDbType.Int).Value = UserID;
+                    conn.Open();
+                    da.InsertCommand.ExecuteNonQuery();
+                    conn.Close();
+                }
+                #endregion
+            }
             else
             {
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Some technical error...!!!')</script>", false);
             }
-            #endregion
-
         }
         protected void btndeliver2_Click(object sender, EventArgs e)
         {
@@ -295,7 +314,76 @@ namespace OMHRD.ProductSale
 
         protected void lnkWallet2_Click(object sender, EventArgs e)
         {
+            int UserID = int.Parse(Session["loginid"].ToString());
+            USERPROFILEMASTER User = USERPROFILEMASTER.GetByRegistration_ID(UserID);
+            if (User.Registration_ID > 0)
+            {
+                decimal UserAmount = User.UserWallet;
+                decimal TransferAmount = 5000;// totalAmount;
+                if (UserAmount <= TransferAmount)
+                {
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Insufulset amount in User account.!!!')</script>", false);
+                    return;
+                }
+                #region
+                SqlConnection cn = new SqlConnection(constr);
+                SqlCommand cmd = new SqlCommand("usp_SaveUserOrder", cn);
+                SqlDataAdapter adptr = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@User_id", UserID);
+                cn.Open();
+                adptr.Fill(ds);
+                cn.Close();
+                orderNo = ds.Tables[0].Rows[0]["OrderNo"].ToString();
+                totalAmount = Convert.ToDecimal(ds.Tables[0].Rows[0]["TotalAmount"]);
+                #endregion
+                USERPROFILEMASTER lm = USERPROFILEMASTER.GetByUser_Name("OMHRD");
+                if (lm.Registration_ID > 0)
+                {
+                    USERPROFILEMASTER lmm = new USERPROFILEMASTER();
+                    decimal PreviousAmount = lm.UserWallet;
+                    decimal Amount = totalAmount;
+                    decimal TotalAmount = PreviousAmount + Amount;
+                    lmm.WalletRecharge(lm.Registration_ID, TotalAmount);
+                    {
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Payment successful..!!!')</script>", false);
+                    }
+                }
+                decimal MyAmount = User.UserWallet;
+                decimal TranferAmount = totalAmount;
+                decimal FinalAmount = MyAmount - TranferAmount;
+                User.WalletRecharge(User.Registration_ID, FinalAmount);
+                #region SaveUserOrderPayment
+                using (SqlConnection conn = new SqlConnection(constr))
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand("Insert Into UserOrderPaymenttbl (Orderid, TrackingId, BankRefNo, OrderStatus,FailureMessage,PaymentMod,CardName,StatusCode,StatusMessage,ResponseCode,PaymentDate,Amount,UserId) Values (@Orderid, @TrackingId, @BankRefNo, @OrderStatus,@FailureMessage,@PaymentMod,@CardName,@StatusCode,@StatusMessage,@ResponseCode,@PaymentDate,@Amount,@UserId)", conn);
+                    da.InsertCommand.Parameters.Add("@Orderid", SqlDbType.Int).Value = 0;
+                    da.InsertCommand.Parameters.Add("@TrackingId", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@BankRefNo", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@OrderStatus", SqlDbType.Text).Value = "Success";
 
+                    da.InsertCommand.Parameters.Add("@FailureMessage", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@PaymentMod", SqlDbType.Text).Value = "Wallet";
+                    da.InsertCommand.Parameters.Add("@CardName", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@StatusCode", SqlDbType.Int).Value = 0;
+
+                    da.InsertCommand.Parameters.Add("@StatusMessage", SqlDbType.Text).Value = "";
+                    da.InsertCommand.Parameters.Add("@ResponseCode", SqlDbType.Int).Value = 0;
+                    da.InsertCommand.Parameters.Add("@PaymentDate", SqlDbType.DateTime).Value = System.DateTime.Now;
+                    da.InsertCommand.Parameters.Add("@Amount", SqlDbType.Decimal).Value = totalAmount;
+                    da.InsertCommand.Parameters.Add("@UserId", SqlDbType.Int).Value = UserID;
+                    conn.Open();
+                    da.InsertCommand.ExecuteNonQuery();
+                    conn.Close();
+                }
+                #endregion
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alert", "<script>alert('Some technical error...!!!')</script>", false);
+            }
         }
     }
 }

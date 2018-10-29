@@ -11,7 +11,24 @@ namespace Business.Object
 
         public int Id { get; set; }
         public int ByUser_id { get; set; }
+        public string ByUserName
+        {
+            get
+            {
+                USERPROFILEMASTER sm = USERPROFILEMASTER.GetByRegistration_ID(ByUser_id);
+                return sm.First_Name.ToString() + " " + sm.Last_Name.ToString();
+            }
+        }
+
         public int User_id { get; set; }
+        public string UserName
+        {
+            get
+            {
+                USERPROFILEMASTER sm = USERPROFILEMASTER.GetByRegistration_ID(User_id);
+                return sm.First_Name.ToString() + " " + sm.Last_Name.ToString();
+            }
+        }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
         public string Status { get; set; }

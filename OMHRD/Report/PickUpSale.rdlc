@@ -1234,6 +1234,7 @@
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
+                                        <Format>'₹'0;('₹'0)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -1252,8 +1253,10 @@
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
                                 <PaddingBottom>2pt</PaddingBottom>
+                                <rd:FormatSymbolCulture>en-IN</rd:FormatSymbolCulture>
                               </Style>
                             </Textbox>
+                            <rd:Selected>true</rd:Selected>
                           </CellContents>
                         </TablixCell>
                       </TablixCells>
