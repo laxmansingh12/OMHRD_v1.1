@@ -811,10 +811,7 @@ namespace OMHRD.PickUp
             }
         }
 
-        protected void ddlUser_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ClearControls(this);
-        }
+
 
         protected void btnreset_Click(object sender, EventArgs e)
         {
@@ -852,8 +849,14 @@ namespace OMHRD.PickUp
         public void BindProductAddToCart()
         {
             int userId = int.Parse(ddlUser.SelectedValue);
+
             gdvNotice.DataSource = ProductAddtoCartMasterCollection.GetAll().FindAll(x => x.User_id == userId);
             gdvNotice.DataBind();
+        }
+        protected void ddlUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BindProductAddToCart();
+            ClearControls(this);
         }
         protected void btnPickAddtocart_Click(object sender, EventArgs e)
         {

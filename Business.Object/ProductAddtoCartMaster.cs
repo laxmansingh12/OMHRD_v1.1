@@ -28,6 +28,9 @@ namespace Business.Object
             }
         }
         public decimal Quantity { get; set; }
+
+        public decimal Total { get { return Price * Quantity; } }
+
         public string UnitCode { get; set; }
         public string Color_Code { get; set; }
 

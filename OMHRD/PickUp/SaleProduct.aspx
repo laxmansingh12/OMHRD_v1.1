@@ -72,7 +72,6 @@
                         <div>
                             <br />
                             <asp:Button ID="btnPickAddtocart" runat="server" Text="Add To Cart" CssClass="btn btn-success" OnClick="btnPickAddtocart_Click" />
-                            <asp:Button ID="btnsave" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="btnsave_Click" />
                             <asp:Button ID="btnreset" runat="server" Text="Reset" CssClass="btn btn-success" OnClick="btnreset_Click" />
                         </div>
                     </div>
@@ -97,7 +96,7 @@
                     <asp:BoundField DataField="ITEMNAME" HeaderText="Item Name " SortExpression="File" />
                     <asp:BoundField DataField="Quantity" HeaderText="Qty" SortExpression="File" />
                     <asp:BoundField DataField="Price" HeaderText="Rate" SortExpression="File" />
-                    <%--<asp:BoundField DataField="TOTAL" HeaderText="Total" SortExpression="File" />--%>
+                    <asp:BoundField DataField="Total" HeaderText="Total" SortExpression="File" />
                     <asp:TemplateField HeaderText="Action">
                         <ItemTemplate>
                             <asp:LinkButton ID="linkbtnEdit" runat="server" OnClick="linkbtnEdit_Click">Edit</asp:LinkButton>
@@ -124,6 +123,7 @@
                         <asp:TextBox runat="server" ID="txtComfirmotp" placeholder="Enter the OTP" CssClass="form-control"></asp:TextBox>
                         <asp:Button ID="btnWelletpay" runat="server" Text="Payment" CssClass="btn btn-success" OnClick="btnWelletpay_Click" />
                     </div>
+                     <asp:Button ID="btnsave" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="btnsave_Click" />
                 </div>
             </asp:Panel>
             <br />
